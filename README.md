@@ -9,6 +9,7 @@ History (OE2DOR)
  - Connection to SDR/SpectrumAnalyser using new U.FL to SMA cable
  - Mounting using M3/10mm PCB Spacer soldered to head of existing PCB mounting screw (since PCB mounting screw has no metric thread)
  - Fixation using M3 Plastic nut & screw sticking into tuning hole of shielding box
+ - All but one resitor (1206) changed to 0805 to allow for smaller PCB layout
 
 History (G4HUP/W3AXL)
 Updated G4HUP / W3AXL panadapter tap
