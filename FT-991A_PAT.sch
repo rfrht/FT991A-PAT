@@ -14398,100 +14398,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="sn74lvc1g66-dck">
-<packages>
-<package name="DCK5">
-<smd name="1" x="-1.0414" y="0.65" dx="1.1684" dy="0.3556" layer="1"/>
-<smd name="2" x="-1.0414" y="0" dx="1.1684" dy="0.3556" layer="1"/>
-<smd name="3" x="-1.0414" y="-0.65" dx="1.1684" dy="0.3556" layer="1"/>
-<smd name="4" x="1.0414" y="-0.65" dx="1.1684" dy="0.3556" layer="1"/>
-<smd name="5" x="1.0414" y="0.65" dx="1.1684" dy="0.3556" layer="1"/>
-<wire x1="-0.7112" y1="-1.0668" x2="0.7112" y2="-1.0668" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="-1.0668" x2="0.7112" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="-0.8128" x2="0.7112" y2="-0.508" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="-0.508" x2="0.7112" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="1.0668" x2="-0.3048" y2="1.0668" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="1.0668" x2="-0.7112" y2="1.0668" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="1.0668" x2="-0.7112" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="0.8128" x2="-0.7112" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="0.508" x2="-0.7112" y2="0.1524" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="0.1524" x2="-0.7112" y2="-0.1524" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="-0.1524" x2="-0.7112" y2="-0.508" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="0.8128" x2="-1.1938" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="-1.1938" y1="0.8128" x2="-1.1938" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="-1.1938" y1="0.508" x2="-0.7112" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="0.1524" x2="-1.1938" y2="0.1524" width="0.1524" layer="51"/>
-<wire x1="-1.1938" y1="0.1524" x2="-1.1938" y2="-0.1524" width="0.1524" layer="51"/>
-<wire x1="-1.1938" y1="-0.1524" x2="-0.7112" y2="-0.1524" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="-1.0668" x2="-0.7112" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="-0.8128" x2="-0.7112" y2="-0.508" width="0.1524" layer="51"/>
-<wire x1="-0.7112" y1="-0.508" x2="-1.1938" y2="-0.508" width="0.1524" layer="51"/>
-<wire x1="-1.1938" y1="-0.508" x2="-1.1938" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="-1.1938" y1="-0.8128" x2="-0.7112" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="-0.8128" x2="1.1938" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="1.1938" y1="-0.8128" x2="1.1938" y2="-0.508" width="0.1524" layer="51"/>
-<wire x1="1.1938" y1="-0.508" x2="0.7112" y2="-0.508" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="1.0668" x2="0.7112" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="0.8128" x2="0.7112" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="0.508" x2="1.1938" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="1.1938" y1="0.508" x2="1.1938" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="1.1938" y1="0.8128" x2="0.7112" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="1.0922" x2="-0.3048" y2="1.0668" width="0.1524" layer="51" curve="-180"/>
-<text x="-1.8796" y="0.889" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<wire x1="-0.2286" y1="-1.0668" x2="0.2286" y2="-1.0668" width="0.1524" layer="21"/>
-<wire x1="0.7112" y1="-0.127" x2="0.7112" y2="0.127" width="0.1524" layer="21"/>
-<wire x1="0.2286" y1="1.0668" x2="-0.2286" y2="1.0668" width="0.1524" layer="21"/>
-<wire x1="0.127" y1="0.8128" x2="-0.127" y2="0.8128" width="0.1524" layer="21" curve="-48"/>
-<text x="-1.8796" y="0.889" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-</package>
-</packages>
-<symbols>
-<symbol name="SN74LVC1G66_DCK_5">
-<pin name="A" x="0" y="0" direction="in"/>
-<pin name="B" x="0" y="-2.54" direction="in"/>
-<pin name="GND" x="50.8" y="-5.08" direction="pwr" rot="R180"/>
-<pin name="C" x="50.8" y="-2.54" direction="in" rot="R180"/>
-<pin name="VCC" x="50.8" y="0" direction="pwr" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="43.18" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="43.18" y1="-10.16" x2="43.18" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="43.18" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<text x="20.6756" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="20.0406" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SN74LVC1G66_DCK_5" prefix="U">
-<gates>
-<gate name="A" symbol="SN74LVC1G66_DCK_5" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DCK5">
-<connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="B" pad="2"/>
-<connect gate="A" pin="C" pad="4"/>
-<connect gate="A" pin="GND" pad="3"/>
-<connect gate="A" pin="VCC" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DATASHEETURL" value="httpwww.ti.comlitgpnSN74LVC1G66" constant="no"/>
-<attribute name="FAMILY_NAME" value="ANALOG SWITCHMULTIPLEXERless than or equal to 5V" constant="no"/>
-<attribute name="GENERIC_PART_NUMBER" value="SN74LVC1G66" constant="no"/>
-<attribute name="INDUSTRY_STD_PKG_TYPE" value="SC70" constant="no"/>
-<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="sn74lvc1g66_dck_5" constant="no"/>
-<attribute name="PACKAGE_DESIGNATOR" value="DCK" constant="no"/>
-<attribute name="PIN_COUNT" value="5" constant="no"/>
-<attribute name="VENDOR" value="Texas Instruments" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="sn74ahc1g08-dck">
 <packages>
 <package name="DCK5">
@@ -17250,13 +17156,91 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="psemi">
+<packages>
+<package name="SC-70">
+<description>6-Lead SC-70</description>
+<smd name="1" x="-0.635" y="-1.035" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="0.015" y="-1.035" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="0.665" y="-1.035" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<smd name="6" x="-0.635" y="1.065" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<smd name="5" x="0.015" y="1.065" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="0.665" y="1.065" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<circle x="-0.75" y="-1.4" radius="0.05" width="0" layer="21"/>
+<wire x1="1.05" y1="0.65" x2="-1.05" y2="0.65" width="0.127" layer="51"/>
+<wire x1="-1.05" y1="0.65" x2="-1.05" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1.05" y1="-0.6" x2="1.05" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1.05" y1="-0.6" x2="1.05" y2="0.65" width="0.127" layer="51"/>
+<text x="-2.1" y="1.75" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.3" y="-2.75" size="1" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-0.95" y1="0.65" x2="-1.05" y2="0.65" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="0.65" x2="-1.05" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="-0.6" x2="-0.95" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1" y1="0.65" x2="1.05" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.05" y1="0.65" x2="1.05" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.05" y1="-0.6" x2="1" y2="-0.6" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PE4259">
+<description>Peregrine pSemi PE4259</description>
+<pin name="RF1" x="-12.7" y="7.62" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="RF2" x="-12.7" y="-7.62" length="middle"/>
+<pin name="VDD" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="RFC" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="CTRL" x="15.24" y="-7.62" length="middle" direction="in" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-2.54" y="12.7" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-12.7" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PE4259" prefix="S" uservalue="yes">
+<description>PE4259
+SPDT High Power UltraCMOS 10 MHz 3.0 GHz RF Switch
+
+Features
+- High ESD tolerance of 2 kV HBM
+- Single-pin or complementary CMOS logic control inputs
+- Low insertion loss:
+  * 0.35 dB @ 1000 MHz
+  * 0.5 dB @ 2000 MHz
+- Isolation of 30 dB @ 1000 MHz
+- Typical input 1 dB compression point of +33.5 dBm
+- 1.8V minimum power supply voltage
+- Ultra-small SC-70 package</description>
+<gates>
+<gate name="G$1" symbol="PE4259" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70">
+<connects>
+<connect gate="G$1" pin="CTRL" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RF1" pad="1"/>
+<connect gate="G$1" pin="RF2" pad="3"/>
+<connect gate="G$1" pin="RFC" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="COPYRIGHT" value="PY2RAF"/>
 <attribute name="DOCUMENT_ID" value="PAT-991A"/>
 <attribute name="PROJECT_INFO" value="Yaesu FT-991A Panadapter with Signal Control"/>
 <attribute name="PROJECT_NAME" value="FT-991A PAT &amp; SDR"/>
-<attribute name="REVISION_ID" value="D"/>
+<attribute name="REVISION_ID" value="E"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -17300,7 +17284,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="SCP_OUT"/>
 <part name="X2" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="IF_IN"/>
 <part name="GND11" library="supply1" deviceset="GNDA" device=""/>
-<part name="U1" library="sn74lvc1g66-dck" deviceset="SN74LVC1G66_DCK_5" device=""/>
 <part name="U2" library="sn74ahc1g08-dck" deviceset="SN74AHC1G08_DCK_5" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-W" package3d_urn="urn:adsk.eagle:package:43418/1" value="1SS355VM"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-W" package3d_urn="urn:adsk.eagle:package:43418/1" value="1SS355VM"/>
@@ -17310,7 +17293,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="GPIO" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value=""/>
 <part name="SCPON" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value=""/>
-<part name="+5V" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value=""/>
+<part name="+3.3V" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value=""/>
+<part name="S1" library="psemi" deviceset="PE4259" device="" value="PE4259"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -17436,10 +17422,6 @@ System wide cut-off frequency measured at around 93MHz</text>
 <attribute name="VALUE" x="78.74" y="124.46" size="1.27" layer="96"/>
 </instance>
 <instance part="GND11" gate="1" x="78.74" y="114.3" smashed="yes"/>
-<instance part="U1" gate="A" x="101.6" y="91.44" smashed="yes" rot="MR270">
-<attribute name="NAME" x="95.0214" y="68.2244" size="2.0828" layer="95" ratio="6" rot="SMR270"/>
-<attribute name="VALUE" x="110.2614" y="81.5594" size="2.0828" layer="96" ratio="6" rot="SMR270"/>
-</instance>
 <instance part="U2" gate="A" x="76.2" y="91.44" smashed="yes" rot="R270">
 <attribute name="NAME" x="62.4586" y="68.2244" size="2.0828" layer="95" ratio="6" rot="SR270"/>
 <attribute name="VALUE" x="67.5386" y="81.5594" size="2.0828" layer="96" ratio="6" rot="SR270"/>
@@ -17458,7 +17440,7 @@ System wide cut-off frequency measured at around 93MHz</text>
 <attribute name="VALUE" x="95.504" y="30.861" size="1.778" layer="96"/>
 </instance>
 <instance part="GND10" gate="1" x="66.04" y="33.02" smashed="yes"/>
-<instance part="GND12" gate="1" x="111.76" y="33.02" smashed="yes"/>
+<instance part="GND12" gate="1" x="96.52" y="66.04" smashed="yes"/>
 <instance part="GPIO" gate="G$1" x="71.12" y="109.22" smashed="yes" rot="R270">
 <attribute name="NAME" x="72.9742" y="110.363" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="67.818" y="110.363" size="1.778" layer="96" rot="R270"/>
@@ -17467,9 +17449,21 @@ System wide cut-off frequency measured at around 93MHz</text>
 <attribute name="NAME" x="80.5942" y="110.363" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.518" y="107.823" size="1.778" layer="96"/>
 </instance>
-<instance part="+5V" gate="G$1" x="88.9" y="50.8" smashed="yes" rot="R270">
+<instance part="+3.3V" gate="G$1" x="88.9" y="50.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="90.7542" y="51.943" size="1.778" layer="95"/>
 <attribute name="VALUE" x="90.678" y="49.403" size="1.778" layer="96"/>
+</instance>
+<instance part="S1" gate="G$1" x="114.3" y="81.28" smashed="yes">
+<attribute name="NAME" x="114.3" y="93.98" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="111.76" y="68.58" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="R7" gate="G$1" x="139.7" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.2014" y="72.39" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="143.002" y="72.39" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R8" gate="G$1" x="134.62" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="133.1214" y="59.69" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="137.922" y="59.69" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -17605,11 +17599,14 @@ System wide cut-off frequency measured at around 93MHz</text>
 <pinref part="GND10" gate="1" pin="GNDA"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="GND"/>
-<wire x1="106.68" y1="40.64" x2="106.68" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="38.1" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="38.1" x2="111.76" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="GND"/>
 <pinref part="GND12" gate="1" pin="GNDA"/>
+<wire x1="101.6" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="81.28" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="RF2"/>
+<wire x1="96.52" y1="73.66" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<junction x="96.52" y="73.66"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -17703,26 +17700,26 @@ System wide cut-off frequency measured at around 93MHz</text>
 <pinref part="U2" gate="A" pin="VCC"/>
 <wire x1="76.2" y1="40.64" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VCC"/>
-<wire x1="88.9" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="17.78" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
 <junction x="88.9" y="17.78"/>
 <wire x1="88.9" y1="48.26" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="43.18" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="43.18" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="+5V" gate="G$1" pin="P"/>
+<pinref part="+3.3V" gate="G$1" pin="P"/>
 <wire x1="88.9" y1="17.78" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <junction x="88.9" y="43.18"/>
+<wire x1="88.9" y1="17.78" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="17.78" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="Y"/>
 <wire x1="73.66" y1="40.64" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="12.7" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="C"/>
-<wire x1="104.14" y1="12.7" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="12.7" x2="134.62" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="12.7" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -17763,31 +17760,53 @@ System wide cut-off frequency measured at around 93MHz</text>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="SIGNAL"/>
-<wire x1="99.06" y1="129.54" x2="96.52" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="137.16" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="129.54" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="SIGNAL"/>
 <wire x1="83.82" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="129.54" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="RF1"/>
+<wire x1="99.06" y1="137.16" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="129.54" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="SIGNAL"/>
+<wire x1="96.52" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 <junction x="99.06" y="129.54"/>
-<wire x1="99.06" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="B"/>
-<wire x1="104.14" y1="96.52" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="N$15" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="A"/>
-<wire x1="101.6" y1="91.44" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="129.54" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="129.54" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="129.54" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="RFC"/>
+<wire x1="134.62" y1="93.98" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="81.28" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="VDD"/>
+<wire x1="139.7" y1="88.9" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="CTRL"/>
+<wire x1="134.62" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="68.58" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,71.12,40.64,U2,GND,GNDA,,,"/>
+<approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
