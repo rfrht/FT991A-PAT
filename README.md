@@ -1,5 +1,16 @@
 # FT-991A PAT
-# Yaesu FT-991A Custom Panoramic Adapter TAP Board for external SDR / Spectrum Analyser
+# Yaesu FT-991A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
+
+History (PY2RAF)
+25/Mar/2019 - Revision E
+* Changed the switch from a analog one (was a SN74LVC1G66) to a RF one (now: PE4259) (thanks to Gordon Hudson AD5GG)
+* Now using 3.3V (because of PE4529)
+* When switch is in default state, the SDR will be grounded
+  TODO: Add a 50 ohm resistor to ground line
+* Updated the list of contributors in PCB Silk Screen.
+
+20/Mar/2019 - Revision D
+* With a logical AND gate, which will only connect the IF stage to the SDR if both a dongle signals (via GPIO) a enable signal AND there's a panadapter enable coming from the radio;
 
 History (OE2DOR)
 05/11/2018
