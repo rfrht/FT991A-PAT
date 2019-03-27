@@ -1,7 +1,12 @@
-# FT-991A PAT
+# BUFFERED IF TAP FOR FT-991A
 # Yaesu FT-991A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
-History (PY2RAF)
+This project is a remix of OE2DOR's perfectly crafted FT-991A Panadapter board. This fork adds a AND gate that controls a RF switch: The IF signal is only forwarded to the SDR if both a SDR GPIO signal is present, and, the SCPON signal from radio's Main Unit.
+
+The project tracking/evolution is documented in QRZ: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
+
+Changelog: (PY2RAF)
+
 27/Mar/2019 - Revision F
 * Added 1 nF capacitors in RF lines in PE4529 (except RF2, goes with a 470 pF to GND)
 * Got rid of the VCC via which was crossing the RF line (argh)
@@ -46,3 +51,4 @@ Simple revision to the G4HUP high-impedance IF tap with specific components and 
 
 08/30/2017
  - Schematic revised to fix capacitor placement error in original schematic. New boards sent out for fabrication and testing will be done when they get back.
+
