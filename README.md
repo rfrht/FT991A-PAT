@@ -16,12 +16,12 @@ Changelog: (PY2RAF)
 25/Mar/2019 - Revision E
 * Changed the switch from a analog one (was a SN74LVC1G66) to a RF one (now: PE4259) (thanks to Gordon Hudson AD5GG)
 * Now using 3.3V (because of PE4529)
-* When switch is in default state, the SDR will be grounded
-  TODO: Add a 50 ohm resistor to ground line
+* The switch default state now grounds the SDR
 * Updated the list of contributors in PCB Silk Screen.
 
 20/Mar/2019 - Revision D
-* With a logical AND gate, which will only connect the IF stage to the SDR if both a dongle signals (via GPIO) a enable signal AND there's a panadapter enable coming from the radio;
+* Moved to [OE2DOR](https://github.com/Lightning1984) **amazing** board design
+* Added provision for two external inputs for latching control (actuating on a RF switch), isolating the SDR receiver when the two inputs are not in HIGH state. This is a bit of overkill in FT-991A, but I want to be able to control the IF tap by software and be able to unplug it completely when not in use, without having to open the radio ;-)
 
 History (OE2DOR)
 05/11/2018
