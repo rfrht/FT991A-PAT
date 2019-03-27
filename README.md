@@ -2,6 +2,12 @@
 # Yaesu FT-991A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
 History (PY2RAF)
+27/Mar/2019 - Revision F
+* Added 1 nF capacitors in RF lines in PE4529 (except RF2, goes with a 470 pF to GND)
+* Got rid of the VCC via which was crossing the RF line (argh)
+* Finally got the courage to change a bit the board layout and escape from the thin strip that I was working previously.
+* And another THANK YOU to Gordon AD5GG for his invaluable feedback
+
 25/Mar/2019 - Revision E
 * Changed the switch from a analog one (was a SN74LVC1G66) to a RF one (now: PE4259) (thanks to Gordon Hudson AD5GG)
 * Now using 3.3V (because of PE4529)
