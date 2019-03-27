@@ -3,7 +3,12 @@
 
 This project is a remix of OE2DOR's perfectly crafted FT-991A Panadapter board. This fork adds a AND gate that controls a RF switch: The IF signal is only forwarded to the SDR if both a SDR GPIO signal is present, and, the SCPON signal from radio's Main Unit.
 
+The schematics are in Autodesk Eagle EDA format (Schematic folder).
+The BOM and a few pictures are available in Design folder.
+
 The project tracking/evolution is documented in QRZ: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
+
+This project is **not** compatible with the non-A FT-991 model.
 
 Changelog: (PY2RAF)
 
