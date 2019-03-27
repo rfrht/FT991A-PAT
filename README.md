@@ -1,16 +1,18 @@
 # BUFFERED IF TAP FOR FT-991A
 # Yaesu FT-991A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
-This project is a remix of OE2DOR's perfectly crafted FT-991A Panadapter board. This fork adds a AND gate that controls a RF switch: The IF signal is only forwarded to the SDR if both a SDR GPIO signal is present, and, the SCPON signal from radio's Main Unit.
+This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/master/Design/FT991-PAT_Installed.jpg) FT-991A Panadapter board.
 
-The schematics are in Autodesk Eagle EDA format (Schematic folder).
+This fork adds on-board latch control, by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (on my project, a SDR GPIO signal and the SCPON signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground.
+
+The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
 The BOM and a few pictures are available in Design folder.
 
 The project tracking/evolution is documented in QRZ: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
-This project is **not** compatible with the non-A FT-991 model.
+This project is **not** compatible with the non-A model FT-991.
 
-Changelog: (PY2RAF)
+### Changelog: (PY2RAF)
 
 27/Mar/2019 - Revision F
 * Added 1 nF capacitors in RF lines in PE4529 (except RF2, goes with a 470 pF to GND)
@@ -28,7 +30,8 @@ Changelog: (PY2RAF)
 * Moved to [OE2DOR](https://github.com/Lightning1984) **amazing** board design
 * Added provision for two external inputs for latching control (actuating on a RF switch), isolating the SDR receiver when the two inputs are not in HIGH state. This is a bit of overkill in FT-991A, but I want to be able to control the IF tap by software and be able to unplug it completely when not in use, without having to open the radio ;-)
 
-History (OE2DOR)
+### History (OE2DOR)
+
 05/11/2018
  - Board Layout changed to fit neatly inside FT-991A
  - Connection to IF using existing U.FL jumper cable 
