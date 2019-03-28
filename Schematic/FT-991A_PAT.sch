@@ -12954,8 +12954,7 @@ Features
 <attribute name="DOCUMENT_ID" value="PAT-991A"/>
 <attribute name="PROJECT_INFO" value="Yaesu FT-991A Panadapter with Signal Control"/>
 <attribute name="PROJECT_NAME" value="FT-991A PAT &amp; SDR"/>
-<attribute name="REVISAO" value="F"/>
-<attribute name="REVISION_ID" value="F"/>
+<attribute name="REVISION_ID" value="G"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -13015,7 +13014,6 @@ Features
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0805K" value="0.1uF"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0805K" value="4.7nF"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
 </parts>
 <sheets>
@@ -13029,9 +13027,9 @@ Features
 System wide cut-off frequency measured at around 93MHz</text>
 </plain>
 <instances>
-<instance part="C1" gate="G$1" x="160.02" y="160.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="159.004" y="152.781" size="1.778" layer="95"/>
-<attribute name="VALUE" x="159.004" y="155.321" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="149.86" y="142.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="157.099" y="141.224" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="154.559" y="141.224" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R1" gate="G$1" x="170.18" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="176.3014" y="140.97" size="1.778" layer="95" rot="R90"/>
@@ -13187,13 +13185,9 @@ System wide cut-off frequency measured at around 93MHz</text>
 <attribute name="NAME" x="131.064" y="99.441" size="1.778" layer="95"/>
 <attribute name="VALUE" x="131.064" y="96.901" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="149.86" y="137.16" smashed="yes">
-<attribute name="NAME" x="157.099" y="133.604" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="154.559" y="133.604" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C11" gate="G$1" x="132.08" y="137.16" smashed="yes">
-<attribute name="NAME" x="139.319" y="133.604" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="136.779" y="133.604" size="1.778" layer="96" rot="R90"/>
+<instance part="C11" gate="G$1" x="132.08" y="144.78" smashed="yes">
+<attribute name="NAME" x="139.319" y="141.224" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="136.779" y="141.224" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -13235,11 +13229,12 @@ System wide cut-off frequency measured at around 93MHz</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="160.02" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="149.86" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="147.32" x2="149.86" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
 <junction x="170.18" y="160.02"/>
 </segment>
 </net>
@@ -13494,7 +13489,7 @@ System wide cut-off frequency measured at around 93MHz</text>
 <pinref part="X1" gate="G$1" pin="SIGNAL"/>
 <wire x1="129.54" y1="160.02" x2="132.08" y2="160.02" width="0.1524" layer="91"/>
 <junction x="132.08" y="160.02"/>
-<wire x1="132.08" y1="160.02" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="160.02" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -13504,8 +13499,8 @@ System wide cut-off frequency measured at around 93MHz</text>
 <pinref part="S1" gate="G$1" pin="RFC"/>
 <wire x1="172.72" y1="124.46" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="111.76" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="132.08" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="124.46" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -13524,19 +13519,11 @@ System wide cut-off frequency measured at around 93MHz</text>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="160.02" x2="157.48" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="160.02" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="RF1"/>
 <wire x1="132.08" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="132.08" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="139.7" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 </net>
