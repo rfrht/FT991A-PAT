@@ -16,6 +16,7 @@ This project is **not** compatible with the non-A model FT-991.
 
 27/Mar/2019 - Revision G
 * Removed a lingering DC blocker capacitor in filter in after RF switch.
+* Added chokes in DC IN lines (3.3V and 5V)
 
 27/Mar/2019 - Revision F
 * Added 1 nF capacitors in RF lines in PE4529 (except RF2, goes with a 470 pF to GND)
