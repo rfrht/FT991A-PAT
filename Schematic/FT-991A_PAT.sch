@@ -12954,7 +12954,7 @@ Features
 <attribute name="DOCUMENT_ID" value="PAT-991A"/>
 <attribute name="PROJECT_INFO" value="Yaesu FT-991A Panadapter with Signal Control"/>
 <attribute name="PROJECT_NAME" value="FT-991A PAT &amp; SDR"/>
-<attribute name="REVISION_ID" value="G"/>
+<attribute name="REVISION_ID" value="H"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -12994,11 +12994,11 @@ Features
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805K" value="56pF"/>
 <part name="L4" library="rcl-modified" deviceset="L-EU" device="" value="82nH"/>
 <part name="GND6" library="supply1" deviceset="GNDA" device=""/>
-<part name="TAP_OUT" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="TAP_OUT"/>
+<part name="TAP_OUT" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="SDR_OUT"/>
 <part name="GND9" library="supply1" deviceset="GNDA" device=""/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="SCP_OUT"/>
-<part name="X2" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="IF_IN"/>
+<part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="IF_IN"/>
+<part name="X2" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="SCP_OUT"/>
 <part name="GND11" library="supply1" deviceset="GNDA" device=""/>
 <part name="U2" library="sn74ahc1g08-dck" deviceset="SN74AHC1G08_DCK_5" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-W" package3d_urn="urn:adsk.eagle:package:43418/1" value="1SS355VM"/>
@@ -13010,8 +13010,8 @@ Features
 <part name="SCPON" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="SCPON"/>
 <part name="+3.3V" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value=""/>
 <part name="S1" library="psemi" deviceset="PE4259" device="" value="PE4259"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="1kΩ"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1kΩ"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0805K" value="0.1uF"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0805K" value="4.7nF"/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
@@ -13042,8 +13042,8 @@ System wide cut-off frequency measured at around 93MHz</text>
 <attribute name="VALUE" x="177.8" y="137.16" size="1.778" layer="96"/>
 </instance>
 <instance part="Q2" gate="G$1" x="205.74" y="142.24" smashed="yes">
-<attribute name="NAME" x="200.66" y="139.7" size="1.778" layer="95"/>
-<attribute name="VALUE" x="200.66" y="137.16" size="1.778" layer="96"/>
+<attribute name="NAME" x="213.36" y="139.7" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="210.82" y="139.7" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R2" gate="G$1" x="187.96" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="194.0814" y="123.19" size="1.778" layer="95" rot="R90"/>
@@ -13059,8 +13059,8 @@ System wide cut-off frequency measured at around 93MHz</text>
 </instance>
 <instance part="GND1" gate="1" x="172.72" y="116.84" smashed="yes"/>
 <instance part="PAD1" gate="G$1" x="187.96" y="218.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="189.8142" y="219.583" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="184.658" y="219.583" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="192.3542" y="219.583" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="189.738" y="219.583" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R3" gate="G$1" x="187.96" y="172.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="194.0814" y="168.91" size="1.778" layer="95" rot="R90"/>
@@ -13184,8 +13184,8 @@ System wide cut-off frequency measured at around 93MHz</text>
 <attribute name="VALUE" x="118.999" y="82.804" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C14" gate="G$1" x="134.62" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="133.604" y="81.661" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.604" y="79.121" size="1.778" layer="96"/>
+<attribute name="NAME" x="133.604" y="79.121" size="1.778" layer="95"/>
+<attribute name="VALUE" x="133.604" y="81.661" size="1.778" layer="96"/>
 </instance>
 <instance part="C11" gate="G$1" x="134.62" y="127" smashed="yes">
 <attribute name="NAME" x="141.859" y="123.444" size="1.778" layer="95" rot="R90"/>

@@ -14,9 +14,16 @@ This project is **not** compatible with the non-A model FT-991.
 
 ### Changelog: (PY2RAF)
 
+29/Mar/2019 - Revision H
+* Revised routes in Cheb Filter - Made the tracks fatter and straighter
+* Repositioned Q2 for better signal routing
+* Better unit spelling in silk screen for resistors
+* Flipped IF/SCP ports
+* A few routing changes.
+
 27/Mar/2019 - Revision G
 * Removed a lingering DC blocker capacitor in filter in after RF switch.
-* Added chokes in DC IN lines (3.3V and 5V)
+* Added chokes in DC IN lines (3.3V and 5V) (yet another Gordon trick)
 
 27/Mar/2019 - Revision F
 * Added 1 nF capacitors in RF lines in PE4529 (except RF2, goes with a 470 pF to GND)
