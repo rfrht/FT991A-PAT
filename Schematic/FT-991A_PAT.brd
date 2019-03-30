@@ -2881,7 +2881,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R6" library="rcl" package="R1206" value="1kΩ" x="55.35" y="68.8975" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="55.28" y="70.0375" size="0.8" layer="22" font="vector" ratio="15" rot="MR180" align="top-center"/>
 </element>
-<element name="TAP_OUT" library="adafruit" package="U.FL" value="SDR_OUT" x="71.4375" y="69.5325" smashed="yes" rot="MR270">
+<element name="X3" library="adafruit" package="U.FL" value="SDR_OUT" x="71.4375" y="69.5325" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="71.3975" y="71.2125" size="0.8" layer="22" font="vector" ratio="15" rot="MR180" align="top-center"/>
 </element>
 <element name="X1" library="adafruit" package="U.FL" value="IF_IN" x="33.125" y="65.71" smashed="yes" rot="MR270">
@@ -2974,8 +2974,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C6" pad="2"/>
 <contactref element="C7" pad="2"/>
 <contactref element="C8" pad="2"/>
-<contactref element="TAP_OUT" pad="1"/>
-<contactref element="TAP_OUT" pad="2"/>
+<contactref element="X3" pad="1"/>
+<contactref element="X3" pad="2"/>
 <polygon width="0.6096" layer="16">
 <vertex x="30.1625" y="73.3425"/>
 <vertex x="45.4025" y="73.3425"/>
@@ -3122,7 +3122,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$12">
 <contactref element="L4" pad="2"/>
-<contactref element="TAP_OUT" pad="3"/>
+<contactref element="X3" pad="3"/>
 <wire x1="71.4375" y1="66.0375" x2="71.4375" y2="68.0075" width="0.8128" layer="16"/>
 </signal>
 <signal name="VCC">

@@ -1,0 +1,55 @@
+Partlist exported from C:/Users/Rodrigo/Documents/EAGLE/projects/FT991A-PAT-master/FT-991A_PAT.sch at 30/03/2019 10:48
+
+Part    Value             Device              Package      Description                      	Part Digikey
+C6      56pF              C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-1203-1-ND
+C8      56pF              C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-1203-1-ND (x2)
+C7      68pF              C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-1204-1-ND (x1)
+C1      1nF               C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-8131-1-ND
+C3      1nF               C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-8131-1-ND
+C11     1nF               C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-8131-1-ND
+C5      1nF               C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-8131-1-ND (x4)
+C14     4.7nF             C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-17892-1-ND (x1)
+C13     0.1uF             C-EUC0805K          C0805K       CAPACITOR, European symbol    	399-1249-1-ND   
+C2      0.1uF             C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-1249-1-ND
+C4      0.1uF             C-EUC0805K          C0805K       CAPACITOR, European symbol       	399-1249-1-ND (x3)
+
+
+D1      1SS355VM          DIODE-SOD323-W      SOD323-W     DIODE                            	1SS355VMTE-17CT-ND
+D2      1SS355VM          DIODE-SOD323-W      SOD323-W     DIODE                            	1SS355VMTE-17CT-ND (x2)
+
+
+L1      82nH              L-EU                L0805        INDUCTOR, European symbol        	445-1034-1-ND
+L4      82nH              L-EU                L0805        INDUCTOR, European symbol        	445-1034-1-ND (x2)
+L2      180nH             L-EU                L0805        INDUCTOR, European symbol        	445-8986-1-ND
+L3      180nH             L-EU                L0805        INDUCTOR, European symbol        	445-8986-1-ND (x2)
+
+
+L5      BLM21             L-EU                L0805        INDUCTOR, European symbol        	490-1015-1-ND
+L6      BLM21             L-EU                L0805        INDUCTOR, European symbol        	490-1015-1-ND (x2)
+
+
+Q1      J310              SST201              SOT23        TEMIC / Siliconix N-Channel JFET 	MMBFJ310CT-ND (x1)
+Q2      BFS17             BC846               SOT23        NPN TRANSISTOR                   	BFS17PE6327HTSA1CT-ND (x1)
+U2      SN74AHC1G08_DCK_5 SN74AHC1G08	      SC-70	   AND gate				296-32228-1-ND (x1)
+S1      PE4259            PE4259              SC-70        PE4259                           	1046-1011-2-ND (x1)
+
+
+---
+USB mod only
+Q1012	USB2514BI	  USB2514BI	      36QFN	   USB 2.0 Hi-Speed Hub Controller	USB2514BI-AEZG-CT-ND  (x1)
+---
+
+
+R5      100O              R-EU_R0805          R0805        RESISTOR, European symbol        	541-100ECT-ND (x1)
+R3      220O              R-EU_R0805          R0805        RESISTOR, European symbol        	541-220ECT-ND (x1)
+R2      1kO               R-EU_R0805          R0805        RESISTOR, European symbol        	541-1.0KECT-ND
+R6      1kO               R-EU_R1206          R1206        RESISTOR, European symbol        	541-1.0KECT-ND
+R7      1kO               R-EU_R0805          R0805        RESISTOR, European symbol        	541-1.0KECT-ND
+R8      1kO               R-EU_R0805          R0805        RESISTOR, European symbol        	541-1.0KECT-ND (x4)
+R4      39kO              R-EU_R0805          R0805        RESISTOR, European symbol        	541-39KECT-ND (x1)
+R1      100kO             R-EU_R0805          R0805        RESISTOR, European symbol		541-100KECT-ND (x1)
+
+
+X1      IF_IN             ANTENNA_U.FL        U.FL         U.FL Antenna Connector           	A118077CT-ND
+X2      SCP_OUT           ANTENNA_U.FL        U.FL         U.FL Antenna Connector           	A118077CT-ND
+X3	SDR_OUT           ANTENNA_U.FL        U.FL         U.FL Antenna Connector           	A118077CT-ND (x3)

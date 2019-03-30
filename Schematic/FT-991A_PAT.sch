@@ -12994,7 +12994,7 @@ Features
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805K" value="56pF"/>
 <part name="L4" library="rcl-modified" deviceset="L-EU" device="" value="82nH"/>
 <part name="GND6" library="supply1" deviceset="GNDA" device=""/>
-<part name="TAP_OUT" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="SDR_OUT"/>
+<part name="X3" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="SDR_OUT"/>
 <part name="GND9" library="supply1" deviceset="GNDA" device=""/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="IF_IN"/>
@@ -13121,8 +13121,9 @@ System wide cut-off frequency measured at around 93MHz</text>
 <attribute name="VALUE" x="293.37" y="136.398" size="1.778" layer="96"/>
 </instance>
 <instance part="GND6" gate="1" x="287.02" y="116.84" smashed="yes"/>
-<instance part="TAP_OUT" gate="G$1" x="314.96" y="134.62" smashed="yes" rot="MR0">
-<attribute name="NAME" x="317.5" y="131.318" size="1.27" layer="95" rot="MR180"/>
+<instance part="X3" gate="G$1" x="314.96" y="134.62" smashed="yes" rot="MR0">
+<attribute name="NAME" x="317.5" y="133.858" size="1.27" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="317.5" y="137.16" size="1.27" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND9" gate="1" x="320.04" y="116.84" smashed="yes"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -13136,10 +13137,12 @@ System wide cut-off frequency measured at around 93MHz</text>
 <attribute name="REVISION_ID" x="370.84" y="10.414" size="2.54" layer="94" font="vector"/>
 </instance>
 <instance part="X1" gate="G$1" x="129.54" y="154.94" smashed="yes" rot="R180">
-<attribute name="VALUE" x="127" y="157.48" size="1.27" layer="96" rot="R180"/>
+<attribute name="NAME" x="127" y="156.718" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="127" y="160.02" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="X2" gate="G$1" x="139.7" y="154.94" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="142.24" y="157.48" size="1.27" layer="96" rot="MR180"/>
+<attribute name="NAME" x="142.24" y="156.718" size="1.27" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="142.24" y="160.02" size="1.27" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND11" gate="1" x="134.62" y="144.78" smashed="yes"/>
 <instance part="U2" gate="A" x="91.44" y="142.24" smashed="yes" rot="R270">
@@ -13285,10 +13288,10 @@ System wide cut-off frequency measured at around 93MHz</text>
 <wire x1="287.02" y1="119.38" x2="287.02" y2="121.92" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
-<pinref part="TAP_OUT" gate="G$1" pin="GND@0"/>
+<pinref part="X3" gate="G$1" pin="GND@0"/>
 <wire x1="317.5" y1="129.54" x2="320.04" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="129.54" x2="320.04" y2="127" width="0.1524" layer="91"/>
-<pinref part="TAP_OUT" gate="G$1" pin="GND@1"/>
+<pinref part="X3" gate="G$1" pin="GND@1"/>
 <wire x1="320.04" y1="127" x2="317.5" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GNDA"/>
 <wire x1="320.04" y1="119.38" x2="320.04" y2="127" width="0.1524" layer="91"/>
@@ -13420,7 +13423,7 @@ System wide cut-off frequency measured at around 93MHz</text>
 <net name="N$12" class="0">
 <segment>
 <pinref part="L4" gate="G$1" pin="2"/>
-<pinref part="TAP_OUT" gate="G$1" pin="SIGNAL"/>
+<pinref part="X3" gate="G$1" pin="SIGNAL"/>
 <wire x1="302.26" y1="134.62" x2="309.88" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>

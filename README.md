@@ -6,7 +6,7 @@ This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.git
 This fork adds on-board latch control, by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (on my project, a SDR GPIO signal and the SCPON signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground.
 
 The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
-The BOM and a few pictures are available in Design folder.
+The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a few pictures are available in Design folder.
 
 The project tracking/evolution is documented in QRZ: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
