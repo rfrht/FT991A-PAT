@@ -1,4 +1,4 @@
-# BUFFERED IF TAP FOR FT-991A
+# Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991A
 # Yaesu FT-991A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
 This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/master/Design/FT991-PAT_Installed.jpg) FT-991A Panadapter board.
@@ -9,6 +9,8 @@ The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
 The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a few pictures are available in Design folder.
 
 The project tracking/evolution is documented in QRZ: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
+
+Board reprints in [OSHPark](https://oshpark.com/shared_projects/0RQudHfd)
 
 This project is **not** compatible with the non-A model FT-991.
 
