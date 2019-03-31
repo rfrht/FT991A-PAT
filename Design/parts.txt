@@ -53,3 +53,10 @@ R1      100kO             R-EU_R0805          R0805        RESISTOR, European sy
 X1      IF_IN             ANTENNA_U.FL        U.FL         U.FL Antenna Connector           	A118077CT-ND
 X2      SCP_OUT           ANTENNA_U.FL        U.FL         U.FL Antenna Connector           	A118077CT-ND
 X3	SDR_OUT           ANTENNA_U.FL        U.FL         U.FL Antenna Connector           	A118077CT-ND (x3)
+
+---
+Jumper cables (not in the schematic)
+---
+
+J1	TAP-SCP		  415-0086-100 	      U.FL	   CBL ASSY UMCC PLUG-PLUG 3.937"	 J933-ND
+J2	TAP-SDR		  415-0091-150 	      U.FL x SMA   CBL ASSY SMA-UMC PLUG 5.906"		 J957-ND

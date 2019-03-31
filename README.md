@@ -3,12 +3,14 @@
 
 This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/master/Design/FT991-PAT_Installed.jpg) FT-991A Panadapter board.
 
-This fork adds on-board latch control, by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (on my project, a SDR GPIO signal and the SCPON signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground.
+The final objective is to actually **embed** a RTL-SDR **inside** a FT-991A, without drilling holes, external cables, connectors or whatsoever: The FT-991A sports a USB hub (which feeds the sound card and the CAT interface). By replacing the existing 2-port USB hub chip with a 4-port variant (same SMD footprint and compatible pinout), the SDR will be installed in the radio, and it will be exposed to the computer via the existing USB port, conveniently routed through the radio's USB hub. So, plug the radio's USB port and the computer will see three devices: the virtual sound card, the CAT port **and** the SDR.
+
+This fork adds on-board latch control, by using a AND gate with two inputs that controls a RF switch: The IF signal is only connected to the SDR if both signals (on my project, a SDR GPIO signal and the SCPON signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped.
 
 The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
 The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a few pictures are available in Design folder.
 
-The project tracking/evolution is documented in QRZ: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
+The project tracking, evolution and discussion is on QRZ Forum: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
 Board reprints in [OSHPark](https://oshpark.com/shared_projects/0RQudHfd)
 
