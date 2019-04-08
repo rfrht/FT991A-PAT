@@ -8,7 +8,7 @@ The final objective is to actually **embed** a RTL-SDR **inside** a FT-991A, wit
 This fork adds on-board latch control, by using a AND gate with two inputs that controls a RF switch: The IF signal is only connected to the SDR if both signals (on my project, a SDR GPIO signal and the SCPON signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped.
 
 The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
-The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a few pictures are available in Design folder.
+The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a [few](Design/FT-991A_PAT-Back.png) [pictures](Design/FT-991A_PAT-front.png) are available in Design folder.
 
 The project tracking, evolution and discussion is on QRZ Forum: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
@@ -17,6 +17,12 @@ Board reprints in [OSHPark](https://oshpark.com/shared_projects/0RQudHfd)
 This project is **not** compatible with the non-A model FT-991.
 
 ### Changelog: (PY2RAF)
+
+07/Apr/2019 - Revision I
+* Created USB interconnection with the SDR
+* Proper power management: Three voltage regulators in the board (9V, 5V, 3.3V)
+* Power is only enabled with signaling coming from USB hub; otherwise, board quiesce
+* Updated BOM
 
 29/Mar/2019 - Revision H
 * Revised routes in Cheb Filter - Made the tracks fatter and straighter
