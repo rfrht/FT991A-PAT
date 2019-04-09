@@ -12,7 +12,7 @@ The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a [few](Design
 
 The project tracking, evolution and discussion is on QRZ Forum: [A FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
-Board reprints in [OSHPark](https://oshpark.com/shared_projects/0RQudHfd)
+Board reprints in [OSHPark](https://oshpark.com/projects/l2nCpoVc)
 
 This project is **not** compatible with the non-A model FT-991.
 
