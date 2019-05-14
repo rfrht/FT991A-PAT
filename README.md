@@ -17,13 +17,28 @@ Board reprints in [OSHPark](https://oshpark.com/projects/l2nCpoVc)
 This project is **not** compatible with the non-A model FT-991.
 
 ### Current state:
-* Giving it a few days to mature prior to order/produce
+* Board ordered, printed, shipped, delivered!
+* Components as well!
+* Did a few tests in FT-991A - See content in https://rf01.co:8443/q/pat-991a/
 
-Next steps:
+### Next steps:
 
-* Order the board, the components
-* Build and test the board
-* Document the install and tests
+* Book lab time and have Yvo to solder the components and replace the USB hub from Main Unit
+* Run the board through a VNA and check VSWR + Gain
+* Create a new Revision J board (see notes, below)
+
+### Notes:
+
+* Board costed $2 in jlpcb.com.
+* The parts costed $26 (though I bought the wrong SMA connector, how on earth is there a male pin in a normally female receptacle)
+* The SCPON signal is not the best option to the AND gate, along the RTL's GPIO port. SCPON is only HIGH when the Scope is being displayed. If you go to Menu or Setup, the SCPON goes down. Ah, if in Scope mode, it stays HIGH during TX as well (though I found no artifacts during 50W TX, I think the line is grounded somewhere else). For now since I have printed the PCB and etc, I will just bridge the GPIO port to both ports in the board. A next board revision will use TX9 signal plus a signal inverter (so TX high = signal low, TX low = signal high), so the AND gate will work accordingly.
+* IF signal is incredibly strong (centered in 68.450 MHz).
+* IF is wide open, spanning the whole bandpass filter (with that comes a few problems: Strong signals might spew images through the spectrum in your SDR)
+* Seems that the footprints are correct
+* Definitely, the USB footprint was designed correctly, yay \o/
+* The SDR is a bit large for the radio, and I'm having a hard time finding a suitable place to lodge it (see picture 08 in my website, at 'Current State')
+* I'm pending availability of the Tech for soldering the components and swapping the Main Unit IC
+
 
 ### Changelog: (PY2RAF)
 
