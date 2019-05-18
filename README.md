@@ -29,7 +29,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 
 ### Notes:
 
-* Board costed $2 in jlpcb.com.
+* Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
 * The parts costed $26 (though I bought the wrong SMA connector, how on earth is there a male pin in a normally female receptacle)
 * Until revision I, the AND gate took the SCPON signal. However, the SCPON signal is not the best option to the AND gate, along the RTL's GPIO port. SCPON is only HIGH when the Scope is being displayed. If you go to Menu or Setup, the SCPON goes down. Ah, if in Scope mode, it stays HIGH during TX as well (though I found no artifacts during 50W TX, I think the line is grounded somewhere else). For now since I have printed the PCB and etc, I will just bridge the GPIO port to both ports in the board. A next board revision will use RX9 signal plus a voltage divider (to bring the voltage down to a safe voltage to the AND gate), so the AND gate will actuate the RF switch accordingly.
 * IF signal is incredibly strong (centered in 68.450 MHz).
