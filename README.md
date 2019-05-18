@@ -14,7 +14,7 @@ The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/FT-991
 
 Board reprints in [OSHPark](https://oshpark.com/projects/l2nCpoVc)
 
-This project is **also** compatible with the non-A model FT-991. The only difference is that the FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5.
+This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/ft-991-tap-point.png).
 
 ### Current state:
 * Board ordered, printed, shipped, delivered!
