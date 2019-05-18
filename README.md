@@ -12,7 +12,7 @@ The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a [few](https:
 
 The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/FT-991A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-FT-991/FT-991A-need-rf-designers-review.650840/)
 
-Board reprints in [OSHPark](https://oshpark.com/projects/l2nCpoVc)
+Board reprints in [OSHPark](https://oshpark.com/projects/imu2uyEW). Click [here for Gerber files](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/board-gerbers.zip) and print somewhere else (like [JLCPCB](https://jlcpcb.com/quote), way cheaper).
 
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/ft-991-tap-point.png).
 
@@ -25,7 +25,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 
 * Book lab time and have Yvo to solder the components and replace the USB hub from Main Unit
 * Run the board through a VNA and check VSWR + Gain
-* Create a new Revision J board (see notes, below)
+* ~~Create a new Revision J board (see notes, below)~~
 
 ### Notes:
 
@@ -41,6 +41,12 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 
 
 ### Changelog: (PY2RAF)
+
+18/May/2019 - Revision J
+* Changed SCPON signal to RX9
+  - Added a Voltage Divider
+* Added a few vias in large ground pads for voltage regulators
+* Moved USB port a bit back in PCB
 
 07/Apr/2019 - Revision I
 * Created USB interconnection with the SDR
