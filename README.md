@@ -26,15 +26,16 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * Book lab time and have Yvo to solder the components and replace the USB hub from Main Unit
 * Run the board through a VNA and check VSWR + Gain
 * ~~Create a new Revision J board (see notes, below)~~
+* Planning a Revision L, containing a RF Switch containing a bypass, moving the signal straight off the tap to the SDR_OUT port
 
 ### Notes:
 
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
-* The parts costed $26 (though I bought the wrong SMA connector, how on earth is there a male pin in a normally female receptacle)
+* The parts costed $26 (though I bought the wrong SMA connector, how on earth is there a male pin in a female jack)
 * Until revision I, the AND gate took the SCPON signal. However, the SCPON signal is not the best option to the AND gate, along the RTL's GPIO port. SCPON is only HIGH when the Scope is being displayed. If you go to Menu or Setup, the SCPON goes down. Ah, if in Scope mode, it stays HIGH during TX as well (though I found no artifacts during 50W TX, I think the line is grounded somewhere else). For now since I have printed the PCB and etc, I will just bridge the GPIO port to both ports in the board. A next board revision will use RX9 signal plus a voltage divider (to bring the voltage down to a safe voltage to the AND gate), so the AND gate will actuate the RF switch accordingly.
 * IF signal is incredibly strong (centered in 68.450 MHz).
 * IF is wide open, spanning the whole bandpass filter (with that comes a few problems: Strong signals might spew images through the spectrum in your SDR)
-* Seems that the footprints are correct
+* ~~Seems that the footprints are correct~~ - No, they were not. BOM specifies 1206 and board had 0805. Had to issue Rev. K.
 * Definitely, the USB footprint was designed correctly, yay \o/
 * The SDR is a bit large for the radio, and I'm having a hard time finding a suitable place to lodge it (see picture 08 in my website, at 'Current State')
 * I'm pending availability of the Tech for soldering the components and swapping the Main Unit IC
@@ -56,7 +57,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * Changed SCPON signal to RX9
   - Added a Voltage Divider
 * Changed the SMA-to-U.FL cable
-* Added a few vias in large ground pads for voltage regulators
+* Added a few vias in voltage regulators' large ground pads 
 * Moved USB port a bit back in PCB
 
 07/Apr/2019 - Revision I
