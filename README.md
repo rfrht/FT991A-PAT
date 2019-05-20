@@ -42,9 +42,20 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 
 ### Changelog: (PY2RAF)
 
+19/May/2019 - Revision K
+* Changed footprints: BOM specifies 1206, project had 0805
+  - Unified everything Resistors and Capacitors in 1206
+  - Inductors are 0805
+* A few routing enhancements
+* Recalculated the component indexes
+* Updated BOM to reflect the new component index
+  - And also found a unaccounted resistor, whoops.
+  - Reviewed the entire BOM and circuits. Now everything should be fine.
+
 18/May/2019 - Revision J
 * Changed SCPON signal to RX9
   - Added a Voltage Divider
+* Changed the SMA-to-U.FL cable
 * Added a few vias in large ground pads for voltage regulators
 * Moved USB port a bit back in PCB
 
