@@ -5,7 +5,7 @@ This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.git
 
 The final objective is to actually **embed** a RTL-SDR **inside** a FT-991/FT-991A, without drilling holes, external cables, connectors or whatsoever: The FT-991/FT-991A sports a USB hub (which feeds the sound card and the CAT interface). By replacing the existing 2-port USB hub chip with a 4-port variant (same SMD footprint and compatible pinout), the SDR will be installed in the radio, and it will be exposed to the computer via the existing USB port, conveniently routed through the radio's USB hub. So, plug the radio's USB port and the computer will see three devices: the virtual sound card, the CAT port **and** the SDR.
 
-This fork adds on-board latch control, by using a AND gate with two inputs that controls a RF switch: The IF signal is only connected to the SDR if both signals (on my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped.
+This fork adds on-board latch control, by using a AND gate with two inputs that controls a RF switch: The IF signal is only connected to the SDR if both signals (on my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped. There are also provisions to bypass entirely the high impedance/Amplifier stage via a SDR GPIO (default: off), and filter the IF signal through a selectable 3 MHz-wide 69.450 MHz centered bandpass filter (also adds 6 dB of attenuation) (default: off).
 
 The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
 The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a [few](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT-991A_PAT-Back.png) [pictures](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT-991A_PAT-front.png) are available in Design folder.
@@ -41,6 +41,17 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 
 
 ### Changelog: (PY2RAF)
+24/May/2019 - Revision L
+EXPERIMENTAL.  In this revision:
+* Added the ability to bypass entirely the amplifier and filters
+  - Selectable by RF switch (default: off)
+* Added a 3-pole Chebyshev Band-pass Filter centered at 69.450 MHz, 3 MHz
+  wide
+  - Selectable by RF switch (default: off)
+* Revamped the Block Diagram
+* Added the BPF LT-SPICE simulation
+* Updated README, BOM, Gerbers and Pictures
+* And yes, board is getting somewhat cluttered.
 
 19/May/2019 - Revision K
 * Changed footprints: BOM specifies 1206, project had 0805
