@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -70,7 +70,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -14388,59 +14388,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="psemi">
-<packages>
-<package name="USB-SMD-AMP">
-<smd name="D-" x="-0.992" y="8.524" dx="2.88" dy="1.12" layer="1" rot="R90"/>
-<smd name="D+" x="1.048" y="8.524" dx="2.88" dy="1.12" layer="1" rot="R90"/>
-<smd name="VCC" x="-3.492" y="8.524" dx="2.88" dy="1.12" layer="1" rot="R90"/>
-<smd name="GND" x="3.508" y="8.524" dx="2.88" dy="1.12" layer="1" rot="R90"/>
-<pad name="5" x="-6.5" y="5" drill="2.3"/>
-<pad name="6" x="6.5" y="5" drill="2.3"/>
-<wire x1="-8" y1="9" x2="-8" y2="-8.5" width="0.127" layer="21"/>
-<wire x1="-8" y1="-8.5" x2="8" y2="-8.5" width="0.127" layer="21"/>
-<wire x1="8" y1="-8.5" x2="8" y2="9" width="0.127" layer="21"/>
-<wire x1="8" y1="9" x2="-8" y2="9" width="0.127" layer="21"/>
-<text x="-2" y="-10" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="-2" y="-11" size="0.8" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="USB">
-<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="-4.064" y="-11.43" size="1.778" layer="95" ratio="10">&gt;NAME</text>
-<text x="-4.064" y="-7.62" size="1.778" layer="96" ratio="10">&gt;VALUE</text>
-<pin name="1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="3.556" y="-1.27" size="1.778" layer="94" rot="R90">USB</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="87583-3010RPALF" prefix="X">
-<gates>
-<gate name="A" symbol="USB" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="USB-SMD-AMP">
-<connects>
-<connect gate="A" pin="1" pad="VCC"/>
-<connect gate="A" pin="2" pad="D-"/>
-<connect gate="A" pin="3" pad="D+"/>
-<connect gate="A" pin="4" pad="5 6 GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="frames" urn="urn:adsk.eagle:library:229">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
@@ -14765,7 +14712,7 @@ Features
 <attribute name="DOCUMENT_ID" value="PAT-991A"/>
 <attribute name="PROJECT_INFO" value="Yaesu FT-991A Panadapter with Signal Control"/>
 <attribute name="PROJECT_NAME" value="FT-991A PAT &amp; SDR"/>
-<attribute name="REVISION_ID" value="K"/>
+<attribute name="REVISION_ID" value="M"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -14825,7 +14772,6 @@ Features
 <part name="PAD8" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="D+"/>
 <part name="PAD7" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="D-"/>
 <part name="PAD5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="EN"/>
-<part name="X3" library="psemi" deviceset="87583-3010RPALF" device=""/>
 <part name="L3" library="rcl-modified" deviceset="L-EU" device="" value="BLM21"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="10kΩ"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
@@ -14876,7 +14822,7 @@ Features
 <part name="Q4" library="aarf" deviceset="BD09GA5WEFJ" device="" value="BD90GA5WEFJ"/>
 <part name="Q7" library="aarf" deviceset="MC78M00" device="" value="MC78M05CDTRKG"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
-<part name="Q8" library="aarf" deviceset="MIC5365" device="" value=" MIC5365-3.3"/>
+<part name="Q8" library="aarf" deviceset="MIC5365" device="" value="MIC5365-3.3"/>
 <part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1µF">
 <spice>
 <pinmapping spiceprefix="C">
@@ -14917,6 +14863,10 @@ Features
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="PAD10" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="D-"/>
+<part name="PAD11" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="D+"/>
+<part name="PAD12" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="GND"/>
+<part name="PAD9" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="5V"/>
 </parts>
 <sheets>
 <sheet>
@@ -14934,7 +14884,7 @@ with Signal Control</text>
 <text x="173.736" y="244.602" size="1.778" layer="97">9V</text>
 <text x="237.49" y="244.602" size="1.778" layer="97">5V</text>
 <text x="205.232" y="213.868" size="1.778" layer="97">3.3V</text>
-<text x="375.92" y="5.08" size="2.54" layer="94">R: L</text>
+<text x="375.92" y="5.08" size="2.54" layer="94">R: M</text>
 <wire x1="114.3" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="97" style="longdash"/>
 <wire x1="185.42" y1="50.8" x2="185.42" y2="17.78" width="0.1524" layer="97" style="longdash"/>
 <wire x1="185.42" y1="17.78" x2="187.96" y2="17.78" width="0.1524" layer="97" style="longdash"/>
@@ -15104,10 +15054,6 @@ with Signal Control</text>
 <instance part="PAD5" gate="G$1" x="86.36" y="233.68" smashed="yes">
 <attribute name="VALUE" x="85.217" y="230.378" size="1.778" layer="96"/>
 </instance>
-<instance part="X3" gate="A" x="287.02" y="238.76" smashed="yes">
-<attribute name="NAME" x="282.956" y="250.19" size="1.778" layer="95" ratio="10"/>
-<attribute name="VALUE" x="275.336" y="247.142" size="1.778" layer="96" ratio="10"/>
-</instance>
 <instance part="L3" gate="G$1" x="116.84" y="248.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="120.65" y="255.0414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="120.65" y="252.222" size="1.778" layer="96" rot="R180"/>
@@ -15253,6 +15199,18 @@ with Signal Control</text>
 </instance>
 <instance part="GND8" gate="1" x="134.62" y="20.32" smashed="yes"/>
 <instance part="GND13" gate="1" x="165.1" y="20.32" smashed="yes"/>
+<instance part="PAD10" gate="G$1" x="281.94" y="241.3" smashed="yes" rot="R180">
+<attribute name="VALUE" x="288.163" y="242.062" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PAD11" gate="G$1" x="281.94" y="238.76" smashed="yes" rot="R180">
+<attribute name="VALUE" x="288.163" y="239.522" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PAD12" gate="G$1" x="281.94" y="236.22" smashed="yes" rot="R180">
+<attribute name="VALUE" x="288.163" y="236.982" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PAD9" gate="G$1" x="281.94" y="243.84" smashed="yes" rot="R180">
+<attribute name="VALUE" x="288.163" y="244.602" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15416,10 +15374,10 @@ with Signal Control</text>
 <wire x1="205.74" y1="200.66" x2="205.74" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X3" gate="A" pin="4"/>
 <wire x1="279.4" y1="236.22" x2="276.86" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GNDA"/>
 <wire x1="276.86" y1="236.22" x2="276.86" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="PAD12" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <pinref part="Q4" gate="G$1" pin="GND"/>
@@ -15717,17 +15675,17 @@ with Signal Control</text>
 <net name="N$25" class="0">
 <segment>
 <pinref part="PAD7" gate="G$1" pin="P"/>
-<pinref part="X3" gate="A" pin="2"/>
 <wire x1="261.62" y1="226.06" x2="261.62" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="241.3" x2="279.4" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="PAD10" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="PAD8" gate="G$1" pin="P"/>
-<pinref part="X3" gate="A" pin="3"/>
 <wire x1="269.24" y1="226.06" x2="269.24" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="238.76" x2="279.4" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="PAD11" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -15736,7 +15694,6 @@ with Signal Control</text>
 <wire x1="246.38" y1="213.36" x2="246.38" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="Q8" gate="G$1" pin="VIN"/>
 <wire x1="241.3" y1="213.36" x2="243.84" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="X3" gate="A" pin="1"/>
 <wire x1="243.84" y1="213.36" x2="246.38" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="243.84" x2="246.38" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="Q7" gate="G$1" pin="OUT"/>
@@ -15748,6 +15705,7 @@ with Signal Control</text>
 <wire x1="241.3" y1="208.28" x2="243.84" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="208.28" x2="243.84" y2="213.36" width="0.1524" layer="91"/>
 <junction x="243.84" y="213.36"/>
+<pinref part="PAD9" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -16245,7 +16203,7 @@ RF Stage</text>
 <wire x1="165.1" y1="165.1" x2="165.1" y2="160.02" width="0.1524" layer="94"/>
 <wire x1="165.1" y1="160.02" x2="167.64" y2="162.56" width="0.1524" layer="94"/>
 <wire x1="167.64" y1="162.56" x2="165.1" y2="165.1" width="0.1524" layer="94"/>
-<text x="375.92" y="5.08" size="2.54" layer="94">R: L</text>
+<text x="375.92" y="5.08" size="2.54" layer="94">R: M</text>
 <text x="342.9" y="20.32" size="2.286" layer="94">Panadapter FT-991/FT-991A</text>
 <text x="289.56" y="7.62" size="2.54" layer="94">Yaesu FT-991A Panadapter board
 with Signal Control
@@ -16320,7 +16278,8 @@ Block Diagram</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,76.2,68.58,U1,GND,GNDA,,,"/>
+<approved hash="104,1,55.88,111.76,U1,GND,GNDA,,,"/>
+<approved hash="113,2,193.571,130.071,FRAME2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
