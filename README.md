@@ -14,7 +14,7 @@ The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a [few](https:
 
 The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
-If you are interested in build your own, click [here for Gerber (the PCB layout file for fabrication) files](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/board-gerbers.zip) and print somewhere else (like [JLCPCB](https://jlcpcb.com/quote), way cheaper).
+If you are interested in build your own, click [here for Gerber (the PCB layout file for fabrication) files](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/board-gerbers.zip) and print somewhere else (like [JLCPCB](https://jlcpcb.com/quote), super cheap and $0 shipping on first order).
 
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design-tap-point.png).
 
