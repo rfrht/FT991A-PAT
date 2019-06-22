@@ -1,3 +1,5 @@
+**No-USB version:** [Here](https://github.com/rfrht/FT991A-PAT/tree/NoUSB)
+
 # Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991/FT-991A
 ## Yaesu FT-991/FT-991A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
