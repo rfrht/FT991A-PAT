@@ -1,16 +1,17 @@
 # Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991/A
 ## Yaesu FT-991/A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
-This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/master/Design/FT991-PAT_Installed.jpg) FT-991/A Panadapter board with the acclaimed G4HUP (SK) Filter / Amplifier.
+This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/master/Design/FT991-PAT_Installed.jpg) FT-991/A Panadapter board with a high impedance IF tap, in order to disturb to a minimum the radio's IF signal, also featuring selectable By-Pass (off by default) and selectable (off by default) 3 MHz-Wide 69.450 MHz centered Band-Pass filter in order to reduce signal images or interferences.
 
 This design is compatible with both A and non-A FT-991 rigs.
 
-The final objective is to actually **embed** a RTL-SDR **inside** a FT-991/A, without drilling holes, external cables, connectors or whatsoever: The FT-991/A sports a USB hub (which feeds the sound card and the CAT interface). By replacing the existing 2-port USB hub chip with a 4-port variant (same SMD footprint and compatible pinout), the SDR will be installed inside the radio, and exposed to the computer via the existing USB port, conveniently routed through the radio's USB hub. So, plug the radio's USB port and the computer will see three devices: the virtual sound card, the CAT port **and** the SDR.
+The final objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with a extra USB cable coming off the radio.
 
-This fork adds on-board RF switching control by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (on my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped from IF (default state). There are also provisions to bypass entirely the high impedance/Amplifier stage via a SDR GPIO (default: off), and filter the IF signal through a selectable 3 MHz-wide 69.450 MHz centered bandpass filter (also adds 6 dB of attenuation) (default: off).
+This fork adds on-board RF switching control by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (in my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped from IF (default state). There are also provisions to bypass entirely the high impedance/Amplifier stage via a SDR GPIO (default: off), and filter the IF signal through a selectable 3 MHz-wide 69.450 MHz centered bandpass filter (default: off).
 
 The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
-The [BOM (containing Digikey parts)](Design/parts-digikey.md) and a [few](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT-991A_PAT-Back.png) [pictures](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT-991A_PAT-front.png) are available in Design folder.
+
+The [BOM (containing Digikey parts)](Design/bom-ft991a-panadapter.csv) and a [few](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT-991A_PAT-Back.png) [pictures](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT-991A_PAT-front.png) are available in Design folder.
 
 The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
@@ -18,26 +19,30 @@ If you are interested in build your own, click [here for Gerber (the PCB layout 
 
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design-tap-point.png).
 
-### Current state:
-* Board revision I is implemented!! Results, pictures and videos in [FT991/A Panadapter discussion thread](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/page-2#post-5081710)
-
 ### Next steps:
 
-* Book lab time and have Yvo replace the USB hub from Main Unit
-* Build the Revision M (ordered)
+* Procure and assemble Revision N.
 
 ### Notes:
 
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
-* The parts costed $29
-* Until revision I, the AND gate took the SCPON signal. However, the SCPON signal is not the best option to the AND gate, along the RTL's GPIO port. SCPON is only HIGH when the Scope is being displayed. If you go to Menu or Setup, the SCPON goes down. Ah, if in Scope mode, it stays HIGH during TX as well (though I found no artifacts during 50W TX, I think the line is grounded somewhere else). For now since I have printed the PCB and etc, I will just bridge the GPIO port to both ports in the board. A next board revision will use RX9 signal plus a voltage divider (to bring the voltage down to a safe voltage to the AND gate), so the AND gate will actuate the RF switch accordingly.
-* IF signal is incredibly strong (centered in 68.450 MHz).
-* IF is wide open, spanning the whole bandpass filter (with that comes a few problems: Strong signals might spew images through the spectrum in your SDR. Use the RX gain sparely)
+* The parts costs $16 in Digi-Key.
+* IF is wide open, spanning the preselector filter (with that comes a few problems: Strong signals might spew images through the spectrum in your SDR. Use the RX gain sparely) range.h
 * The SDR is a bit large for the radio, mine I had to strip off the case and SMA/USB connectors. Consider wrapping your USB with some conductive material in order to isolate any potential SDR noise that can interfere with the radio.
-* Pending availability of the Tech for swapping the Main Unit IC
 
 
 ### Changelog: (PY2RAF)
+
+22/Jun/2019 - Revision N
+EXPERIMENTAL. No USB  In this revision:
+* Removed the 5V regulator
+* Removed the USB provisions
+* Removed the G4HUP LPF. Reasoning: Found it of no use, since it cuts the signal 24 MHz above the IF center frequency. The selectable BPF suits better.
+* Moved regulators to the top side of the board (to take advantage of heat dissipation)
+* Moved the SDR Out port to the top of the board
+* Added a large uncovered ground pad
+* Tried to group the signals as much as possible and moved everything to the top of the board
+* And thus, reduced significantly the BOM (35 to 25 different parts)
 
 29/May/2019 - Revision M
 EXPERIMENTAL.  In this revision:
