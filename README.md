@@ -19,25 +19,26 @@ If you are interested in build your own, click [here for Gerber (the PCB layout 
 
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design-tap-point.png).
 
+## Instructions & full documentation: Check the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)
+
 ### Next steps:
 
-* Procure and assemble Revision N.
+* Assemble Revision N.
 
 ### Notes:
 
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
-* The parts costs $16 in Digi-Key.
-* IF is wide open, spanning the preselector filter (with that comes a few problems: Strong signals might spew images through the spectrum in your SDR. Use the RX gain sparely) range.h
+* The parts costs $20 in Digi-Key.
+* IF is wide open, spanning the preselector filter (with that comes a few problems: Strong signals might spew images through the spectrum in your SDR. Use the RX gain sparely) range.
 * The SDR is a bit large for the radio, mine I had to strip off the case and SMA/USB connectors. Consider wrapping your USB with some conductive material in order to isolate any potential SDR noise that can interfere with the radio.
 
 
 ### Changelog: (PY2RAF)
 
 22/Jun/2019 - Revision N
-EXPERIMENTAL. No USB  In this revision:
 * Removed the 5V regulator
 * Removed the USB provisions
-* Removed the G4HUP LPF. Reasoning: Found it of no use, since it cuts the signal 24 MHz above the IF center frequency. The selectable BPF suits better.
+* Removed the G4HUP LPF. Reasoning: Found it of no use, since it cuts the signal 24 MHz above the IF center frequency. Replaced with a selectable 3-MHz wide 69.450 MHz BPF.
 * Moved regulators to the top side of the board (to take advantage of heat dissipation)
 * Moved the SDR Out port to the top of the board
 * Added a large uncovered ground pad
