@@ -1,4 +1,7 @@
 # Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991/A
+
+## Instructions & full documentation: Check the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)
+
 ## Yaesu FT-991/A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
 This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/master/Design/FT991-PAT_Installed.jpg) FT-991/A Panadapter board with a high impedance IF tap, in order to disturb to a minimum the radio's IF signal, also featuring selectable By-Pass (off by default) and selectable (off by default) 3 MHz-Wide 69.450 MHz centered Band-Pass filter in order to reduce signal images or interferences.
@@ -18,8 +21,6 @@ The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/A IF t
 If you are interested in build your own, click [here for Gerber (the PCB layout file for fabrication) files](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/board-gerbers.zip) and print somewhere else (like [JLCPCB](https://jlcpcb.com/quote), super cheap and $0 shipping on first order).
 
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design-tap-point.png).
-
-## Instructions & full documentation: Check the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)
 
 ### Next steps:
 
