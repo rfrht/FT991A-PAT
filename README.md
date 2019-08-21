@@ -8,7 +8,7 @@ This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.git
 
 This design is compatible with both A and non-A FT-991 rigs.
 
-The final objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with a extra USB cable coming off the radio.
+The final objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with no extra cables coming off the radio.
 
 This fork adds on-board RF switching control by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (in my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped from IF (default state). There are also provisions to bypass entirely the high impedance/Amplifier stage via a SDR GPIO (default: off), and filter the IF signal through a selectable 3 MHz-wide 69.450 MHz centered bandpass filter (default: off).
 
