@@ -1,20 +1,21 @@
 # Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991/A
 
-## Instructions & full documentation: Check the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)
+## Video: [Here](https://people.redhat.com/rfreire/panadapter-final-test.mov)
+## Instructions, tests, pictures and full documentation: Check the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)
 
 ## Yaesu FT-991/A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
-This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/master/Design/FT991-PAT_Installed.jpg) FT-991/A Panadapter board with a high impedance IF tap, in order to disturb to a minimum the radio's IF signal, also featuring selectable By-Pass (off by default) and selectable (off by default) 3 MHz-Wide 69.450 MHz centered Band-Pass filter in order to reduce signal images or interferences.
+This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/master/Design/FT991-PAT_Installed.jpg) FT-991/A Panadapter board with a high impedance IF tap, in order to disturb to a minimum the radio's IF signal.
 
 This design is compatible with both A and non-A FT-991 rigs.
 
 The final objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with no extra cables coming off the radio.
 
-This fork adds on-board RF switching control by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (in my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped from IF (default state). There are also provisions to bypass entirely the high impedance/Amplifier stage via a SDR GPIO (default: off), and filter the IF signal through a selectable 3 MHz-wide 69.450 MHz centered bandpass filter (default: off).
+This fork adds on-board RF switching control by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (in my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped from IF (default state). There are also provisions to bypass entirely the high impedance/Amplifier stage via a SDR GPIO (default: off).
 
 The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
 
-The [BOM (containing Digikey parts)](Design/bom-ft991-panadapter.csv) and a [few](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT-991A_PAT-Back.png) [pictures](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT-991A_PAT-front.png) are available in Design folder.
+The [BOM (containing Digikey parts)](Design/bom-ft991-panadapter.csv) and a [few](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT991-PAT_Bottom.jpg) [pictures](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT991-PAT_Top.jpg) are available in Design folder.
 
 The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
@@ -22,17 +23,22 @@ If you are interested in build your own, click [here for Gerber (the PCB layout 
 
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design-tap-point.png).
 
-### Next steps:
-
-* Assemble Revision N.
-
 ### Notes:
 
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
 * The parts costs $20 in Digi-Key.
-* IF is wide open, spanning the preselector filter (with that comes a few problems: Strong signals might spew images through the spectrum in your SDR. Use the RX gain sparely) range.
-* The SDR is a bit large for the radio, mine I had to strip off the case and SMA/USB connectors. Consider wrapping your USB with some conductive material in order to isolate any potential SDR noise that can interfere with the radio.
+* IF is wide open, spanning the preselector filter range. With that comes also a problem: Very strong signals might spew images through the spectrum in your SDR. Use the RTL-SDR RX gain to counteract.
+* The selectable BPF did not work, resulting in signal loss. Fortunately, it is off by default so it did not impact directly the panadapter.
 
+### Next steps:
+
+Draw Revision O with the following changes:
+
+* Remove the BPF
+* Change the first RF switch default state from "Off" to "On"
+* Change the 9V voltage regulator
+* Reduce even further the BOM
+* Add Test Pads
 
 ### Changelog: (PY2RAF)
 
