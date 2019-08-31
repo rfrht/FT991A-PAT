@@ -26,7 +26,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 ### Notes:
 
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
-* The parts costs $20 in Digi-Key.
+* The [parts](Design/bom-ft991-panadapter.csv) costs $20 in Digi-Key.
 * IF is wide open, spanning the preselector filter range. With that comes also a problem: Very strong signals might spew images through the spectrum in your SDR. Use the RTL-SDR RX gain to counteract.
 * The selectable BPF did not work, resulting in signal loss. Fortunately, it is off by default so it did not impact directly the panadapter.
 
