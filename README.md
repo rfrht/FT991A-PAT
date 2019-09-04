@@ -31,16 +31,18 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * The selectable BPF did not work, resulting in signal loss. Fortunately, it is off by default so it did not impact directly the panadapter.
 
 ### Next steps:
-
-Draw Revision O with the following changes:
-
-* Remove the BPF
-* Change the first RF switch default state from "Off" to "On"
-* Change the 9V voltage regulator
-* Reduce even further the BOM
-* Add Test Pads
+Finish Revision O
+Procure the board and components
+Test
 
 ### Changelog: (PY2RAF)
+
+dd/mmm/2019 - Revision O
+** WORK IN PROGRESS **
+Redesign BPF
+Removed PAT Enable
+More component reduction
+Redesign default front-end RF switch
 
 22/Jun/2019 - Revision N
 * Removed the 5V regulator
