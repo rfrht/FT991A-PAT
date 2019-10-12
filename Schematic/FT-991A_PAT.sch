@@ -14366,15 +14366,15 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-1.05" y1="0.65" x2="-1.05" y2="-0.6" width="0.127" layer="51"/>
 <wire x1="-1.05" y1="-0.6" x2="1.05" y2="-0.6" width="0.127" layer="51"/>
 <wire x1="1.05" y1="-0.6" x2="1.05" y2="0.65" width="0.127" layer="51"/>
-<text x="-2.1" y="1.75" size="1" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.3" y="-2.75" size="1" layer="27" font="vector">&gt;VALUE</text>
+<text x="-0.068" y="2.512" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-0.014" y="-2.242" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <wire x1="-0.95" y1="0.65" x2="-1.05" y2="0.65" width="0.127" layer="21"/>
 <wire x1="-1.05" y1="0.65" x2="-1.05" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="-1.05" y1="-0.6" x2="-0.95" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="1" y1="0.65" x2="1.05" y2="0.65" width="0.127" layer="21"/>
 <wire x1="1.05" y1="0.65" x2="1.05" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="1.05" y1="-0.6" x2="1" y2="-0.6" width="0.127" layer="21"/>
-<circle x="-1.1" y="-1.2" radius="0.1" width="0.127" layer="21"/>
+<text x="-1.524" y="-1.016" size="0.8" layer="21" font="vector" ratio="15" align="center">*</text>
 </package>
 <package name="SC70-5" urn="urn:adsk.eagle:footprint:2365/1">
 <description>&lt;b&gt;SMT SC70-5&lt;/b&gt;&lt;p&gt;
@@ -14418,7 +14418,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="1" y1="-0.6" x2="-0.9" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="-0.9" y1="-0.6" x2="-0.9" y2="0.6" width="0.127" layer="21"/>
-<circle x="-1.1" y="-1" radius="0.1" width="0.127" layer="21"/>
+<text x="-1.5" y="-1" size="0.8" layer="21" font="vector" ratio="15" align="center">*</text>
 </package>
 <package name="SOIC8" urn="urn:adsk.eagle:footprint:16321/1">
 <description>&lt;b&gt;SOIC-8&lt;/b&gt; CASE 751-07&lt;p&gt;
@@ -14755,7 +14755,7 @@ Footprint 1111 / 2828</description>
 <part name="Q7" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="?20*" device="SST" package3d_urn="urn:adsk.eagle:package:28534/2" technology="1" value="J310">
 <attribute name="SPICEPREFIX" value="J"/>
 </part>
-<part name="Q8" library="aarf" deviceset="2SC5086" device="" value="2SC5086"/>
+<part name="Q8" library="aarf" deviceset="2SC5086" device="" value="5086"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
@@ -14786,7 +14786,7 @@ Footprint 1111 / 2828</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="4.7nF"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
-<part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="13.8V"/>
+<part name="13.8V" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="13.8V"/>
 <part name="L2" library="rcl-modified" deviceset="L-EU" device="" value="BLM21"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="F1"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
@@ -14798,7 +14798,7 @@ Footprint 1111 / 2828</description>
 <part name="Q10" library="aarf" deviceset="PE4259" device="" value="PE4259"/>
 <part name="GND21" library="supply1" deviceset="GNDA" device=""/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
-<part name="PAD5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="BYP"/>
+<part name="BYP" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="BYP"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
 <part name="L6" library="rcl-modified" deviceset="L-EU" device="" value="BLM21"/>
 <part name="Q4" library="aarf" deviceset="PE4259" device="" value="PE4259"/>
@@ -14807,7 +14807,7 @@ Footprint 1111 / 2828</description>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
-<part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="BPF"/>
+<part name="BPF" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="BPF"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
 <part name="L1" library="rcl-modified" deviceset="L-EU" device="" value="BLM21"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
@@ -14815,7 +14815,7 @@ Footprint 1111 / 2828</description>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="Q5" library="aarf" deviceset="NCP553" device=""/>
-<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="150 mA"/>
+<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="150mA"/>
 <part name="GND23" library="supply1" deviceset="GNDA" device=""/>
 <part name="Q2" library="aarf" deviceset="MC78L" device="" technology="09ABDR2GOSCT"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.5pF"/>
@@ -14965,7 +14965,7 @@ with Signal Control</text>
 <attribute name="NAME" x="35.179" y="128.524" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="32.639" y="128.524" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="PAD1" gate="G$1" x="30.48" y="238.76" smashed="yes">
+<instance part="13.8V" gate="G$1" x="30.48" y="238.76" smashed="yes">
 <attribute name="VALUE" x="29.337" y="235.458" size="1.778" layer="96"/>
 </instance>
 <instance part="L2" gate="G$1" x="71.12" y="238.76" smashed="yes" rot="R270">
@@ -15004,7 +15004,7 @@ with Signal Control</text>
 <attribute name="NAME" x="352.044" y="137.541" size="1.778" layer="95"/>
 <attribute name="VALUE" x="352.044" y="140.081" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD5" gate="G$1" x="368.3" y="175.26" smashed="yes" rot="R180">
+<instance part="BYP" gate="G$1" x="368.3" y="175.26" smashed="yes" rot="R180">
 <attribute name="VALUE" x="369.443" y="178.562" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R11" gate="G$1" x="340.36" y="175.26" smashed="yes">
@@ -15027,7 +15027,7 @@ with Signal Control</text>
 <instance part="GND8" gate="1" x="190.5" y="35.56" smashed="yes"/>
 <instance part="GND15" gate="1" x="218.44" y="35.56" smashed="yes"/>
 <instance part="GND18" gate="1" x="233.68" y="35.56" smashed="yes"/>
-<instance part="PAD2" gate="G$1" x="40.64" y="73.66" smashed="yes">
+<instance part="BPF" gate="G$1" x="40.64" y="73.66" smashed="yes">
 <attribute name="VALUE" x="39.497" y="70.358" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="68.58" y="73.66" smashed="yes" rot="R180">
@@ -15360,7 +15360,7 @@ with Signal Control</text>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="PAD1" gate="G$1" pin="P"/>
+<pinref part="13.8V" gate="G$1" pin="P"/>
 <wire x1="33.02" y1="238.76" x2="43.18" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 </segment>
@@ -15432,7 +15432,7 @@ with Signal Control</text>
 </net>
 <net name="N$41" class="0">
 <segment>
-<pinref part="PAD5" gate="G$1" pin="P"/>
+<pinref part="BYP" gate="G$1" pin="P"/>
 <wire x1="365.76" y1="175.26" x2="360.68" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="L6" gate="G$1" pin="2"/>
 </segment>
@@ -15446,7 +15446,7 @@ with Signal Control</text>
 </net>
 <net name="N$44" class="0">
 <segment>
-<pinref part="PAD2" gate="G$1" pin="P"/>
+<pinref part="BPF" gate="G$1" pin="P"/>
 <wire x1="43.18" y1="73.66" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 </segment>

@@ -26,7 +26,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 ### Notes:
 
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
-* The [parts](Design/bom-ft991-panadapter.csv) costs $20 in Digi-Key.
+* The [parts](Design/bom-ft991-panadapter.csv) costs around $25 in Digi-Key.
 * IF is wide open, spanning the preselector filter range. With that comes also a problem: Very strong signals might spew images through the spectrum in your SDR. Use the RTL-SDR RX gain to counteract.
 * The selectable BPF did not work, resulting in signal loss. Fortunately, it is off by default so it did not impact directly the panadapter.
 
@@ -39,10 +39,13 @@ Test
 
 dd/mmm/2019 - Revision O
 ** WORK IN PROGRESS **
-Redesign BPF
-Removed PAT Enable
-More component reduction
-Redesign default front-end RF switch
+* Board redesign
+* Moved everything to the bottom side of the board, except for a RF switch and SDR/Scope unit ports
+* Redesigned BPF (thanks to SM0AOM)
+* Changed panadapter default state from disabled to enabled
+* Changed RF front-end switch to use the TX9 signal OR SDR to disable it
+* Added a PTC fuse
+* Choosed a simpler (and cheaper) 9V regulator
 
 22/Jun/2019 - Revision N
 * Removed the 5V regulator
