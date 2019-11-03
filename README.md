@@ -37,11 +37,10 @@ Test
 
 ### Changelog: (PY2RAF)
 
-dd/mmm/2019 - Revision O
-** WORK IN PROGRESS **
+02/Nov/2019 - Revision O
 * Board redesign
 * Moved everything to the bottom side of the board, except for a RF switch and SDR/Scope unit ports
-* Redesigned BPF (thanks to SM0AOM)
+* Redesigned BPF (thanks to [SM0AOM](https://forums.qrz.com/index.php?threads/filter-design-help.671664/))
 * Changed panadapter default state from disabled to enabled
 * Changed RF front-end switch to use the TX9 signal OR SDR to disable it
 * Added a PTC fuse
