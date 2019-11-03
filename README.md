@@ -31,9 +31,8 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * The selectable BPF did not work, resulting in signal loss. Fortunately, it is off by default so it did not impact directly the panadapter.
 
 ### Next steps:
-Finish Revision O
-Procure the board and components
-Test
+* Procure the board and components
+* Test
 
 ### Changelog: (PY2RAF)
 
