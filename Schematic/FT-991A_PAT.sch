@@ -14815,7 +14815,7 @@ Footprint 1111 / 2828</description>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="Q5" library="aarf" deviceset="NCP553" device=""/>
-<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="150mA"/>
+<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="50mA"/>
 <part name="GND23" library="supply1" deviceset="GNDA" device=""/>
 <part name="Q2" library="aarf" deviceset="MC78L" device="" technology="09ABDR2GOSCT"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.5pF"/>

@@ -3042,7 +3042,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="Q5" library="aarf" package="SC-82AB" value="NCP553" x="47.5" y="69.1" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="46.84" y="70.76" size="0.8" layer="22" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="F1" library="adafruit" package="R1206" value="150mA" x="30.3" y="69.3" smashed="yes" rot="MR180">
+<element name="F1" library="adafruit" package="R1206" value="50mA" x="30.3" y="69.3" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="30.303" y="67.513" size="0.8" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="Q2" library="aarf" package="SOIC8" value="MC78L09ABDR2GOSCT" x="40.8" y="68" smashed="yes" rot="MR270">
