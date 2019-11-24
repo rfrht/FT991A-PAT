@@ -21,9 +21,9 @@ If you are interested in build your own, [click here to download the Gerber](htt
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design-tap-point.png).
 
 ### Notes:
-a
+
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
-* The [parts](Design/bom-ft991-panadapter.csv) costs around $25 in Digi-Key.
+* The [parts](Design/bom-ft991-panadapter.csv) costs around $15 in Digi-Key.
 * IF is wide open, spanning the preselector filter range. With that comes also a problem: Very strong signals might spew images through the spectrum in your SDR. Use the RTL-SDR RX gain to counteract.
 
 ### Changelog: (PY2RAF)
