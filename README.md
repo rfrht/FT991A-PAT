@@ -1,6 +1,7 @@
 # Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991/A
 
 ## Video: [Here](https://www.youtube.com/watch?v=WfEJoV_u_B8)
+## New Branch, Light Edition: Simpler design, basics only, $15 total BOM - [Here](https://github.com/rfrht/FT991A-PAT/tree/PAT-Light)
 ## Instructions, tests, pictures and full documentation: Check the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)
 
 ## Yaesu FT-991/A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
