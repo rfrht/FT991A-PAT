@@ -14596,7 +14596,6 @@ Features
 <part name="Q8" library="aarf" deviceset="2SC5086" device="" value="5086"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
 <part name="GND11" library="supply1" deviceset="GNDA" device=""/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="220Ω"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="0.1µF"/>
@@ -14690,10 +14689,6 @@ with Signal Control - Light Ed</text>
 <attribute name="NAME" x="255.524" y="117.221" size="1.778" layer="95"/>
 <attribute name="VALUE" x="255.524" y="119.761" size="1.778" layer="96"/>
 </instance>
-<instance part="C12" gate="G$1" x="281.94" y="116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="280.924" y="124.079" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="280.924" y="119.761" size="1.778" layer="96"/>
-</instance>
 <instance part="GND11" gate="1" x="236.22" y="99.06" smashed="yes"/>
 <instance part="R6" gate="G$1" x="251.46" y="154.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="257.5814" y="151.13" size="1.778" layer="95" rot="R90"/>
@@ -14786,9 +14781,9 @@ with Signal Control - Light Ed</text>
 <attribute name="NAME" x="217.17" y="54.3814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="217.17" y="51.562" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C13" gate="G$1" x="312.42" y="116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="311.404" y="109.601" size="1.778" layer="95"/>
-<attribute name="VALUE" x="311.404" y="112.141" size="1.778" layer="96"/>
+<instance part="C13" gate="G$1" x="307.34" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="306.324" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="306.324" y="112.141" size="1.778" layer="96"/>
 </instance>
 <instance part="GND5" gate="1" x="154.94" y="185.42" smashed="yes"/>
 <instance part="Q5" gate="G$1" x="154.94" y="205.74" smashed="yes">
@@ -14810,11 +14805,11 @@ with Signal Control - Light Ed</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="Q8" gate="G$1" pin="E"/>
-<wire x1="271.78" y1="119.38" x2="271.78" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="116.84" x2="279.4" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="271.78" y1="119.38" x2="271.78" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="116.84" x2="271.78" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="116.84" x2="271.78" y2="116.84" width="0.1524" layer="91"/>
 <junction x="271.78" y="116.84"/>
 </segment>
 </net>
@@ -15031,7 +15026,7 @@ with Signal Control - Light Ed</text>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
 <pinref part="X3" gate="G$1" pin="SIGNAL"/>
-<wire x1="317.5" y1="116.84" x2="320.04" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="116.84" x2="320.04" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -15044,13 +15039,6 @@ with Signal Control - Light Ed</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="119.38" x2="203.2" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="119.38" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="287.02" y1="116.84" x2="309.88" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$21" class="0">
