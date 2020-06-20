@@ -18,7 +18,7 @@ The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/A IF t
 
 If you are interested in build your own, [click here to download the Gerber](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design/board-gerbers.zip) and order in your favourite PCB Fab (like [JLCPCB](https://jlcpcb.com/quote), super cheap and $0 shipping on first order).
 
-This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design-tap-point.png).
+This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://github.com/rfrht/FT991A-PAT/wiki/installation#ft-991-if).
 
 ### Notes:
 
@@ -31,7 +31,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 24/Nov/2019 - Lite Edition
 * This revision features the bare minimum of the panadapter board: The TX signal RF switch and the Amplifier
 * Greatly simplified and cheaper design
-* Possibly more gain (due to less insertion loss of the RF switch chain that existed in previous revisions)
+* More gain (due to less insertion loss of the RF switch chain that existed in previous revisions)
 
 02/Nov/2019 - Revision O
 * Board redesign
