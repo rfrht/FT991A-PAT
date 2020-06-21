@@ -14815,7 +14815,7 @@ Footprint 1111 / 2828</description>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="Q5" library="aarf" deviceset="NCP553" device=""/>
-<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="150mA"/>
+<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="50mA"/>
 <part name="GND23" library="supply1" deviceset="GNDA" device=""/>
 <part name="Q2" library="aarf" deviceset="MC78L" device="" technology="09ABDR2GOSCT"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.5pF"/>
@@ -15706,8 +15706,7 @@ Unit</text>
 BPF Ø 3 MHz</text>
 <text x="187.96" y="68.58" size="2.54" layer="94">Pass-Through</text>
 <text x="281.94" y="104.14" size="2.54" layer="94">Pass-Through</text>
-<text x="291.846" y="70.104" size="2.54" layer="94" align="center">High-Z Amplifier
-and LPF</text>
+<text x="291.846" y="70.104" size="2.54" layer="94" align="center">High-Z Amplifier</text>
 <text x="116.84" y="99.06" size="2.54" layer="94">DISABLE</text>
 <text x="149.86" y="99.06" size="2.54" layer="94">GPIO_BPF</text>
 <text x="233.68" y="99.06" size="2.54" layer="94">GPIO_BYPASS</text>
@@ -15752,13 +15751,9 @@ and LPF</text>
 <wire x1="208.28" y1="198.12" x2="208.28" y2="205.74" width="0.1524" layer="94"/>
 <wire x1="132.08" y1="198.12" x2="167.64" y2="198.12" width="0.1524" layer="94"/>
 <wire x1="198.12" y1="198.12" x2="208.28" y2="198.12" width="0.1524" layer="94"/>
-<wire x1="172.72" y1="193.04" x2="172.72" y2="165.1" width="0.1524" layer="94"/>
 <wire x1="205.74" y1="200.66" x2="205.74" y2="195.58" width="0.1524" layer="94"/>
 <wire x1="205.74" y1="195.58" x2="208.28" y2="198.12" width="0.1524" layer="94"/>
 <wire x1="208.28" y1="198.12" x2="205.74" y2="200.66" width="0.1524" layer="94"/>
-<wire x1="170.18" y1="190.5" x2="175.26" y2="190.5" width="0.1524" layer="94"/>
-<wire x1="175.26" y1="190.5" x2="172.72" y2="193.04" width="0.1524" layer="94"/>
-<wire x1="172.72" y1="193.04" x2="170.18" y2="190.5" width="0.1524" layer="94"/>
 <wire x1="167.64" y1="233.68" x2="198.12" y2="233.68" width="0.1524" layer="94"/>
 <wire x1="198.12" y1="233.68" x2="198.12" y2="220.98" width="0.1524" layer="94"/>
 <wire x1="198.12" y1="220.98" x2="182.88" y2="220.98" width="0.1524" layer="94"/>
@@ -15814,11 +15809,10 @@ Power Management</text>
 <wire x1="104.14" y1="45.72" x2="330.2" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <text x="205.74" y="53.34" size="3.81" layer="97" align="center">Panadapter Board
 RF Stage</text>
-<text x="173.228" y="184.15" size="1.778" layer="94">PWR_EN</text>
 <text x="251.46" y="132.08" size="1.778" layer="94">IF output</text>
-<text x="167.64" y="132.08" size="1.778" layer="94">29</text>
-<text x="175.26" y="132.08" size="1.778" layer="94">30</text>
-<text x="182.88" y="132.08" size="1.778" layer="94">31</text>
+<text x="167.64" y="132.08" size="1.778" layer="94">DIS</text>
+<text x="175.26" y="132.08" size="1.778" layer="94">BPF</text>
+<text x="182.88" y="132.08" size="1.778" layer="94">BYP</text>
 <text x="193.04" y="132.08" size="1.778" layer="94">RF IN</text>
 <text x="200.66" y="198.12" size="1.778" layer="94">9V</text>
 <text x="144.018" y="198.882" size="1.778" layer="94">13.8V</text>
@@ -15898,7 +15892,6 @@ Block Diagram</text>
 <wire x1="246.38" y1="195.58" x2="248.92" y2="198.12" width="0.1524" layer="94"/>
 <wire x1="248.92" y1="198.12" x2="246.38" y2="200.66" width="0.1524" layer="94"/>
 <text x="241.3" y="198.12" size="1.778" layer="94">3V</text>
-<text x="170.18" y="172.72" size="1.778" layer="94">32</text>
 <wire x1="101.6" y1="180.34" x2="132.08" y2="180.34" width="0.1524" layer="94"/>
 <wire x1="132.08" y1="180.34" x2="132.08" y2="167.64" width="0.1524" layer="94"/>
 <wire x1="132.08" y1="167.64" x2="116.84" y2="167.64" width="0.1524" layer="94"/>
