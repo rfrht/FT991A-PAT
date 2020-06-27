@@ -38,7 +38,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * Moved everything to the bottom side of the board, except for a RF switch and SDR/Scope unit ports
 * Redesigned BPF (thanks to [SM0AOM](https://forums.qrz.com/index.php?threads/filter-design-help.671664/))
 * Changed panadapter default state from disabled to enabled
-* Changed RF front-end switch to use the TX9 signal OR SDR to disable it
+* Changed RF front-end switch to use the TX9 signal instead of RX9
 * Added a PTC fuse
 * Choosed a simpler (and cheaper) 9V regulator
 
