@@ -32,6 +32,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * Repositioned the SDR Out port to right above the DC block cap
 * Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - It seems that the PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active
 * Got rid of the "Grounding" in RF1 port; that's not necessary because... Above
+* Because of that... One less component (the 4.7 nF C2 cap)
 * Few text corrections
 
 24/Nov/2019 - Lite Edition
