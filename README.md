@@ -11,11 +11,11 @@ This design is compatible with both A and non-A FT-991 rigs.
 
 The final objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with no extra cables coming off the radio.
 
-This fork adds on-board RF switching control by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (in my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped from IF (default state). There are also provisions to bypass entirely the high impedance/Amplifier stage via a SDR GPIO (default: off).
-
 The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
 
 The [BOM (containing Digikey parts)](Design/bom-ft991-panadapter.csv) and a [few](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT991-PAT_Bottom.jpg) [pictures](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design/FT991-PAT_Top.jpg) are available in Design folder.
+
+This fork adds on-board RF switching control by using a AND gate with two inputs that controls a RF switch: The IF signal is only forwarded to the SDR if both signals (in my project, a SDR GPIO signal and the RX9 signal from radio's Main Unit) are present. Otherwise, the SDR is left isolated to the ground and no signal is tapped from IF (default state). There are also provisions to bypass entirely the high impedance/Amplifier stage via a SDR GPIO (default: off).
 
 The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
@@ -26,24 +26,29 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 ### Notes:
 
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
-* The [parts](Design/bom-ft991-panadapter.csv) costs around $25 in Digi-Key.
+* The [parts](Design/bom-ft991-panadapter.csv) costs around $24 in Digi-Key.
 * IF is wide open, spanning the preselector filter range. With that comes also a problem: Very strong signals might spew images through the spectrum in your SDR. Use the RTL-SDR RX gain to counteract.
-* The selectable BPF did not work, resulting in signal loss. Fortunately, it is off by default so it did not impact directly the panadapter.
+* The selectable BPF **now works!!**
 
 ### Next steps:
-Finish Revision O
-Procure the board and components
+Procure the board
 Test
 
 ### Changelog: (PY2RAF)
 
-dd/mmm/2019 - Revision O
-** WORK IN PROGRESS **
+28/Jun/2020 - Revision P, Full Version - Experimental
+* Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - It seems that the PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active
+* Got rid of the "Grounding" in RF1 port; that's not necessary because... Above
+* Because of that... One less component (the 4.7 nF C2 cap)
+* Few component routing/placement for better ground plane rastnest
+* Updated Bandpass .ASC file for use with LTSpice; reflects SM0AOM Filter, with new values
+
+02/Nov/2019 - Revision O
 * Board redesign
 * Moved everything to the bottom side of the board, except for a RF switch and SDR/Scope unit ports
-* Redesigned BPF (thanks to SM0AOM)
+* Redesigned BPF (thanks to [SM0AOM](https://forums.qrz.com/index.php?threads/filter-design-help.671664/))
 * Changed panadapter default state from disabled to enabled
-* Changed RF front-end switch to use the TX9 signal OR SDR to disable it
+* Changed RF front-end switch to use the TX9 signal instead of RX9
 * Added a PTC fuse
 * Choosed a simpler (and cheaper) 9V regulator
 
