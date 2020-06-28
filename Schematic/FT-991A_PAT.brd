@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -229,6 +229,9 @@ PY2RAF</text>
 <wire x1="29.2" y1="69.3" x2="31.2" y2="69.3" width="0.1524" layer="22"/>
 <text x="14.7" y="39.8" size="1.3" layer="21" font="vector" ratio="15" rot="R180" align="center">Light
 Ed</text>
+<text x="50.6" y="66" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">3V</text>
+<text x="43.9" y="62.3" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">9V</text>
+<text x="18" y="36.7" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">sw</text>
 </plain>
 <libraries>
 <library name="transistor-fet" urn="urn:adsk.eagle:library:396">
@@ -2617,6 +2620,31 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 </package>
 </packages>
 </library>
+<library name="testpad" urn="urn:adsk.eagle:library:385">
+<description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
+Cream on SMD OFF.&lt;br&gt;
+new: Attribute TP_SIGNAL_NAME&lt;br&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="B1,27" urn="urn:adsk.eagle:footprint:27900/1" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.0024" layer="37"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.0024" layer="37"/>
+<smd name="TP" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.635" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="B1,27" urn="urn:adsk.eagle:package:27944/1" type="box" library_version="1">
+<description>TEST PAD</description>
+<packageinstances>
+<packageinstance name="B1,27"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 <attribute name="REVISION_ID" value="P"/>
@@ -2907,8 +2935,19 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE" value="9V" x="40.8" y="68" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="Q1" library="aarf" package="SC-70" value="" x="16.3" y="42.4" smashed="yes" rot="MR270">
-<attribute name="NAME" x="13.788" y="42.468" size="0.8" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 <attribute name="VALUE" x="18.542" y="42.414" size="0.8" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
+</element>
+<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="9V" x="43" y="64" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="43.635" y="62.095" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="43.635" y="63.238" size="0.0254" layer="28" rot="MR0"/>
+</element>
+<element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="3V" x="49.8" y="67.7" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="50.435" y="65.795" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="50.435" y="66.938" size="0.0254" layer="28" rot="MR0"/>
+</element>
+<element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="3V" x="16.6" y="38.2" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="16.6" y="38.2" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="17.235" y="37.438" size="0.0254" layer="28" rot="MR0"/>
 </element>
 </elements>
 <signals>
@@ -3034,7 +3073,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="34.095" y="58.125" extent="1-16" drill="0.5"/>
 <via x="42.195" y="58.125" extent="1-16" drill="0.5"/>
 <via x="26.495" y="47.825" extent="1-16" drill="0.5"/>
-<via x="43.795" y="64.125" extent="1-16" drill="0.5"/>
+<via x="45.995" y="54.125" extent="1-16" drill="0.5"/>
 <via x="40.695" y="69.125" extent="1-16" drill="0.5"/>
 <via x="47.095" y="58.325" extent="1-16" drill="0.5"/>
 <via x="49.795" y="70.225" extent="1-16" drill="0.5"/>
@@ -3104,7 +3143,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="39.495" y="40.525" extent="1-16" drill="0.5"/>
 <via x="31.495" y="32.125" extent="1-16" drill="0.5"/>
 <via x="18.395" y="35.125" extent="1-16" drill="0.5"/>
-<via x="16.895" y="38.225" extent="1-16" drill="0.5"/>
+<via x="16.795" y="40.025" extent="1-16" drill="0.5"/>
 <via x="14.225" y="34.425" extent="1-16" drill="0.5"/>
 <wire x1="17.335" y1="42.385" x2="18.285" y2="42.385" width="0.35" layer="16"/>
 <wire x1="18.285" y1="42.385" x2="18.4" y2="42.5" width="0.35" layer="16"/>
@@ -3162,6 +3201,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="45.72" y1="64.008" x2="45.7025" y2="63.96" width="0.127" layer="16"/>
 <wire x1="45.593" y1="64.008" x2="45.593" y2="69.723" width="0.127" layer="16"/>
 <wire x1="45.593" y1="64.008" x2="45.7025" y2="63.96" width="0.127" layer="16"/>
+<contactref element="TP1" pad="TP"/>
+<wire x1="43" y1="64" x2="45.6625" y2="64" width="0.1524" layer="16"/>
+<wire x1="45.6625" y1="64" x2="45.7025" y2="63.96" width="0.1524" layer="16"/>
 </signal>
 <signal name="VDD">
 <contactref element="Q5" pad="3"/>
@@ -3176,6 +3218,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="15.235" y="43.066" extent="1-16" drill="0.2"/>
 <wire x1="15.235" y1="43.066" x2="16.1715" y2="44.0025" width="0.2" layer="1"/>
 <wire x1="16.1715" y1="44.0025" x2="23.40015" y2="44.0025" width="0.2" layer="1"/>
+<contactref element="TP2" pad="TP"/>
+<wire x1="49.8" y1="67.7" x2="49.8" y2="68.3" width="0.1524" layer="16"/>
+<wire x1="49.8" y1="68.3" x2="48.4" y2="69.7" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$27">
 <contactref element="C1" pad="1"/>
@@ -3268,6 +3313,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.02564375" y1="31.7" x2="9" y2="31.7" width="0.2" layer="16"/>
 <wire x1="9" y1="31.7" x2="8.02544375" y2="32.67455625" width="0.2" layer="16"/>
 <wire x1="8.02544375" y1="32.67455625" x2="8.02544375" y2="33.09288125" width="0.2" layer="16"/>
+<contactref element="TP3" pad="TP"/>
+<wire x1="15.632096875" y1="38.619890625" x2="16.180109375" y2="38.619890625" width="0.1524" layer="16"/>
+<wire x1="16.180109375" y1="38.619890625" x2="16.6" y2="38.2" width="0.1524" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

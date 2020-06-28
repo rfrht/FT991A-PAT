@@ -34,6 +34,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * Got rid of the "Grounding" in RF1 port; that's not necessary because... Above
 * Because of that... One less component (the 4.7 nF C2 cap)
 * Few text corrections
+* Added test pads for 9V, 3V and RF Switch
 
 24/Nov/2019 - Lite Edition
 * This revision features the bare minimum of the panadapter board: The TX signal RF switch and the Amplifier
