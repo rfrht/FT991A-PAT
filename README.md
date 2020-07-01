@@ -30,11 +30,12 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 
 27/Jun/2020 - Revision P, Lite Version
 * Repositioned the SDR Out port to right above the DC block cap
-* Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - It seems that the PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active
+* Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active. More details [here](https://github.com/rfrht/FT991A-PAT/wiki/appendix-pe4259-grounded-rf-port-when-port-is-not-selected)
 * Got rid of the "Grounding" in RF1 port; that's not necessary because... Above
 * Because of that... One less component (the 4.7 nF C2 cap)
 * Few text corrections
 * Added test pads for 9V, 3V and RF Switch
+* A voltage line re-routed to the board edge, less ground plane disturbance
 
 24/Nov/2019 - Lite Edition
 * This revision features the bare minimum of the panadapter board: The TX signal RF switch and the Amplifier
