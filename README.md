@@ -37,11 +37,13 @@ Test
 ### Changelog: (PY2RAF)
 
 28/Jun/2020 - Revision P, Full Version - Experimental
-* Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - It seems that the PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active
-* Got rid of the "Grounding" in RF1 port; that's not necessary because... Above
+* Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active
+* Got rid of the "Grounding" in RF1 port; that's not necessary because... Above. More details [here](https://github.com/rfrht/FT991A-PAT/wiki/appendix-pe4259-grounded-rf-port-when-port-is-not-selected)
 * Because of that... One less component (the 4.7 nF C2 cap)
 * Few component routing/placement for better ground plane rastnest
 * Updated Bandpass .ASC file for use with LTSpice; reflects SM0AOM Filter, with new values
+* Changed BPF to 56 pF in Cheb poles
+* Added test poings: 9V, 3V and BPF, Bypass and Disable in RF Switches (useful for troubleshooting)
 
 02/Nov/2019 - Revision O
 * Board redesign
