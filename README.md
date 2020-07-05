@@ -8,15 +8,15 @@ This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.git
 
 This design is compatible with both A and non-A FT-991 rigs.
 
-The final objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with no extra cables coming off the radio.
+The schematics are in Autodesk Eagle EDA format. Check the [Schematic](Schematic) folder.
 
-The schematics are in Autodesk Eagle EDA format. Check the Schematic folder.
+The objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with no extra cables coming off the radio.
 
 The [BOM (containing Digikey parts)](Design/bom-ft991-panadapter.csv) and a [few](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design/FT991-PAT_Bottom.jpg) [pictures](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design/FT991-PAT_Top.jpg) are available in Design folder.
 
 The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
 
-If you are interested in build your own, [click here to download the Gerber](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design/board-gerbers.zip) and order in your favourite PCB Fab (like [JLCPCB](https://jlcpcb.com/quote), super cheap and $0 shipping on first order).
+If you are interested in build your own, [click here to download the Gerber](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design/board-gerbers.zip) and order in your favourite PCB Fab (like [JLCPCB](https://jlcpcb.com/quote), super cheap, good quality and $0 shipping on first order).
 
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://github.com/rfrht/FT991A-PAT/wiki/installation#ft-991-if).
 
@@ -27,6 +27,15 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * IF is wide open, spanning the preselector filter range. With that comes also a problem: Very strong signals might spew images through the spectrum in your SDR. Use the RTL-SDR RX gain to counteract.
 
 ### Changelog: (PY2RAF)
+
+05/Jul/2020 - Revision P, Lite Version
+* Repositioned the SDR Out port to right above the DC block cap
+* Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active. More details [here](https://github.com/rfrht/FT991A-PAT/wiki/appendix-pe4259-grounded-rf-port-when-port-is-not-selected)
+* Got rid of the "Grounding" in RF1 port; that's not necessary because... Above
+* Because of that... One less component (the 4.7 nF C2 cap)
+* Few text corrections
+* Added test pads for 9V, 3V and RF Switch
+* A voltage line re-routed to the board edge, less ground plane disturbance
 
 24/Nov/2019 - Lite Edition
 * This revision features the bare minimum of the panadapter board: The TX signal RF switch and the Amplifier
