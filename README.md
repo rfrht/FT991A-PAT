@@ -28,7 +28,7 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 
 ### Changelog: (PY2RAF)
 
-27/Jun/2020 - Revision P, Lite Version
+05/Jul/2020 - Revision P, Lite Version
 * Repositioned the SDR Out port to right above the DC block cap
 * Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active. More details [here](https://github.com/rfrht/FT991A-PAT/wiki/appendix-pe4259-grounded-rf-port-when-port-is-not-selected)
 * Got rid of the "Grounding" in RF1 port; that's not necessary because... Above
