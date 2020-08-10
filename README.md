@@ -35,6 +35,13 @@ Procure the board
 Test
 
 ### Changelog: (PY2RAF)
+10/Aug/2020 - Revision Q, Full Version
+* Changed 1000pF caps to a 0805 footprint and an low ESL variant for better RF performance
+* A lot of re-routing; moving non-RF circuits to other parts of the board
+* Better ground plane
+* Better Silk-Screen Pin 1 markings for Power regulators
+* Larger footprint for 2SC5086
+* Labeled a few signals in Eagle file for better understanding of signal route/path
 
 28/Jun/2020 - Revision P, Full Version - Experimental
 * Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active

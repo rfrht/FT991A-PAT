@@ -14402,9 +14402,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<smd name="3" x="0" y="0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="1" x="-0.5" y="-0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="2" x="0.5" y="-0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0" y="0.7" dx="0.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="1" x="-0.5" y="-0.7" dx="0.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="0.5" y="-0.7" dx="0.6" dy="0.5" layer="1" rot="R90"/>
 <text x="-1.9" y="1" size="0.8128" layer="255">&gt;NAME</text>
 <text x="-0.1" y="-1.4" size="0.8128" layer="21" font="vector" align="center">&gt;VALUE</text>
 </package>
@@ -14418,20 +14418,17 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="1" y1="-0.6" x2="-0.9" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="-0.9" y1="-0.6" x2="-0.9" y2="0.6" width="0.127" layer="21"/>
-<text x="-1.5" y="-1" size="0.8" layer="21" font="vector" ratio="15" align="center">*</text>
+<text x="0.024" y="-0.238" size="0.8" layer="21" font="vector" ratio="15" align="center">*</text>
 </package>
-<package name="SOIC8" urn="urn:adsk.eagle:footprint:16321/1">
+<package name="SOIC8" urn="urn:adsk.eagle:footprint:16321/1" locally_modified="yes">
 <description>&lt;b&gt;SOIC-8&lt;/b&gt; CASE 751-07&lt;p&gt;
 Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF&lt;p&gt;
 &lt;b&gt;D (R-PDSO-G8)&lt;/b&gt;PLATIC SMALL-OUTLINE PACKAGE&lt;br&gt;
 Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
 <wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
 <wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
 <smd name="2" x="-0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
 <smd name="7" x="-0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
 <smd name="1" x="-1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
@@ -14450,6 +14447,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<wire x1="-1.905" y1="1.397" x2="-1.905" y2="-1.143" width="0.127" layer="21"/>
 </package>
 <package name="SQCB">
 <smd name="P$1" x="-1.5" y="0" dx="3.33" dy="1.3" layer="1" rot="R90"/>
@@ -15777,7 +15775,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="DOCUMENT_ID" value="PAT-991A"/>
 <attribute name="PROJECT_INFO" value="Yaesu FT-991A Panadapter with Signal Control"/>
 <attribute name="PROJECT_NAME" value="FT-991A PAT &amp; SDR"/>
-<attribute name="REVISION_ID" value="P"/>
+<attribute name="REVISION_ID" value="Q"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -15786,15 +15784,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </class>
 </classes>
 <parts>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1000pF"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="100kΩ"/>
 <part name="Q7" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="?20*" device="SST" package3d_urn="urn:adsk.eagle:package:28534/2" technology="1" value="J310">
 <attribute name="SPICEPREFIX" value="J"/>
 </part>
 <part name="Q8" library="aarf" deviceset="2SC5086" device="" value="5086"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1000pF"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1000pF"/>
 <part name="GND11" library="supply1" deviceset="GNDA" device=""/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="220Ω"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="0.1µF"/>
@@ -15819,7 +15817,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="DIS"/>
 <part name="PAD3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="TX9"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1000pF"/>
 <part name="13.8V" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="13.8V"/>
 <part name="L2" library="rcl-modified" deviceset="L-EU" device="" value="BLM21"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="F1"/>
@@ -15831,7 +15829,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="Q6" library="aarf" deviceset="PE4259" device="" value="PE4259"/>
 <part name="Q10" library="aarf" deviceset="PE4259" device="" value="PE4259"/>
 <part name="GND21" library="supply1" deviceset="GNDA" device=""/>
-<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="1nF"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1000pF"/>
 <part name="BYP" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="BYP"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
 <part name="L6" library="rcl-modified" deviceset="L-EU" device="" value="BLM21"/>
@@ -15862,9 +15860,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="Q1" library="aarf" deviceset="PE4259" device="" value="PE4259"/>
 <part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
-<part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
-<part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
-<part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="BPF"/>
+<part name="D" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
+<part name="B" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
+<part name="F" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="BPF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16126,15 +16124,15 @@ with Signal Control</text>
 <attribute name="NAME" x="179.07" y="229.87" size="1.778" layer="95" rot="R270"/>
 <attribute name="TP_SIGNAL_NAME" x="176.53" y="227.33" size="1.778" layer="97" rot="R270"/>
 </instance>
-<instance part="TP3" gate="G$1" x="71.12" y="106.68" smashed="yes">
+<instance part="D" gate="G$1" x="71.12" y="106.68" smashed="yes">
 <attribute name="NAME" x="69.85" y="107.95" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="72.39" y="105.41" size="1.778" layer="97"/>
 </instance>
-<instance part="TP4" gate="G$1" x="248.92" y="104.14" smashed="yes" rot="R180">
+<instance part="B" gate="G$1" x="248.92" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="250.19" y="102.87" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="247.65" y="105.41" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="TP5" gate="G$1" x="81.28" y="63.5" smashed="yes" rot="R180">
+<instance part="F" gate="G$1" x="81.28" y="63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="82.55" y="62.23" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="80.01" y="64.77" size="1.778" layer="97" rot="R180"/>
 </instance>
@@ -16311,7 +16309,7 @@ with Signal Control</text>
 <wire x1="83.82" y1="116.84" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="FJ310" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="Q7" gate="G$1" pin="D"/>
@@ -16324,7 +16322,7 @@ with Signal Control</text>
 <junction x="241.3" y="177.8"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="F5086" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="254" y1="175.26" x2="254" y2="177.8" width="0.1524" layer="91"/>
@@ -16339,7 +16337,7 @@ with Signal Control</text>
 <wire x1="261.62" y1="182.88" x2="261.62" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="9V" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="198.12" x2="261.62" y2="193.04" width="0.1524" layer="91"/>
@@ -16360,7 +16358,7 @@ with Signal Control</text>
 <wire x1="124.46" y1="226.06" x2="124.46" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="3V" class="0">
 <segment>
 <wire x1="139.7" y1="99.06" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="109.22" x2="139.7" y2="116.84" width="0.1524" layer="91"/>
@@ -16468,7 +16466,7 @@ with Signal Control</text>
 <wire x1="358.14" y1="144.78" x2="360.68" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="BYP" class="0">
 <segment>
 <wire x1="332.74" y1="175.26" x2="335.28" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
@@ -16482,12 +16480,12 @@ with Signal Control</text>
 <wire x1="248.92" y1="111.76" x2="162.56" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="111.76" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="149.86" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="TP4" gate="G$1" pin="TP"/>
+<pinref part="B" gate="G$1" pin="TP"/>
 <wire x1="248.92" y1="106.68" x2="248.92" y2="111.76" width="0.1524" layer="91"/>
 <junction x="248.92" y="111.76"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="FINAL" class="0">
 <segment>
 <pinref part="Q10" gate="G$1" pin="RFC"/>
 <pinref part="C13" gate="G$1" pin="1"/>
@@ -16522,7 +16520,7 @@ with Signal Control</text>
 <pinref part="L1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$46" class="0">
+<net name="BPF" class="0">
 <segment>
 <pinref part="Q4" gate="G$1" pin="CTRL"/>
 <wire x1="127" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
@@ -16534,12 +16532,12 @@ with Signal Control</text>
 <pinref part="Q9" gate="G$1" pin="CTRL"/>
 <wire x1="292.1" y1="73.66" x2="292.1" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="TP5" gate="G$1" pin="TP"/>
+<pinref part="F" gate="G$1" pin="TP"/>
 <wire x1="81.28" y1="66.04" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
 <junction x="81.28" y="73.66"/>
 </segment>
 </net>
-<net name="N$47" class="0">
+<net name="IFIN" class="0">
 <segment>
 <wire x1="88.9" y1="111.76" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="RFC"/>
@@ -16577,14 +16575,14 @@ with Signal Control</text>
 <junction x="114.3" y="170.18"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="AMPOUT" class="0">
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="Q10" gate="G$1" pin="RF2"/>
 <wire x1="276.86" y1="149.86" x2="294.64" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="IFTAP" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="127" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
@@ -16592,7 +16590,7 @@ with Signal Control</text>
 <wire x1="27.94" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="DIS" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
@@ -16600,7 +16598,7 @@ with Signal Control</text>
 <wire x1="43.18" y1="99.06" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="CTRL"/>
 <wire x1="43.18" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="D" gate="G$1" pin="TP"/>
 <wire x1="71.12" y1="104.14" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
 <junction x="71.12" y="99.06"/>
 </segment>
@@ -16628,7 +16626,7 @@ with Signal Control</text>
 <pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="AMPIN" class="0">
 <segment>
 <pinref part="Q6" gate="G$1" pin="RF2"/>
 <wire x1="193.04" y1="149.86" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
@@ -16637,7 +16635,7 @@ with Signal Control</text>
 <wire x1="198.12" y1="157.48" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="AMPBYP" class="0">
 <segment>
 <pinref part="Q10" gate="G$1" pin="RF1"/>
 <wire x1="294.64" y1="139.7" x2="289.56" y2="139.7" width="0.1524" layer="91"/>
@@ -16672,7 +16670,7 @@ with Signal Control</text>
 <junction x="218.44" y="68.58"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="BPFOUT" class="0">
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -16685,7 +16683,7 @@ with Signal Control</text>
 <wire x1="251.46" y1="63.5" x2="266.7" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="BPFIN" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="Q4" gate="G$1" pin="RF1"/>
