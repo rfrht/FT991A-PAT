@@ -36,11 +36,12 @@ Test
 
 ### Changelog: (PY2RAF)
 10/Aug/2020 - Revision Q, Full Version
-* Changed 1000pF caps to a 0805 footprint and an low ESL variant for better RF performance
+* Changed 1000pF caps to a 0805 footprint and an _low ESL_ variant for better RF performance
 * A lot of re-routing; moving non-RF circuits to other parts of the board
 * Better ground plane
 * Better Silk-Screen Pin 1 markings for Power regulators
 * Larger footprint for 2SC5086
+* Took advantage of J310 [source & drain interchangeability](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/transistor-switch-jfet/) and rerouted component for better placement and signal routing.
 * Labeled a few signals in Eagle file for better understanding of signal route/path
 
 28/Jun/2020 - Revision P, Full Version - Experimental
