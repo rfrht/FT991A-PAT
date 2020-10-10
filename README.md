@@ -32,7 +32,8 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * Larger footprint for 2SC5086
 * Moving 0.1µF transistor caps away from RF section
 * Lots of re-routing
-* Changing 1 nF caps to Low ESL type and 0805 footprint for better RF performance
+* Changing 1000 pF decoupling caps to _Low ESL_ type and 0805 footprint for better RF performance
+* Took advantage of J310 [source & drain interchangeability](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/transistor-switch-jfet/) and rerouted component for better placement and signal routing.
 * Labeled a few signals in Eagle file for better understanding of signal route/path
 
 05/Jul/2020 - Revision P, Lite Version
