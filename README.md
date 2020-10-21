@@ -35,6 +35,8 @@ This project is **also** compatible with the non-A model FT-991. The only differ
 * Changing 1000 pF decoupling caps to _Low ESL_ type and 0805 footprint for better RF performance
 * Took advantage of J310 [source & drain interchangeability](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/transistor-switch-jfet/) and rerouted component for better placement and signal routing.
 * Labeled a few signals in Eagle file for better understanding of signal route/path
+* Changed two resistors in Amplifier stage for extra 0.3 dB gain - and updated BOM
+* Added ground pad
 
 05/Jul/2020 - Revision P, Lite Version
 * Repositioned the SDR Out port to right above the DC block cap
