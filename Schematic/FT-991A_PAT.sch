@@ -15562,11 +15562,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="0.1µF"/>
 <part name="GND10" library="supply1" deviceset="GNDA" device=""/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="0.1µF"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="39kΩ"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="10kΩ"/>
 <part name="GND19" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND13" library="supply1" deviceset="GNDA" device=""/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="100Ω"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="220Ω"/>
 <part name="GND16" library="supply1" deviceset="GNDA" device=""/>
 <part name="X3" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="SDR_OUT"/>
 <part name="GND22" library="supply1" deviceset="GNDA" device=""/>
@@ -15597,6 +15597,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="3V"/>
 <part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="3V"/>
 <part name="Q7" library="aarf" deviceset="JFET-N-SOT23-3" device="" value="J310"/>
+<part name="GND" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="GND"/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15766,6 +15768,10 @@ with Signal Control - Light Ed</text>
 <attribute name="NAME" x="254" y="96.52" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="254" y="99.06" size="1.778" layer="96" rot="MR180"/>
 </instance>
+<instance part="GND" gate="G$1" x="50.8" y="170.18" smashed="yes">
+<attribute name="VALUE" x="49.657" y="166.878" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="58.42" y="160.02" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -15886,6 +15892,12 @@ with Signal Control - Light Ed</text>
 <pinref part="GND1" gate="1" pin="GNDA"/>
 <wire x1="167.64" y1="96.52" x2="172.72" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="96.52" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND" gate="G$1" pin="P"/>
+<pinref part="GND3" gate="1" pin="GNDA"/>
+<wire x1="53.34" y1="170.18" x2="58.42" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="170.18" x2="58.42" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="9VJ310" class="0">
