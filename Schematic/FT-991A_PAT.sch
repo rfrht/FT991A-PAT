@@ -15729,11 +15729,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="0.1µF"/>
 <part name="GND10" library="supply1" deviceset="GNDA" device=""/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="0.1µF"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="39kΩ"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="10kΩ"/>
 <part name="GND19" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND13" library="supply1" deviceset="GNDA" device=""/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="1kΩ"/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="100Ω"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216" package3d_urn="urn:adsk.eagle:package:23557/2" value="220Ω"/>
 <part name="GND16" library="supply1" deviceset="GNDA" device=""/>
 <part name="X3" library="adafruit" deviceset="ANTENNA_U.FL" device="" value="SDR_OUT"/>
 <part name="GND22" library="supply1" deviceset="GNDA" device=""/>
@@ -15794,6 +15794,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="D" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="B" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="F" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="BPF"/>
+<part name="GND" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="GND"/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15823,7 +15825,7 @@ with Signal Control</text>
 <wire x1="287.02" y1="129.54" x2="287.02" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="287.02" y1="203.2" x2="203.2" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <text x="205.74" y="200.66" size="1.778" layer="97">Low Noise Amplifier</text>
-<text x="30.48" y="218.44" size="1.778" layer="97">Power Regulators</text>
+<text x="71.12" y="248.92" size="1.778" layer="97">Power Regulators</text>
 <text x="379.984" y="5.08" size="2.54" layer="94">&gt;REVISION_ID</text>
 </plain>
 <instances>
@@ -16067,6 +16069,10 @@ with Signal Control</text>
 <attribute name="NAME" x="82.55" y="62.23" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="80.01" y="64.77" size="1.778" layer="97" rot="R180"/>
 </instance>
+<instance part="GND" gate="G$1" x="30.48" y="226.06" smashed="yes">
+<attribute name="VALUE" x="29.337" y="222.758" size="1.778" layer="96"/>
+</instance>
+<instance part="GND7" gate="1" x="45.72" y="215.9" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -16240,6 +16246,12 @@ with Signal Control</text>
 <pinref part="GND3" gate="1" pin="GNDA"/>
 <wire x1="73.66" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="116.84" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND" gate="G$1" pin="P"/>
+<wire x1="33.02" y1="226.06" x2="45.72" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GNDA"/>
+<wire x1="45.72" y1="226.06" x2="45.72" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="9VJ310" class="0">
