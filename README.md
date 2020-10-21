@@ -24,8 +24,7 @@ If you are interested in build your own, click [here for Gerber (the PCB layout 
 This project is **also** compatible with the non-A model FT-991. The only difference is that the [FT-991 signal pick-up should be between RF switches Q1088 Pin 5 and Q1102 Pin 5](https://raw.githubusercontent.com/rfrht/FT991A-PAT/master/Design-tap-point.png).
 
 ### Notes:
-
-* Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
+* Board (5 samples) costs $2 in [jlcpcb.com](https://jlcpcb.com/quote).
 * The [parts](Design/bom-ft991-panadapter.csv) costs around $24 in Digi-Key.
 * IF is wide open, spanning the preselector filter range. With that comes also a problem: Very strong signals might spew images through the spectrum in your SDR. Use the RTL-SDR RX gain to counteract.
 * The selectable BPF **now works!!**
@@ -35,16 +34,18 @@ Procure the board
 Test
 
 ### Changelog: (PY2RAF)
-10/Aug/2020 - Revision Q, Full Version
+21/Oct/2020 - Revision Q, Full Version
 * Changed 1000pF caps to a 0805 footprint and an _low ESL_ variant for better RF performance
 * A lot of re-routing; moving non-RF circuits to other parts of the board
 * Better ground plane
 * Better Silk-Screen Pin 1 markings for Power regulators
-* Larger footprint for 2SC5086
+* Larger footprint for 2SC5086 (that was _painful_ to solder)
 * Took advantage of J310 [source & drain interchangeability](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/transistor-switch-jfet/) and rerouted component for better placement and signal routing.
 * Labeled a few signals in Eagle file for better understanding of signal route/path
+* Changed two resistors in Amplifier stage for extra 0.3 dB gain - and updated BOM
+* Added ground pad
 
-28/Jun/2020 - Revision P, Full Version - Experimental
+28/Jun/2020 - Revision P, Full Version
 * Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active
 * Got rid of the "Grounding" in RF1 port; that's not necessary because... Above. More details [here](https://github.com/rfrht/FT991A-PAT/wiki/appendix-pe4259-grounded-rf-port-when-port-is-not-selected)
 * Because of that... One less component (the 4.7 nF C2 cap)
