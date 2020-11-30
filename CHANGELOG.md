@@ -10,6 +10,10 @@
 * Labeled a few signals in Eagle file for better understanding of signal route/path
 * Changed two resistors in Amplifier stage for extra 0.3 dB gain - and updated BOM
 * Added ground pad
+* Larger ground exposed ground pad near at the screw
+* Changed pad for RF components to a rounded layout
+* Enlarged the RF wire signal, in order to reduce the internal signal impedance
+* Better component silk screen
 
 05/Jul/2020 - Revision P, Lite Version
 * Repositioned the SDR Out port to right above the DC block cap
