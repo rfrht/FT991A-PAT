@@ -10,6 +10,10 @@
 * Labeled a few signals in Eagle file for better understanding of signal route/path
 * Changed two resistors in Amplifier stage for extra 0.3 dB gain - and updated BOM
 * Added ground pad
+* Larger ground exposed ground pad near at the screw
+* Changed pad for RF components to a rounded layout
+* Enlarged the RF wire signal, in order to reduce the internal signal impedance
+* Better component silk screen
 
 28/Jun/2020 - Revision P, Full Version
 * Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active
