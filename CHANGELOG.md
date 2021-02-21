@@ -1,6 +1,6 @@
 # Changelog
 
-10/Aug/2020 - Revision Q, Lite Version
+21/Feb/2021 - Revision Q, Lite Version
 * Better Silk-Screen Pin 1 markings for Power regulators
 * Larger footprint for 2SC5086
 * Moving 0.1µF transistor caps away from RF section
@@ -13,7 +13,8 @@
 * Larger ground exposed ground pad near at the screw
 * Changed pad for RF components to a rounded layout
 * Enlarged the RF wire signal, in order to reduce the internal signal impedance
-* Better component silk screen
+* Improved component silk screen, for better component placement cue (and get rid of manual silk cues)
+* Removed components from the board lid part, moved to larger board part
 
 05/Jul/2020 - Revision P, Lite Version
 * Repositioned the SDR Out port to right above the DC block cap

@@ -224,42 +224,6 @@
 <text x="-1.27" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="1812">
-<description>Multilayer SMD</description>
-<wire x1="-2.3" y1="0" x2="2.4" y2="0" width="0.127" layer="51"/>
-<wire x1="-2.8004" y1="1.7113" x2="2.8004" y2="1.7113" width="0.127" layer="21"/>
-<wire x1="2.8004" y1="1.7113" x2="2.8004" y2="-1.7113" width="0.127" layer="51"/>
-<wire x1="2.8004" y1="-1.7113" x2="-2.8004" y2="-1.7113" width="0.127" layer="21"/>
-<wire x1="-2.8004" y1="-1.7113" x2="-2.8004" y2="1.7113" width="0.127" layer="51"/>
-<wire x1="-1.7" y1="0" x2="1.7" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.07" layer="21"/>
-<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.07" layer="51"/>
-<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.07" layer="21"/>
-<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.07" layer="51"/>
-<smd name="1" x="-2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
-<smd name="2" x="2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
-<text x="-1.8575" y="1.905" size="0.6096" layer="27">&gt;VALUE</text>
-<text x="-1.8575" y="-2.54" size="0.6096" layer="25">&gt;NAME</text>
-<rectangle x1="-0.9" y1="-0.3" x2="0.9" y2="0.3" layer="21"/>
-<rectangle x1="-0.6" y1="-0.3" x2="0.5" y2="0.3" layer="21"/>
-</package>
-<package name="R1206">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.397" y="1.143" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
-<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-</package>
 </packages>
 <symbols>
 <symbol name="U.FL">
@@ -271,14 +235,6 @@ chip</description>
 <pin name="GND@1" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
 <text x="-2.54" y="3.302" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="FUSE">
-<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94" curve="-126.869898"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
-<text x="-3.81" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="-5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -293,32 +249,6 @@ chip</description>
 <connect gate="G$1" pin="GND@0" pad="1"/>
 <connect gate="G$1" pin="GND@1" pad="2"/>
 <connect gate="G$1" pin="SIGNAL" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PTCFUSE" prefix="F" uservalue="yes">
-<description>PTC fuses, resettable thermistors</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="-1812" package="1812">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1206" package="R1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1113,6 +1043,24 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <text x="0.043" y="-1.284" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-0.319" y1="-0.7" x2="-0.119" y2="0.7" layer="21"/>
 </package>
+<package name="FUSE-1206">
+<description>Footprint 1206</description>
+<wire x1="-0.913" y1="0.8" x2="0.888" y2="0.8" width="0.1524" layer="21"/>
+<wire x1="-0.913" y1="-0.8" x2="0.888" y2="-0.8" width="0.1524" layer="21"/>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1" roundness="50"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1" roundness="50"/>
+<text x="0" y="1.651" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.651" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-0.8763" x2="-0.9009" y2="0.8738" layer="21"/>
+<rectangle x1="0.889" y1="-0.8763" x2="1.6391" y2="0.8738" layer="21"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+<wire x1="0" y1="0" x2="-0.635" y2="0" width="0.127" layer="21" curve="-180"/>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.127" layer="21" curve="-180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NPN">
@@ -1234,6 +1182,20 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <text x="-2.5654" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="FUSE">
+<wire x1="-2.794" y1="-0.762" x2="2.794" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="2.794" y1="0.762" x2="-2.794" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.794" y1="-0.762" x2="2.794" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="0.762" x2="-2.794" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="92.795489"/>
+<wire x1="1.524" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="92.795489"/>
+<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1420,6 +1382,22 @@ Features
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE-1206" prefix="F">
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FUSE-1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2471,7 +2449,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="DOCUMENT_ID" value="PAT-991A"/>
 <attribute name="PROJECT_INFO" value="Yaesu FT-991A Panadapter with Signal Control"/>
 <attribute name="PROJECT_NAME" value="FT-991A PAT &amp; SDR"/>
-<attribute name="REVISION_ID" value="P"/>
+<attribute name="REVISION_ID" value="Q"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -2517,7 +2495,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="Q5" library="aarf" deviceset="NCP553" device=""/>
-<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="50mA"/>
+<part name="F1" library="aarf" deviceset="FUSE-1206" device="" value="50mA"/>
 <part name="Q2" library="aarf" deviceset="MC78L" device="" technology="09ABDR2GOSCT"/>
 <part name="Q1" library="aarf" deviceset="PE4259" device="" value="PE4259"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
@@ -2667,7 +2645,7 @@ with Signal Control - Light Ed</text>
 <attribute name="VALUE" x="161.036" y="188.214" size="1.778" layer="96"/>
 <attribute name="NAME" x="163.83" y="190.5" size="1.778" layer="95"/>
 </instance>
-<instance part="F1" gate="G$1" x="68.58" y="180.34" smashed="yes">
+<instance part="F1" gate="G$1" x="68.58" y="182.88" smashed="yes">
 <attribute name="VALUE" x="64.77" y="184.15" size="1.778" layer="96"/>
 <attribute name="NAME" x="67.31" y="187.96" size="1.778" layer="95"/>
 </instance>
