@@ -1,11 +1,16 @@
 # Changelog
 
-21/Oct/2020 - Revision Q, Full Version
-* Changed 1000pF caps to a 0805 footprint and an _low ESL_ variant for better RF performance
-* A lot of re-routing; moving non-RF circuits to other parts of the board
-* Better ground plane
+14/Apr/2021 - Revision R, Full Version
+* Removed C6 - That's for DC blocking and no DC is present at this point
+* Removed R6, R9 - J310 chain connected directly to +9V lines, 2SC5086 connected directly to 3V line.
+* Cleared some lines away away from the PCB border, too close to PCB edge.
+
+21/Feb/2021 - Revision Q, Full Version
 * Better Silk-Screen Pin 1 markings for Power regulators
-* Larger footprint for 2SC5086 (that was _painful_ to solder)
+* Larger footprint for 2SC5086
+* Moving 0.1µF transistor caps away from RF section
+* Lots of re-routing
+* Changing 1000 pF decoupling caps to _Low ESL_ type and 0805 footprint for better RF performance
 * Took advantage of J310 [source & drain interchangeability](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/transistor-switch-jfet/) and rerouted component for better placement and signal routing.
 * Labeled a few signals in Eagle file for better understanding of signal route/path
 * Changed two resistors in Amplifier stage for extra 0.3 dB gain - and updated BOM
@@ -13,16 +18,22 @@
 * Larger ground exposed ground pad near at the screw
 * Changed pad for RF components to a rounded layout
 * Enlarged the RF wire signal, in order to reduce the internal signal impedance
-* Better component silk screen
+* Improved component silk screen, for better component placement cue (and get rid of manual silk cues)
+* Removed components from the board lid part, moved to larger board part
 
-28/Jun/2020 - Revision P, Full Version
-* Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active
-* Got rid of the "Grounding" in RF1 port; that's not necessary because... Above. More details [here](https://github.com/rfrht/FT991A-PAT/wiki/appendix-pe4259-grounded-rf-port-when-port-is-not-selected)
+05/Jul/2020 - Revision P, Full Version
+* Repositioned the SDR Out port to right above the DC block cap
+* Changed RF switch layout - now IF input uses the RF switch's `RFC` port instead of RF2 - The PE4259's `RF{N}` port gets in a grounded state instead of just reflecting out the data when the port is not selected/active. More details [here](https://github.com/rfrht/FT991A-PAT/wiki/appendix-pe4259-grounded-rf-port-when-port-is-not-selected)
+* Got rid of the "Grounding" in RF1 port; that's not necessary because... Above
 * Because of that... One less component (the 4.7 nF C2 cap)
-* Few component routing/placement for better ground plane rastnest
-* Updated Bandpass .ASC file for use with LTSpice; reflects SM0AOM Filter, with new values
-* Changed BPF to 56 pF in Cheb poles
-* Added test poings: 9V, 3V and BPF, Bypass and Disable in RF Switches (useful for troubleshooting)
+* Few text corrections
+* Added test pads for 9V, 3V and RF Switch
+* A voltage line re-routed to the board edge, less ground plane disturbance
+
+24/Nov/2019 - Full Edition
+* This revision features the bare minimum of the panadapter board: The TX signal RF switch and the Amplifier
+* Greatly simplified and cheaper design
+* More gain (due to less insertion loss of the RF switch chain that existed in previous revisions)
 
 02/Nov/2019 - Revision O
 * Board redesign
