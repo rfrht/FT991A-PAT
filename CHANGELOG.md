@@ -1,5 +1,10 @@
 # Changelog
 
+14/Apr/2021 - Revision R, Full Version
+* Removed C6 - That's for DC blocking and no DC is present at this point
+* Removed R6, R9 - J310 chain connected directly to +9V lines, 2SC5086 connected directly to 3V line.
+* Cleared some lines away away from the PCB border, too close to PCB edge.
+
 21/Feb/2021 - Revision Q, Lite Version
 * Better Silk-Screen Pin 1 markings for Power regulators
 * Larger footprint for 2SC5086
