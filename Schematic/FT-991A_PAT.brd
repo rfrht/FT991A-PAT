@@ -1630,7 +1630,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </library>
 </libraries>
 <attributes>
-<attribute name="REVISION_ID" value="Q"/>
+<attribute name="REVISION_ID" value="R"/>
 </attributes>
 <variantdefs>
 </variantdefs>
