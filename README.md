@@ -4,21 +4,17 @@
 
 ## Yaesu FT-991/A Custom Panoramic Adapter Buffered TAP Board for external SDR / Spectrum Analyser
 
-This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/PAT-Light/Design/FT991-PAT_Installed.jpg) FT-991/A Panadapter board with a high impedance IF tap, in order to disturb to a minimum the radio's IF signal.
+This project is a remix of OE2DOR's [perfect and neatly crafted](https://raw.githubusercontent.com/Lightning1984/FT991A-PAT/PAT-Light/Design/FT991-PAT_Installed.jpg) FT-991/A Panadapter board with a high impedance IF tap, in order to disturb to a [minimum](https://youtu.be/yeTeMTJRBIg) the radio sensitivity.
 
 This design is compatible with both A and non-A FT-991 transceivers.
 
-The schematics are in Autodesk Eagle EDA format. Check the [Schematic](Schematic) folder.
-
 The objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with no extra cables coming off the radio.
 
-The [BOM (containing Digikey parts)](Design/bom-ft991-panadapter.csv) and a [few](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design/FT991-PAT_Bottom.jpg) [pictures](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design/FT991-PAT_Top.jpg) are available in Design folder.
+The schematics are in Autodesk Eagle EDA format. Check the [Schematic](Schematic) folder. The [Design](Design) folder contains some ancillary material.
 
-The project tracking, evolution and discussion is on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/)
+The project genesis and some discussion are logged on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/). If you need to ask questions, either file a Github Issue (preferred) or use the QRZ Forum.
 
-If you are interested in build your own, [click here to download the Gerber](https://raw.githubusercontent.com/rfrht/FT991A-PAT/PAT-Light/Design/board-gerbers.zip) and order in your favourite PCB Fab (like [JLCPCB](https://jlcpcb.com/quote), super cheap, good quality and $0 shipping on first order).
-
-This project is **also** compatible with the non-A model FT-991. Check the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki), section **Install**.
+If you are interested in build your own, [click here to download the Gerber](Design/bom-ft991-panadapter.csv) and order in your favourite PCB Fab (like [JLCPCB](https://jlcpcb.com/quote), super cheap, good quality and $0 shipping on first order). **Ensure to read the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)**.
 
 ### Notes:
 

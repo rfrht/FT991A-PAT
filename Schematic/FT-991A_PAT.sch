@@ -921,10 +921,10 @@ DIN A3, landscape with location and doc. field</description>
 <text x="0" y="-1.5" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="SC-82AB">
-<smd name="4" x="-0.6" y="0.9" dx="0.6" dy="0.8" layer="1"/>
-<smd name="3" x="0.6" y="0.9" dx="0.6" dy="0.8" layer="1"/>
-<smd name="1" x="-0.6" y="-0.9" dx="0.6" dy="0.8" layer="1"/>
-<smd name="2" x="0.6" y="-0.9" dx="0.8" dy="0.8" layer="1"/>
+<smd name="4" x="-0.6" y="0.9" dx="0.6" dy="1.016" layer="1"/>
+<smd name="3" x="0.6" y="0.9" dx="0.6" dy="1.016" layer="1"/>
+<smd name="1" x="-0.6" y="-0.9" dx="0.6" dy="1.016" layer="1"/>
+<smd name="2" x="0.6" y="-0.9" dx="0.8" dy="1.016" layer="1"/>
 <text x="0" y="-1.9" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <wire x1="-0.9" y1="0.6" x2="1" y2="0.6" width="0.127" layer="21"/>
 <wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="21"/>
@@ -1037,8 +1037,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <wire x1="-0.119" y1="0" x2="0.481" y2="0.4" width="0.1524" layer="21"/>
 <wire x1="0.481" y1="0.4" x2="0.481" y2="-0.4" width="0.1524" layer="21"/>
 <wire x1="0.481" y1="-0.4" x2="-0.119" y2="0" width="0.1524" layer="21"/>
-<smd name="C" x="-1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
-<smd name="A" x="1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="C" x="-1.354" y="0" dx="1.016" dy="0.635" layer="1"/>
+<smd name="A" x="1.481" y="0" dx="1.016" dy="0.635" layer="1"/>
 <text x="0.043" y="1.381" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0.043" y="-1.284" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-0.319" y1="-0.7" x2="-0.119" y2="0.7" layer="21"/>
@@ -2944,7 +2944,7 @@ with Signal Control - Light Ed</text>
 <wire x1="147.32" y1="53.34" x2="147.32" y2="40.64" width="0.1524" layer="94"/>
 <wire x1="147.32" y1="40.64" x2="116.84" y2="40.64" width="0.1524" layer="94"/>
 <wire x1="116.84" y1="40.64" x2="116.84" y2="53.34" width="0.1524" layer="94"/>
-<circle x="175.26" y="88.9" radius="2.54" width="0.1524" layer="94"/>
+<circle x="165.1" y="73.66" radius="2.54" width="0.1524" layer="94"/>
 <circle x="106.68" y="83.82" radius="15.450215625" width="0.1524" layer="94"/>
 <wire x1="96.52" y1="93.98" x2="116.84" y2="73.66" width="0.1524" layer="94"/>
 <wire x1="96.52" y1="73.66" x2="116.84" y2="93.98" width="0.1524" layer="94"/>
@@ -3016,9 +3016,9 @@ Power Management</text>
 <wire x1="91.44" y1="149.86" x2="91.44" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="91.44" y1="200.66" x2="182.88" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <text x="127.762" y="174.244" size="3.81" layer="97">Main Unit</text>
-<wire x1="236.22" y1="66.04" x2="236.22" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="149.86" y1="129.54" x2="149.86" y2="66.04" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="149.86" y1="66.04" x2="236.22" y2="66.04" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="236.22" y1="48.26" x2="236.22" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="149.86" y1="129.54" x2="149.86" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="149.86" y1="48.26" x2="236.22" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <text x="198.12" y="111.76" size="3.81" layer="97" align="center">Panadapter Board
 RF Stage</text>
 <text x="228.6" y="134.62" size="1.778" layer="94">IF input</text>
@@ -3104,10 +3104,11 @@ USBDM (-)</text>
 <text x="200.406" y="80.264" size="2.54" layer="94" align="center">High-Z Amplifier</text>
 <wire x1="226.06" y1="142.24" x2="226.06" y2="78.74" width="0.1524" layer="94"/>
 <wire x1="226.06" y1="78.74" x2="215.9" y2="78.74" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="94"/>
-<wire x1="180.34" y1="91.44" x2="182.88" y2="86.36" width="0.1524" layer="94"/>
-<wire x1="180.34" y1="86.36" x2="182.88" y2="91.44" width="0.1524" layer="94"/>
-<wire x1="167.64" y1="83.82" x2="175.26" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="172.72" y1="78.74" x2="165.1" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="165.1" y1="71.12" x2="165.1" y2="58.42" width="0.1524" layer="94"/>
+<wire x1="157.48" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="94"/>
+<wire x1="160.02" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="94"/>
+<wire x1="162.56" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">

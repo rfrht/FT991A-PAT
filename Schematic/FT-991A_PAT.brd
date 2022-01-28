@@ -209,8 +209,8 @@ LITE VERSION</text>
 <text x="42" y="36.5" size="1.3" layer="21" font="vector" ratio="15" rot="R180" align="center">All flaws by:</text>
 <text x="14.7" y="39.8" size="1.3" layer="29" font="vector" ratio="15" rot="R180" align="center">Light
 Ed</text>
-<text x="50.6" y="66" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">3V</text>
-<text x="46.5" y="62.9" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">9V</text>
+<text x="50.3" y="65.7" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">3V</text>
+<text x="48.7" y="62.9" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">9V</text>
 <text x="24.6" y="38" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">sw</text>
 <text x="42" y="34.9" size="1.3" layer="29" font="vector" ratio="15" rot="R180" align="center">PY2RAF</text>
 <circle x="9.4" y="15.1" radius="1.3038375" width="2.54" layer="29"/>
@@ -299,10 +299,10 @@ Ed</text>
 <text x="0" y="-1.5" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="SC-82AB">
-<smd name="4" x="-0.6" y="0.9" dx="0.6" dy="0.8" layer="1"/>
-<smd name="3" x="0.6" y="0.9" dx="0.6" dy="0.8" layer="1"/>
-<smd name="1" x="-0.6" y="-0.9" dx="0.6" dy="0.8" layer="1"/>
-<smd name="2" x="0.6" y="-0.9" dx="0.8" dy="0.8" layer="1"/>
+<smd name="4" x="-0.6" y="0.9" dx="0.6" dy="1.016" layer="1"/>
+<smd name="3" x="0.6" y="0.9" dx="0.6" dy="1.016" layer="1"/>
+<smd name="1" x="-0.6" y="-0.9" dx="0.6" dy="1.016" layer="1"/>
+<smd name="2" x="0.6" y="-0.9" dx="0.8" dy="1.016" layer="1"/>
 <text x="0" y="-1.9" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <wire x1="-0.9" y1="0.6" x2="1" y2="0.6" width="0.127" layer="21"/>
 <wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="21"/>
@@ -415,8 +415,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <wire x1="-0.119" y1="0" x2="0.481" y2="0.4" width="0.1524" layer="21"/>
 <wire x1="0.481" y1="0.4" x2="0.481" y2="-0.4" width="0.1524" layer="21"/>
 <wire x1="0.481" y1="-0.4" x2="-0.119" y2="0" width="0.1524" layer="21"/>
-<smd name="C" x="-1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
-<smd name="A" x="1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="C" x="-1.354" y="0" dx="1.016" dy="0.635" layer="1"/>
+<smd name="A" x="1.481" y="0" dx="1.016" dy="0.635" layer="1"/>
 <text x="0.043" y="1.381" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0.043" y="-1.284" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-0.319" y1="-0.7" x2="-0.119" y2="0.7" layer="21"/>
@@ -728,9 +728,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE" value="9V" x="40.8" y="68" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="Q1" library="aarf" package="SC-70" value="PE4259" x="26.9" y="41.3" smashed="yes" rot="MR270"/>
-<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="9V" x="47.5" y="62.9" smashed="yes" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="48.135" y="60.995" size="1" layer="38" rot="MR0"/>
-<attribute name="VALUE" x="48.135" y="62.138" size="0.0254" layer="28" rot="MR0"/>
+<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="9V" x="49.6" y="64.1" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="50.235" y="62.195" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="50.235" y="63.338" size="0.0254" layer="28" rot="MR0"/>
 </element>
 <element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="3V" x="49.8" y="67.7" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="50.435" y="65.795" size="1" layer="38" rot="MR0"/>
@@ -865,7 +865,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="40.495" y="40.925" extent="1-16" drill="0.5"/>
 <via x="8.995" y="42.525" extent="1-16" drill="0.5"/>
 <via x="40.525" y="48.025" extent="1-16" drill="0.5"/>
-<via x="49.825" y="62.925" extent="1-16" drill="0.5"/>
+<via x="50.025" y="62.025" extent="1-16" drill="0.5"/>
 <via x="30.095" y="58.125" extent="1-16" drill="0.5"/>
 <via x="32.095" y="56.125" extent="1-16" drill="0.5"/>
 <via x="28.095" y="56.125" extent="1-16" drill="0.5"/>
@@ -975,13 +975,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.400603125" y1="31.400603125" x2="19.6775" y2="30.6775" width="0.15" layer="16"/>
 <wire x1="19.6775" y1="30.6775" x2="12.311253125" y2="30.6775" width="0.15" layer="16"/>
 <wire x1="12.311253125" y1="30.6775" x2="9.388746875" y2="30.6775" width="0.1524" layer="16"/>
-<wire x1="9.388746875" y1="30.6775" x2="7.69535625" y2="32.370890625" width="0.1524" layer="16"/>
+<wire x1="9.388746875" y1="30.6775" x2="7.69535625" y2="31.989890625" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$35">
 <contactref element="D1" pad="C"/>
 <contactref element="L3" pad="P$1"/>
 <wire x1="9.9662" y1="34.58748125" x2="7.711946875" y2="34.58748125" width="0.1524" layer="16"/>
-<wire x1="7.711946875" y1="34.58748125" x2="7.69535625" y2="34.570890625" width="0.1524" layer="16"/>
+<wire x1="7.711946875" y1="34.58748125" x2="7.69535625" y2="34.824890625" width="0.1524" layer="16"/>
 </signal>
 <signal name="FINAL">
 <contactref element="C13" pad="P$2"/>
@@ -1061,11 +1061,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="45.2" y1="69.8" x2="43.655" y2="69.8" width="0.2" layer="16"/>
 <wire x1="43.655" y1="69.8" x2="43.55" y2="69.905" width="0.2" layer="16"/>
 <wire x1="46.5" y1="69.8" x2="46.6" y2="69.7" width="0.2" layer="16"/>
-<wire x1="47.5" y1="62.9" x2="47.45" y2="62.9" width="0.2" layer="16"/>
-<wire x1="47.45" y1="62.9" x2="45.2" y2="65.15" width="0.2" layer="16"/>
-<wire x1="45.2" y1="69.8" x2="45.2" y2="65.15" width="0.2" layer="16"/>
-<wire x1="47.5" y1="62.9" x2="49.5025" y2="60.8975" width="0.2" layer="16"/>
-<wire x1="49.5025" y1="60.8975" x2="49.5025" y2="58.5325" width="0.2" layer="16"/>
+<wire x1="49.6" y1="58.63" x2="49.5025" y2="58.5325" width="0.1524" layer="16"/>
+<wire x1="49.4" y1="64.1" x2="49.6" y2="64.1" width="0.1524" layer="16"/>
+<wire x1="49.3178" y1="63.8178" x2="49.3178" y2="58.7172" width="0.1524" layer="16"/>
+<wire x1="49.5025" y1="58.5325" x2="49.3178" y2="58.7172" width="0.1524" layer="16"/>
+<wire x1="49.3178" y1="63.8178" x2="49.6" y2="64.1" width="0.1524" layer="16"/>
+<wire x1="49.6" y1="64.1" x2="49.3" y2="63.8" width="0.1524" layer="16"/>
+<wire x1="46.4" y1="63.8" x2="45.2" y2="65" width="0.1524" layer="16"/>
+<wire x1="49.3" y1="63.8" x2="46.4" y2="63.8" width="0.1524" layer="16"/>
+<wire x1="45.2" y1="65" x2="45.2" y2="69.8" width="0.1524" layer="16"/>
 </signal>
 <signal name="3V">
 <contactref element="Q5" pad="3"/>
