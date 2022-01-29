@@ -14,13 +14,14 @@ The schematics are in Autodesk Eagle EDA format. Check the [Schematic](Schematic
 
 The project genesis and some discussion are logged on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/). If you need to ask questions, either file a Github Issue (preferred) or use the QRZ Forum.
 
-If you are interested in build your own, [click here to download the Gerber](Design/bom-ft991-panadapter.csv) and order in your favourite PCB Fab (like [JLCPCB](https://jlcpcb.com/quote), super cheap, good quality and $0 shipping on first order). **Ensure to read the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)**.
+If you are interested in build your own, [click here to download the Gerber](Design/board-gerbers.zip) and order in your favourite PCB Fab (like [JLCPCB](https://jlcpcb.com/quote), super cheap, good quality and $0 shipping on first order). **Ensure to read the [Wiki](https://github.com/rfrht/FT991A-PAT/wiki)**.
 
 ### Notes:
 
 * Board (5 samples) costed $2 in [jlcpcb.com](https://jlcpcb.com/quote).
 * The [parts](Design/bom-ft991-panadapter.csv) costs around $15 in Digi-Key.
 * IF is wide open, spanning the preselector filter range. With that comes also a problem: Very strong signals in passband might spew images through the spectrum in your SDR. Use the RTL-SDR RX gain to counteract.
+* There's a Full Version with some extra bells and whistles (more details in the Wiki). Use the Branch "Rev-R-Full".
 
 ### Changelog:
-Click [Here](CHANGELOG.md)
+Check [Here](CHANGELOG.md)
