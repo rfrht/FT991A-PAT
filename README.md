@@ -12,7 +12,7 @@ This design is compatible with both A and non-A FT-991 transceivers.
 
 The objective is to actually **lodge** a RTL-SDR **inside** a FT-991/A, with no extra cables coming off the radio.
 
-The schematics are in Autodesk Eagle EDA format. Check the [Schematic](Schematic) folder. The [Design](Design) folder contains some ancillary material.
+The schematics are in Autodesk Eagle EDA format. Check the [Schematic](Schematic) folder. The [Design](Design) folder contains the ready to print Gerber files, images and some ancillary material.
 
 The project genesis and some discussion are logged on QRZ Forum: [A FT-991/A IF tap for Panadapter / RTL-SDR inside the radio](https://forums.qrz.com/index.php?threads/hard-hack-embedding-a-sdr-in-ft-991a-need-rf-designers-review.650840/). If you need to ask questions, either file a Github Issue (preferred) or use the QRZ Forum.
 
