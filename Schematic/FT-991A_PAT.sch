@@ -5315,16 +5315,16 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <rectangle x1="-0.775" y1="0.6" x2="-0.525" y2="1.05" layer="51"/>
 <rectangle x1="0.525" y1="0.6" x2="0.775" y2="1.05" layer="51"/>
 </package>
-<package name="2-2H1A">
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<smd name="3" x="0" y="0.7" dx="0.6" dy="0.5" layer="1" roundness="50" rot="R90"/>
-<smd name="1" x="-0.5" y="-0.7" dx="0.6" dy="0.5" layer="1" roundness="50" rot="R90"/>
-<smd name="2" x="0.5" y="-0.7" dx="0.6" dy="0.5" layer="1" roundness="50" rot="R90"/>
-<text x="0" y="1.5" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-1.5" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<package name="TSFP-3">
+<wire x1="0.6" y1="0.4" x2="0.6" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.4" x2="-0.6" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-0.4" x2="-0.6" y2="0.4" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="0.4" x2="0.6" y2="0.4" width="0.127" layer="21"/>
+<text x="-1.27" y="1.016" size="0.508" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.524" y="-1.497" size="0.508" layer="21" font="vector" ratio="15">&gt;VALUE</text>
+<smd name="3" x="0" y="0.5" dx="0.4" dy="0.5" layer="1"/>
+<smd name="1" x="-0.4" y="-0.6" dx="0.4" dy="0.45" layer="1"/>
+<smd name="2" x="0.4" y="-0.6" dx="0.4" dy="0.45" layer="1"/>
 </package>
 <package name="SC-82AB">
 <smd name="4" x="-0.6" y="0.9" dx="0.6" dy="1.016" layer="1"/>
@@ -5694,12 +5694,13 @@ Features
 </device>
 </devices>
 </deviceset>
-<deviceset name="2SC5086" prefix="Q">
+<deviceset name="BFR193F" uservalue="yes">
+<description>Infineon BFR193F RF Transistor</description>
 <gates>
 <gate name="G$1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="2-2H1A">
+<device name="" package="TSFP-3">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="3"/>
@@ -5879,6 +5880,23 @@ Footprint 1111 / 2828</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L-0805" prefix="L" uservalue="yes">
+<description>Inductor - L - Footprint 0805</description>
+<gates>
+<gate name="G$1" symbol="L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6930,7 +6948,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="DOCUMENT_ID" value="PAT-991A"/>
 <attribute name="PROJECT_INFO" value="Yaesu FT-991A Panadapter with Signal Control"/>
 <attribute name="PROJECT_NAME" value="FT-991A PAT &amp; SDR"/>
-<attribute name="REVISION_ID" value="R"/>
+<attribute name="REVISION_ID" value="S"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -6943,7 +6961,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="Q7" library="aarf" deviceset="JFET-N-SOT23-3" device="" value="J310">
 <attribute name="SPICEPREFIX" value="J"/>
 </part>
-<part name="Q8" library="aarf" deviceset="2SC5086" device="" value="5086"/>
+<part name="Q8" library="aarf" deviceset="BFR193F" device="" value="BFR193F"/>
 <part name="R7" library="aarf" deviceset="R-1206" device="" value="1kΩ"/>
 <part name="C10" library="aarf" deviceset="C-0805" device="" value="1000pF"/>
 <part name="C12" library="aarf" deviceset="C-0805" device="" value="1000pF"/>
@@ -7017,6 +7035,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="F" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="BPF"/>
 <part name="GND" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="GND"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
+<part name="L7" library="aarf" deviceset="L-0805" device="" value="3.9 uH"/>
 </parts>
 <sheets>
 <sheet>
@@ -7282,6 +7301,10 @@ with Signal Control</text>
 <attribute name="VALUE" x="29.337" y="222.758" size="1.778" layer="96"/>
 </instance>
 <instance part="GND7" gate="1" x="45.72" y="215.9" smashed="yes"/>
+<instance part="L7" gate="G$1" x="261.62" y="187.96" smashed="yes" rot="MR0">
+<attribute name="NAME" x="265.43" y="185.42" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="262.89" y="185.42" size="1.778" layer="96" rot="MR90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7753,19 +7776,12 @@ with Signal Control</text>
 </net>
 <net name="3V" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="254" y1="175.26" x2="254" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="Q8" gate="G$1" pin="C"/>
-<wire x1="254" y1="177.8" x2="261.62" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="177.8" x2="261.62" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<junction x="261.62" y="177.8"/>
-<wire x1="261.62" y1="177.8" x2="261.62" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="99.06" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="109.22" x2="139.7" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="116.84" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="139.7" x2="139.7" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="193.04" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="139.7" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
 <junction x="139.7" y="116.84"/>
 <pinref part="Q3" gate="G$1" pin="VCC"/>
 <wire x1="119.38" y1="119.38" x2="119.38" y2="109.22" width="0.1524" layer="91"/>
@@ -7778,7 +7794,7 @@ with Signal Control</text>
 <wire x1="124.46" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="238.76" x2="172.72" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="Q6" gate="G$1" pin="VDD"/>
-<wire x1="172.72" y1="228.6" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="228.6" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="139.7" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
 <junction x="139.7" y="139.7"/>
 <pinref part="Q10" gate="G$1" pin="VDD"/>
@@ -7801,10 +7817,12 @@ with Signal Control</text>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="180.34" y1="228.6" x2="172.72" y2="228.6" width="0.1524" layer="91"/>
 <junction x="172.72" y="228.6"/>
-<wire x1="261.62" y1="193.04" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
-<junction x="172.72" y="193.04"/>
+<wire x1="261.62" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
+<junction x="172.72" y="198.12"/>
 <wire x1="162.56" y1="238.76" x2="162.56" y2="233.68" width="0.1524" layer="91"/>
 <junction x="162.56" y="238.76"/>
+<wire x1="261.62" y1="195.58" x2="261.62" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="L7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="9V" class="0">
@@ -7824,6 +7842,18 @@ with Signal Control</text>
 <wire x1="236.22" y1="254" x2="124.46" y2="254" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="238.76" x2="116.84" y2="233.68" width="0.1524" layer="91"/>
 <junction x="116.84" y="238.76"/>
+</segment>
+</net>
+<net name="FB-3V" class="0">
+<segment>
+<pinref part="Q8" gate="G$1" pin="C"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="254" y1="175.26" x2="254" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="254" y1="177.8" x2="261.62" y2="177.8" width="0.1524" layer="91"/>
+<junction x="261.62" y="177.8"/>
+<wire x1="261.62" y1="177.8" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="177.8" x2="261.62" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="L7" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

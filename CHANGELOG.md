@@ -1,5 +1,9 @@
 # Changelog
 
+11/Apr/2022 - Revision S, Full Version
+* Replaced 2SC5086 with BFR193F amplifier, since 2SC5086 is now EOL
+* Added a RF choke (L7) to avoid signal feedback propagating in 3V line
+
 28/Jan/2022 - Revision R, Full Version
 * Designed larger pads for the Diodes and NCP553
 
