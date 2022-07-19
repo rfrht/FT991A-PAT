@@ -3,6 +3,10 @@
 11/Apr/2022 - Revision S, Full Version
 * Replaced 2SC5086 with BFR193F amplifier, since 2SC5086 is now EOL
 * Added a RF choke (L1) to avoid signal feedback propagating in 3V line
+* New RF switch design - now uses an analog switch to flip the RF switch.
+  While this added new parts (1 switch and two resistors) and extra
+  complexity, this actuation format is industry-standard and allows
+  for substitutes of PE4259 (which is unobtanium as of now).
 
 28/Jan/2022 - Revision R, Full & Lite
 * Designed larger pads for the Diodes and NCP553
