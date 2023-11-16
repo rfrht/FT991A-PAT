@@ -1,4 +1,4 @@
-# This is the REV. R *FULL VERSION* Branch.
+# This is the REV. S *FULL VERSION* Branch.
 
 # Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991/A
 
