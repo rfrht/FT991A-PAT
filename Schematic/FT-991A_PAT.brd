@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -200,19 +200,19 @@ AD5GG, PY2UGO and SM0AOM.</text>
 (AD5GG), Yvo Muniz, Carl
 Laufer, Hugo Marçal (PY2UGO)
 Karl-Arne (SM0AOM)</text>
-<text x="12.016" y="40.65" size="0.9" layer="21" font="vector">&gt;PLOT_DATE_TIME</text>
-<text x="45.3" y="40.9" size="0.9" layer="21" font="vector" rot="R180">REV.:</text>
-<text x="47" y="40.9" size="0.9" layer="29" font="vector" rot="R180">&gt;REVISION_ID</text>
-<text x="34.7" y="53.2" size="0.9" layer="21" font="vector" rot="R180" align="center">FT-991/A PANADAPTER B ARD
+<text x="12.016" y="40.65" size="0.9" layer="21" font="vector" ratio="15">&gt;PLOT_DATE_TIME</text>
+<text x="45.3" y="40.9" size="0.9" layer="21" font="vector" ratio="15" rot="R180">REV.:</text>
+<text x="47" y="40.9" size="1.27" layer="29" font="vector" ratio="15" rot="R180">&gt;REVISION_ID</text>
+<text x="34.7" y="53.2" size="0.9" layer="21" font="vector" ratio="15" rot="R180" align="center">FT-991/A PANADAPTER B ARD
 LITE VERSION</text>
 <text x="42.527" y="51.027" size="1" layer="30" font="vector" ratio="15" rot="MR0" align="center">VAI CORINTHIANS!</text>
 <text x="42" y="36.5" size="1.3" layer="21" font="vector" ratio="15" rot="R180" align="center">All flaws by:</text>
 <text x="29.305" y="44.372" size="1.3" layer="29" font="vector" ratio="15" rot="R180" align="center">Light
 Ed</text>
-<text x="47.887" y="66.462" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">3V</text>
+<text x="49.792" y="64.938" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">3V</text>
 <text x="47.684" y="62.773" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">9V</text>
 <text x="25.9" y="50.3" size="0.8" layer="22" font="vector" ratio="15" rot="MR0">sw</text>
-<text x="42" y="34.9" size="1.3" layer="29" font="vector" ratio="15" rot="R180" align="center">PY2RAF</text>
+<text x="42" y="34.392" size="1.3" layer="29" font="vector" ratio="15" rot="R180" align="center">PY2RAF</text>
 <circle x="9.4" y="15.1" radius="1.3038375" width="2.54" layer="29"/>
 <circle x="9.4" y="15.1" radius="1.264909375" width="2.54" layer="30"/>
 <wire x1="44.6" y1="34.7" x2="44.8" y2="34.7" width="0.1016" layer="42"/>
@@ -736,12 +736,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="45.94" y="44.77" size="0.8" layer="22" font="vector" ratio="15" rot="MR270"/>
 </element>
 <element name="Q5" library="aarf" package="SC-82AB" value="NCP553" x="47.5" y="69.1" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="46.84" y="70.76" size="0.8" layer="22" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="VALUE" x="45.318" y="68.684" size="0.8" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="F1" library="aarf" package="FUSE-1206" value="50mA" x="30.3" y="69.3" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="30.303" y="67.513" size="0.8" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
-<element name="Q2" library="aarf" package="SOIC8" value="MC78L09ABDR2GOSCT" x="40.8" y="68" smashed="yes" rot="MR270">
+<element name="Q2" library="aarf" package="SOIC8" value="MC78L09" x="40.8" y="68" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="40.927" y="64.952" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VOLTAGE" value="9V" x="40.8" y="68" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="Q1" library="aarf" package="SC-70" value="PE4259" x="26.9" y="41.3" smashed="yes" rot="MR270"/>
@@ -766,7 +767,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="L1" library="aarf" package="0805" value="3.9uH" x="48.1" y="39.8" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="44.919" y="39.768" size="0.8" layer="22" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="Q3" library="aarf" package="SOT23-6" value="NLAS4599" x="27.9" y="52.3" smashed="yes" rot="MR180">
+<element name="Q3" library="aarf" package="SOT23-6" value="DG2001" x="27.9" y="52.3" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="29.996" y="52.538" size="0.7874" layer="22" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
 <element name="R1" library="aarf" package="1206" value="100kΩ" x="25.6" y="47.2" smashed="yes" rot="MR90">
@@ -859,7 +860,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="8.97" y="39.815" extent="1-16" drill="0.5"/>
 <via x="18.304" y="43.115" extent="1-16" drill="0.5"/>
 <via x="44.395" y="48.025" extent="1-16" drill="0.5"/>
-<via x="39.6648" y="63.9872" extent="1-16" drill="0.5"/>
+<via x="39.6648" y="63.7332" extent="1-16" drill="0.5"/>
 <via x="44.695" y="52.379" extent="1-16" drill="0.5"/>
 <via x="40.695" y="69.125" extent="1-16" drill="0.5"/>
 <via x="49.795" y="70.225" extent="1-16" drill="0.5"/>
@@ -896,7 +897,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="GND" pad="1"/>
 <via x="27.935" y="41.285" extent="1-16" drill="0.2"/>
 <via x="47.49" y="65.133" extent="1-16" drill="0.5"/>
-<via x="48.125" y="60.725" extent="1-16" drill="0.5"/>
+<via x="47.363" y="60.979" extent="1-16" drill="0.5"/>
 <contactref element="R1" pad="1"/>
 <contactref element="R6" pad="1"/>
 <contactref element="Q3" pad="3"/>
@@ -1246,7 +1247,6 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,16,6a2a571575e548da"/>
 <approved hash="19,16,e3c7dcf63d0a023b"/>
 <approved hash="19,16,0be9092649564b99"/>
-<approved hash="8,1,f4fef2b6f1fef7b8"/>
 <approved hash="8,16,b22e82dc98019a00"/>
 <approved hash="6,16,3ecbad4357760429"/>
 <approved hash="6,16,8c322ea2614b4581"/>

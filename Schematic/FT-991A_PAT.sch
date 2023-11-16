@@ -2601,7 +2601,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="Q5" library="aarf" deviceset="NCP553" device=""/>
 <part name="F1" library="aarf" deviceset="FUSE-1206" device="" value="50mA"/>
-<part name="Q2" library="aarf" deviceset="MC78L" device="" technology="09ABDR2GOSCT"/>
+<part name="Q2" library="aarf" deviceset="MC78L" device="" technology="09ABDR2GOSCT" value="MC78L09"/>
 <part name="Q1" library="aarf" deviceset="PE4259" device="" value="PE4259"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="9V"/>
@@ -2611,7 +2611,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="SMD1,27-254" package3d_urn="urn:adsk.eagle:package:30839/1" value="GND"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="L1" library="aarf" deviceset="L-0805" device="" value="3.9uH"/>
-<part name="Q3" library="aarf" deviceset="NLAS4599" device="" value="NLAS4599"/>
+<part name="Q3" library="aarf" deviceset="NLAS4599" device="" value="DG2001"/>
 <part name="R1" library="aarf" deviceset="R-1206" device="" value="100kΩ"/>
 <part name="GND6" library="supply1" deviceset="GNDA" device=""/>
 <part name="R6" library="aarf" deviceset="R-1206" device="" value="100kΩ"/>
@@ -3126,176 +3126,172 @@ with Signal Control - Light Ed</text>
 </sheet>
 <sheet>
 <plain>
-<wire x1="116.84" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="94"/>
-<wire x1="132.08" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="94"/>
-<wire x1="147.32" y1="53.34" x2="147.32" y2="40.64" width="0.1524" layer="94"/>
-<wire x1="147.32" y1="40.64" x2="116.84" y2="40.64" width="0.1524" layer="94"/>
-<wire x1="116.84" y1="40.64" x2="116.84" y2="53.34" width="0.1524" layer="94"/>
-<circle x="165.1" y="73.66" radius="2.54" width="0.1524" layer="94"/>
-<circle x="106.68" y="83.82" radius="15.450215625" width="0.1524" layer="94"/>
-<wire x1="96.52" y1="93.98" x2="116.84" y2="73.66" width="0.1524" layer="94"/>
-<wire x1="96.52" y1="73.66" x2="116.84" y2="93.98" width="0.1524" layer="94"/>
-<circle x="165.1" y="83.82" radius="2.54" width="0.1524" layer="94"/>
-<circle x="175.26" y="78.74" radius="2.54" width="0.1524" layer="94"/>
-<text x="131.572" y="47.244" size="2.54" layer="94" align="center">Scope
+<wire x1="119.38" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="94"/>
+<wire x1="134.62" y1="73.66" x2="149.86" y2="73.66" width="0.1524" layer="94"/>
+<wire x1="149.86" y1="73.66" x2="149.86" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="149.86" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="119.38" y1="60.96" x2="119.38" y2="73.66" width="0.1524" layer="94"/>
+<circle x="167.64" y="93.98" radius="2.54" width="0.1524" layer="94"/>
+<circle x="109.22" y="104.14" radius="15.450215625" width="0.1524" layer="94"/>
+<wire x1="99.06" y1="114.3" x2="119.38" y2="93.98" width="0.1524" layer="94"/>
+<wire x1="99.06" y1="93.98" x2="119.38" y2="114.3" width="0.1524" layer="94"/>
+<circle x="167.64" y="104.14" radius="2.54" width="0.1524" layer="94"/>
+<circle x="177.8" y="99.06" radius="2.54" width="0.1524" layer="94"/>
+<text x="134.112" y="67.564" size="2.54" layer="94" align="center">Scope
 Unit</text>
-<text x="165.1" y="93.98" size="2.54" layer="94">TX9</text>
-<text x="93.98" y="63.5" size="2.54" layer="94">69.450 MHz IF</text>
-<wire x1="121.92" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="94"/>
-<wire x1="132.08" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="195.58" x2="228.6" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="228.6" y1="195.58" x2="243.84" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="243.84" y1="195.58" x2="243.84" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="243.84" y1="187.96" x2="243.84" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="243.84" y1="182.88" x2="213.36" y2="182.88" width="0.1524" layer="94"/>
-<text x="228.092" y="189.484" size="2.54" layer="94" align="center">9 V Regulator</text>
-<wire x1="213.36" y1="182.88" x2="213.36" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="187.96" x2="213.36" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="154.94" x2="243.84" y2="154.94" width="0.1524" layer="94"/>
-<wire x1="243.84" y1="154.94" x2="243.84" y2="142.24" width="0.1524" layer="94"/>
-<wire x1="243.84" y1="142.24" x2="226.06" y2="142.24" width="0.1524" layer="94"/>
-<wire x1="226.06" y1="142.24" x2="213.36" y2="142.24" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="142.24" x2="213.36" y2="144.78" width="0.1524" layer="94"/>
-<text x="228.092" y="148.844" size="2.54" layer="94" align="center">SDR</text>
-<wire x1="213.36" y1="144.78" x2="213.36" y2="152.4" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="152.4" x2="213.36" y2="154.94" width="0.1524" layer="94"/>
-<wire x1="147.32" y1="195.58" x2="177.8" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="195.58" x2="177.8" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="187.96" x2="177.8" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="182.88" x2="147.32" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="147.32" y1="182.88" x2="147.32" y2="195.58" width="0.1524" layer="94"/>
-<text x="162.052" y="189.484" size="2.54" layer="94" align="center">13.8V</text>
-<wire x1="254" y1="195.58" x2="284.48" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="284.48" y1="195.58" x2="284.48" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="284.48" y1="182.88" x2="254" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="254" y1="182.88" x2="254" y2="187.96" width="0.1524" layer="94"/>
-<text x="268.732" y="189.484" size="2.54" layer="94" align="center">3V Regulator</text>
-<wire x1="254" y1="187.96" x2="254" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="187.96" x2="213.36" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="243.84" y1="187.96" x2="254" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="251.46" y1="190.5" x2="251.46" y2="185.42" width="0.1524" layer="94"/>
-<wire x1="251.46" y1="185.42" x2="254" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="254" y1="187.96" x2="251.46" y2="190.5" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="223.52" x2="243.84" y2="223.52" width="0.1524" layer="94"/>
-<wire x1="243.84" y1="223.52" x2="243.84" y2="210.82" width="0.1524" layer="94"/>
-<wire x1="243.84" y1="210.82" x2="228.6" y2="210.82" width="0.1524" layer="94"/>
-<wire x1="228.6" y1="210.82" x2="213.36" y2="210.82" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="210.82" x2="213.36" y2="223.52" width="0.1524" layer="94"/>
-<text x="228.092" y="217.424" size="2.54" layer="94" align="center">J310 Preamp</text>
-<wire x1="294.64" y1="195.58" x2="325.12" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="325.12" y1="195.58" x2="325.12" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="325.12" y1="182.88" x2="294.64" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="294.64" y1="182.88" x2="294.64" y2="195.58" width="0.1524" layer="94"/>
-<text x="309.372" y="189.484" size="2.54" layer="94" align="center">RF Switch
-2SC5086 LNA</text>
-<wire x1="228.6" y1="210.82" x2="228.6" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="226.06" y1="208.28" x2="231.14" y2="208.28" width="0.1524" layer="94"/>
-<wire x1="231.14" y1="208.28" x2="228.6" y2="210.82" width="0.1524" layer="94"/>
-<wire x1="228.6" y1="210.82" x2="226.06" y2="208.28" width="0.1524" layer="94"/>
-<wire x1="205.74" y1="228.6" x2="205.74" y2="177.8" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="205.74" y1="177.8" x2="332.74" y2="177.8" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="332.74" y1="177.8" x2="332.74" y2="228.6" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="332.74" y1="228.6" x2="205.74" y2="228.6" width="0.1524" layer="97" style="dashdot"/>
-<text x="289.56" y="213.36" size="3.81" layer="97" align="center">Panadapter Board
-Power Management</text>
-<wire x1="182.88" y1="200.66" x2="182.88" y2="149.86" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="182.88" y1="149.86" x2="91.44" y2="149.86" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="91.44" y1="149.86" x2="91.44" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="91.44" y1="200.66" x2="182.88" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
-<text x="127.762" y="174.244" size="3.81" layer="97">Main Unit</text>
-<wire x1="236.22" y1="48.26" x2="236.22" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="149.86" y1="129.54" x2="149.86" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="149.86" y1="48.26" x2="236.22" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
-<text x="198.12" y="111.76" size="3.81" layer="97" align="center">Panadapter Board
-RF Stage</text>
-<text x="228.6" y="134.62" size="1.778" layer="94">IF input</text>
-<text x="246.38" y="187.96" size="1.778" layer="94">9V</text>
-<text x="189.738" y="188.722" size="1.778" layer="94">13.8V</text>
-<text x="229.108" y="202.438" size="1.778" layer="94">9V</text>
-<wire x1="210.82" y1="190.5" x2="210.82" y2="185.42" width="0.1524" layer="94"/>
-<wire x1="210.82" y1="185.42" x2="213.36" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="187.96" x2="210.82" y2="190.5" width="0.1524" layer="94"/>
-<wire x1="91.44" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="94"/>
-<wire x1="88.9" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="94"/>
-<wire x1="86.36" y1="86.36" x2="86.36" y2="81.28" width="0.1524" layer="94"/>
-<wire x1="86.36" y1="81.28" x2="88.9" y2="83.82" width="0.1524" layer="94"/>
-<wire x1="88.9" y1="83.82" x2="86.36" y2="86.36" width="0.1524" layer="94"/>
-<wire x1="160.02" y1="86.36" x2="160.02" y2="81.28" width="0.1524" layer="94"/>
-<wire x1="160.02" y1="81.28" x2="162.56" y2="83.82" width="0.1524" layer="94"/>
-<wire x1="162.56" y1="83.82" x2="160.02" y2="86.36" width="0.1524" layer="94"/>
-<wire x1="129.54" y1="55.88" x2="134.62" y2="55.88" width="0.1524" layer="94"/>
-<wire x1="134.62" y1="55.88" x2="132.08" y2="53.34" width="0.1524" layer="94"/>
-<wire x1="132.08" y1="53.34" x2="129.54" y2="55.88" width="0.1524" layer="94"/>
+<text x="167.64" y="114.3" size="2.54" layer="94">TX9</text>
+<text x="96.52" y="83.82" size="2.54" layer="94">69.450 MHz IF</text>
+<wire x1="124.46" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="134.62" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="215.9" y1="175.26" x2="246.38" y2="175.26" width="0.1524" layer="94"/>
+<wire x1="246.38" y1="175.26" x2="246.38" y2="162.56" width="0.1524" layer="94"/>
+<wire x1="246.38" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="94"/>
+<wire x1="228.6" y1="162.56" x2="215.9" y2="162.56" width="0.1524" layer="94"/>
+<wire x1="215.9" y1="162.56" x2="215.9" y2="165.1" width="0.1524" layer="94"/>
+<text x="230.632" y="169.164" size="2.54" layer="94" align="center">SDR</text>
+<wire x1="215.9" y1="165.1" x2="215.9" y2="172.72" width="0.1524" layer="94"/>
+<wire x1="215.9" y1="172.72" x2="215.9" y2="175.26" width="0.1524" layer="94"/>
+<wire x1="149.86" y1="215.9" x2="180.34" y2="215.9" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="215.9" x2="180.34" y2="208.28" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="208.28" x2="180.34" y2="203.2" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="203.2" x2="149.86" y2="203.2" width="0.1524" layer="94"/>
+<wire x1="149.86" y1="203.2" x2="149.86" y2="215.9" width="0.1524" layer="94"/>
+<text x="164.592" y="209.804" size="2.54" layer="94" align="center">13.8V</text>
+<wire x1="185.42" y1="220.98" x2="185.42" y2="170.18" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="185.42" y1="170.18" x2="93.98" y2="170.18" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="93.98" y1="170.18" x2="93.98" y2="220.98" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="93.98" y1="220.98" x2="185.42" y2="220.98" width="0.1524" layer="97" style="shortdash"/>
+<text x="130.302" y="194.564" size="3.81" layer="97">Main Unit</text>
+<wire x1="325.12" y1="68.58" x2="325.12" y2="149.86" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="152.4" y1="149.86" x2="152.4" y2="68.58" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="152.4" y1="68.58" x2="325.12" y2="68.58" width="0.1524" layer="97" style="shortdash"/>
+<text x="200.66" y="132.08" size="3.81" layer="97" align="center">Panadapter Board</text>
+<text x="231.14" y="154.94" size="1.778" layer="94">IF input</text>
+<text x="268.478" y="150.622" size="1.778" layer="94">13.8V</text>
+<text x="257.048" y="110.998" size="1.778" layer="94">9V</text>
+<wire x1="93.98" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="91.44" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="88.9" y1="106.68" x2="88.9" y2="101.6" width="0.1524" layer="94"/>
+<wire x1="88.9" y1="101.6" x2="91.44" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="91.44" y1="104.14" x2="88.9" y2="106.68" width="0.1524" layer="94"/>
+<wire x1="162.56" y1="106.68" x2="162.56" y2="101.6" width="0.1524" layer="94"/>
+<wire x1="162.56" y1="101.6" x2="165.1" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="165.1" y1="104.14" x2="162.56" y2="106.68" width="0.1524" layer="94"/>
+<wire x1="132.08" y1="76.2" x2="137.16" y2="76.2" width="0.1524" layer="94"/>
+<wire x1="137.16" y1="76.2" x2="134.62" y2="73.66" width="0.1524" layer="94"/>
+<wire x1="134.62" y1="73.66" x2="132.08" y2="76.2" width="0.1524" layer="94"/>
 <text x="375.92" y="5.08" size="2.54" layer="94">&gt;REVISION_ID</text>
 <text x="342.9" y="20.32" size="2.286" layer="94">Panadapter FT-991/FT-991A</text>
 <text x="289.56" y="7.62" size="2.54" layer="94">Yaesu FT-991A Panadapter board
 with Signal Control - Light Ed
 
 Block Diagram</text>
-<wire x1="96.52" y1="195.58" x2="127" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="127" y1="195.58" x2="127" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="127" y1="182.88" x2="96.52" y2="182.88" width="0.1524" layer="94"/>
-<wire x1="96.52" y1="182.88" x2="96.52" y2="187.96" width="0.1524" layer="94"/>
-<text x="111.252" y="189.484" size="2.54" layer="94" align="center">TX9</text>
-<wire x1="96.52" y1="187.96" x2="96.52" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="81.28" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="94"/>
-<wire x1="236.22" y1="129.54" x2="149.86" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
-<text x="114.3" y="119.38" size="1.778" layer="94">TX9</text>
-<wire x1="132.08" y1="53.34" x2="132.08" y2="83.82" width="0.1524" layer="94"/>
-<wire x1="160.02" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="96.52" x2="177.8" y2="93.98" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="94"/>
-<wire x1="160.02" y1="93.98" x2="160.02" y2="96.52" width="0.1524" layer="94"/>
-<wire x1="284.48" y1="187.96" x2="294.64" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="292.1" y1="190.5" x2="292.1" y2="185.42" width="0.1524" layer="94"/>
-<wire x1="292.1" y1="185.42" x2="294.64" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="294.64" y1="187.96" x2="292.1" y2="190.5" width="0.1524" layer="94"/>
-<text x="287.02" y="187.96" size="1.778" layer="94">3V</text>
-<wire x1="147.32" y1="170.18" x2="177.8" y2="170.18" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="170.18" x2="177.8" y2="157.48" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="157.48" x2="162.56" y2="157.48" width="0.1524" layer="94"/>
-<wire x1="162.56" y1="157.48" x2="147.32" y2="157.48" width="0.1524" layer="94"/>
-<wire x1="147.32" y1="157.48" x2="147.32" y2="170.18" width="0.1524" layer="94"/>
-<text x="162.052" y="164.084" size="2.54" layer="94" align="center">5V</text>
-<text x="189.738" y="153.162" size="1.778" layer="94">5V</text>
-<wire x1="96.52" y1="170.18" x2="127" y2="170.18" width="0.1524" layer="94"/>
-<wire x1="127" y1="170.18" x2="127" y2="157.48" width="0.1524" layer="94"/>
-<wire x1="127" y1="157.48" x2="109.22" y2="157.48" width="0.1524" layer="94"/>
-<wire x1="109.22" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="94"/>
-<wire x1="96.52" y1="157.48" x2="96.52" y2="170.18" width="0.1524" layer="94"/>
-<text x="111.252" y="164.084" size="2.54" layer="94" align="center">USBDP (+)
+<wire x1="99.06" y1="215.9" x2="129.54" y2="215.9" width="0.1524" layer="94"/>
+<wire x1="129.54" y1="215.9" x2="129.54" y2="203.2" width="0.1524" layer="94"/>
+<wire x1="129.54" y1="203.2" x2="99.06" y2="203.2" width="0.1524" layer="94"/>
+<wire x1="99.06" y1="203.2" x2="99.06" y2="208.28" width="0.1524" layer="94"/>
+<text x="113.792" y="209.804" size="2.54" layer="94" align="center">TX9</text>
+<wire x1="99.06" y1="208.28" x2="99.06" y2="215.9" width="0.1524" layer="94"/>
+<wire x1="83.82" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="94"/>
+<wire x1="325.12" y1="149.86" x2="152.4" y2="149.86" width="0.1524" layer="97" style="shortdash"/>
+<text x="116.84" y="139.7" size="1.778" layer="94">TX9</text>
+<wire x1="134.62" y1="73.66" x2="134.62" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="162.56" y1="116.84" x2="180.34" y2="116.84" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="116.84" x2="180.34" y2="114.3" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="94"/>
+<wire x1="162.56" y1="114.3" x2="162.56" y2="116.84" width="0.1524" layer="94"/>
+<wire x1="149.86" y1="190.5" x2="180.34" y2="190.5" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="190.5" x2="180.34" y2="177.8" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="177.8" x2="165.1" y2="177.8" width="0.1524" layer="94"/>
+<wire x1="165.1" y1="177.8" x2="149.86" y2="177.8" width="0.1524" layer="94"/>
+<wire x1="149.86" y1="177.8" x2="149.86" y2="190.5" width="0.1524" layer="94"/>
+<text x="164.592" y="184.404" size="2.54" layer="94" align="center">5V</text>
+<text x="192.278" y="173.482" size="1.778" layer="94">5V</text>
+<wire x1="99.06" y1="190.5" x2="129.54" y2="190.5" width="0.1524" layer="94"/>
+<wire x1="129.54" y1="190.5" x2="129.54" y2="177.8" width="0.1524" layer="94"/>
+<wire x1="129.54" y1="177.8" x2="111.76" y2="177.8" width="0.1524" layer="94"/>
+<wire x1="111.76" y1="177.8" x2="99.06" y2="177.8" width="0.1524" layer="94"/>
+<wire x1="99.06" y1="177.8" x2="99.06" y2="190.5" width="0.1524" layer="94"/>
+<text x="113.792" y="184.404" size="2.54" layer="94" align="center">USBDP (+)
 USBDM (-)</text>
-<wire x1="210.82" y1="154.94" x2="210.82" y2="152.4" width="0.1524" layer="94"/>
-<wire x1="210.82" y1="152.4" x2="210.82" y2="149.86" width="0.1524" layer="94"/>
-<wire x1="210.82" y1="149.86" x2="213.36" y2="152.4" width="0.1524" layer="94"/>
-<wire x1="213.36" y1="152.4" x2="210.82" y2="154.94" width="0.1524" layer="94"/>
-<wire x1="162.56" y1="157.48" x2="162.56" y2="152.4" width="0.1524" layer="94"/>
-<wire x1="162.56" y1="152.4" x2="210.82" y2="152.4" width="0.1524" layer="94"/>
-<wire x1="109.22" y1="157.48" x2="109.22" y2="144.78" width="0.1524" layer="94"/>
-<wire x1="109.22" y1="144.78" x2="213.36" y2="144.78" width="0.1524" layer="94"/>
-<wire x1="96.52" y1="187.96" x2="81.28" y2="187.96" width="0.1524" layer="94"/>
-<wire x1="81.28" y1="187.96" x2="81.28" y2="116.84" width="0.1524" layer="94"/>
-<text x="151.638" y="145.542" size="1.778" layer="94">USB Data</text>
-<wire x1="167.64" y1="116.84" x2="167.64" y2="96.52" width="0.1524" layer="94"/>
-<wire x1="223.52" y1="139.7" x2="228.6" y2="139.7" width="0.1524" layer="94"/>
-<wire x1="228.6" y1="139.7" x2="226.06" y2="142.24" width="0.1524" layer="94"/>
-<wire x1="226.06" y1="142.24" x2="223.52" y2="139.7" width="0.1524" layer="94"/>
-<wire x1="106.68" y1="154.94" x2="111.76" y2="154.94" width="0.1524" layer="94"/>
-<wire x1="111.76" y1="154.94" x2="109.22" y2="157.48" width="0.1524" layer="94"/>
-<wire x1="109.22" y1="157.48" x2="106.68" y2="154.94" width="0.1524" layer="94"/>
-<wire x1="185.42" y1="86.36" x2="215.9" y2="86.36" width="0.1524" layer="94"/>
-<wire x1="215.9" y1="86.36" x2="215.9" y2="73.66" width="0.1524" layer="94"/>
-<wire x1="215.9" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="94"/>
-<wire x1="185.42" y1="73.66" x2="185.42" y2="86.36" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="94"/>
-<text x="200.406" y="80.264" size="2.54" layer="94" align="center">High-Z Amplifier</text>
-<wire x1="226.06" y1="142.24" x2="226.06" y2="78.74" width="0.1524" layer="94"/>
-<wire x1="226.06" y1="78.74" x2="215.9" y2="78.74" width="0.1524" layer="94"/>
-<wire x1="172.72" y1="78.74" x2="165.1" y2="81.28" width="0.1524" layer="94"/>
-<wire x1="165.1" y1="71.12" x2="165.1" y2="58.42" width="0.1524" layer="94"/>
-<wire x1="157.48" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="94"/>
-<wire x1="160.02" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="94"/>
-<wire x1="162.56" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="94"/>
+<wire x1="213.36" y1="175.26" x2="213.36" y2="172.72" width="0.1524" layer="94"/>
+<wire x1="213.36" y1="172.72" x2="213.36" y2="170.18" width="0.1524" layer="94"/>
+<wire x1="213.36" y1="170.18" x2="215.9" y2="172.72" width="0.1524" layer="94"/>
+<wire x1="215.9" y1="172.72" x2="213.36" y2="175.26" width="0.1524" layer="94"/>
+<wire x1="165.1" y1="177.8" x2="165.1" y2="172.72" width="0.1524" layer="94"/>
+<wire x1="165.1" y1="172.72" x2="213.36" y2="172.72" width="0.1524" layer="94"/>
+<wire x1="111.76" y1="177.8" x2="111.76" y2="165.1" width="0.1524" layer="94"/>
+<wire x1="111.76" y1="165.1" x2="215.9" y2="165.1" width="0.1524" layer="94"/>
+<wire x1="99.06" y1="208.28" x2="83.82" y2="208.28" width="0.1524" layer="94"/>
+<wire x1="83.82" y1="208.28" x2="83.82" y2="137.16" width="0.1524" layer="94"/>
+<text x="154.178" y="165.862" size="1.778" layer="94">USB Data</text>
+<wire x1="170.18" y1="137.16" x2="170.18" y2="116.84" width="0.1524" layer="94"/>
+<wire x1="226.06" y1="160.02" x2="231.14" y2="160.02" width="0.1524" layer="94"/>
+<wire x1="231.14" y1="160.02" x2="228.6" y2="162.56" width="0.1524" layer="94"/>
+<wire x1="228.6" y1="162.56" x2="226.06" y2="160.02" width="0.1524" layer="94"/>
+<wire x1="109.22" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="94"/>
+<wire x1="114.3" y1="175.26" x2="111.76" y2="177.8" width="0.1524" layer="94"/>
+<wire x1="111.76" y1="177.8" x2="109.22" y2="175.26" width="0.1524" layer="94"/>
+<wire x1="187.96" y1="106.68" x2="218.44" y2="106.68" width="0.1524" layer="94"/>
+<wire x1="218.44" y1="106.68" x2="218.44" y2="93.98" width="0.1524" layer="94"/>
+<wire x1="218.44" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="94"/>
+<wire x1="187.96" y1="93.98" x2="187.96" y2="106.68" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="94"/>
+<text x="202.946" y="100.584" size="2.54" layer="94" align="center">High-Z Amplifier</text>
+<wire x1="228.6" y1="162.56" x2="228.6" y2="99.06" width="0.1524" layer="94"/>
+<wire x1="228.6" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="94"/>
+<wire x1="175.26" y1="99.06" x2="167.64" y2="101.6" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="91.44" x2="167.64" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="160.02" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="162.56" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="94"/>
+<wire x1="165.1" y1="73.66" x2="170.18" y2="73.66" width="0.1524" layer="94"/>
+<wire x1="236.22" y1="129.54" x2="266.7" y2="129.54" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="129.54" x2="266.7" y2="121.92" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="121.92" x2="266.7" y2="116.84" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="116.84" x2="251.46" y2="116.84" width="0.1524" layer="94"/>
+<text x="250.952" y="123.444" size="2.54" layer="94" align="center">9 V Regulator</text>
+<wire x1="251.46" y1="116.84" x2="236.22" y2="116.84" width="0.1524" layer="94"/>
+<wire x1="236.22" y1="116.84" x2="236.22" y2="129.54" width="0.1524" layer="94"/>
+<wire x1="236.22" y1="109.22" x2="266.7" y2="109.22" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="109.22" x2="266.7" y2="101.6" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="101.6" x2="266.7" y2="96.52" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="94"/>
+<text x="250.952" y="103.124" size="2.54" layer="94" align="center">3V Regulator</text>
+<wire x1="236.22" y1="96.52" x2="236.22" y2="109.22" width="0.1524" layer="94"/>
+<wire x1="276.86" y1="129.54" x2="307.34" y2="129.54" width="0.1524" layer="94"/>
+<wire x1="307.34" y1="129.54" x2="307.34" y2="116.84" width="0.1524" layer="94"/>
+<wire x1="307.34" y1="116.84" x2="276.86" y2="116.84" width="0.1524" layer="94"/>
+<wire x1="276.86" y1="116.84" x2="276.86" y2="129.54" width="0.1524" layer="94"/>
+<text x="291.592" y="123.444" size="2.54" layer="94" align="center">J310 Preamp</text>
+<wire x1="274.32" y1="124.46" x2="274.32" y2="121.92" width="0.1524" layer="94"/>
+<wire x1="274.32" y1="121.92" x2="274.32" y2="119.38" width="0.1524" layer="94"/>
+<wire x1="274.32" y1="119.38" x2="276.86" y2="121.92" width="0.1524" layer="94"/>
+<wire x1="276.86" y1="121.92" x2="274.32" y2="124.46" width="0.1524" layer="94"/>
+<wire x1="248.92" y1="111.76" x2="251.46" y2="111.76" width="0.1524" layer="94"/>
+<wire x1="251.46" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="94"/>
+<wire x1="254" y1="111.76" x2="251.46" y2="109.22" width="0.1524" layer="94"/>
+<wire x1="251.46" y1="109.22" x2="248.92" y2="111.76" width="0.1524" layer="94"/>
+<wire x1="276.86" y1="109.22" x2="307.34" y2="109.22" width="0.1524" layer="94"/>
+<wire x1="307.34" y1="109.22" x2="307.34" y2="96.52" width="0.1524" layer="94"/>
+<wire x1="307.34" y1="96.52" x2="276.86" y2="96.52" width="0.1524" layer="94"/>
+<wire x1="276.86" y1="96.52" x2="276.86" y2="109.22" width="0.1524" layer="94"/>
+<text x="291.592" y="103.124" size="2.54" layer="94" align="center">Switches
+LNA</text>
+<wire x1="274.32" y1="99.06" x2="276.86" y2="101.6" width="0.1524" layer="94"/>
+<wire x1="276.86" y1="101.6" x2="274.32" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="274.32" y1="104.14" x2="274.32" y2="101.6" width="0.1524" layer="94"/>
+<text x="269.24" y="101.6" size="1.778" layer="94">3V</text>
+<text x="269.24" y="121.92" size="1.778" layer="94">9V</text>
+<wire x1="274.32" y1="101.6" x2="274.32" y2="99.06" width="0.1524" layer="94"/>
+<wire x1="180.34" y1="208.28" x2="251.46" y2="208.28" width="0.1524" layer="94"/>
+<wire x1="251.46" y1="208.28" x2="251.46" y2="132.08" width="0.1524" layer="94"/>
+<wire x1="251.46" y1="116.84" x2="251.46" y2="111.76" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="121.92" x2="274.32" y2="121.92" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="101.6" x2="274.32" y2="101.6" width="0.1524" layer="94"/>
+<wire x1="248.92" y1="132.08" x2="251.46" y2="132.08" width="0.1524" layer="94"/>
+<wire x1="251.46" y1="132.08" x2="254" y2="132.08" width="0.1524" layer="94"/>
+<wire x1="254" y1="132.08" x2="251.46" y2="129.54" width="0.1524" layer="94"/>
+<wire x1="251.46" y1="129.54" x2="248.92" y2="132.08" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">

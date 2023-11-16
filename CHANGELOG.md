@@ -6,7 +6,7 @@
 * New RF switch design - now uses an analog switch to flip the RF switch.
   While this added new parts (1 switch and two resistors) and extra
   complexity, this actuation format is industry-standard and allows
-  for substitutes of PE4259 (which is unobtanium as of now).
+  for substitutes of PE4259 (which was unobtanium during the pandemics).
 
 28/Jan/2022 - Revision R, Full & Lite
 * Designed larger pads for the Diodes and NCP553
