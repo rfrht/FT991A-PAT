@@ -1,5 +1,11 @@
 # Changelog
 
+28/May/2024 - Revision T, Lite version
+* Fixed a gross flaw in Revision S: The RF switch was flipped out /o\  Resolves #25
+* Updated BOM, renamed some capacitors and the matching network components are labeled as {C,R}1x
+* There are more gain to be obtained from BFR193. Added a bias and matching network design from [Infineon's AN-1806](https://www.infineon.com/dgdl/Infineon-Design_Guide_for_low_noise_TR_in_FM_radio_FE-ApplicationNotes-v01_00-EN.pdf?fileId=8ac78c8c7e7124d1017f0227976a6c9d). While the matching network isn't suitable for BFR193, the footprints will be good enough to test other components and values. Capacitors are 0805, Resistors are 1206.
+* This revision is planned to be a testbed for a proper bias and match network in order to get better gain figures from BFR193.
+
 11/Apr/2022 - Revision S, Full Version
 * Replaced 2SC5086 with BFR193F amplifier, since 2SC5086 is now EOL
 * Added a RF choke (L1) to avoid signal feedback propagating in 3V line
