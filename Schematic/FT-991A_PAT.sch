@@ -916,9 +916,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-0.6" y1="0.4" x2="0.6" y2="0.4" width="0.127" layer="21"/>
 <text x="-1.27" y="1.016" size="0.508" layer="21" font="vector" ratio="15">&gt;NAME</text>
 <text x="-1.524" y="-1.497" size="0.508" layer="21" font="vector" ratio="15">&gt;VALUE</text>
-<smd name="3" x="0" y="0.5" dx="0.4" dy="0.5" layer="1"/>
-<smd name="1" x="-0.4" y="-0.6" dx="0.4" dy="0.45" layer="1"/>
-<smd name="2" x="0.4" y="-0.6" dx="0.4" dy="0.45" layer="1"/>
+<smd name="3" x="0" y="0.635" dx="0.5" dy="0.6" layer="1"/>
+<smd name="1" x="-0.4" y="-0.7" dx="0.5" dy="0.55" layer="1"/>
+<smd name="2" x="0.4" y="-0.7" dx="0.5" dy="0.55" layer="1"/>
 </package>
 <package name="SC-82AB">
 <smd name="4" x="-0.6" y="0.9" dx="0.6" dy="1.016" layer="1"/>
@@ -2557,7 +2557,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="DOCUMENT_ID" value="PAT-991A"/>
 <attribute name="PROJECT_INFO" value="Yaesu FT-991A Panadapter with Signal Control"/>
 <attribute name="PROJECT_NAME" value="FT-991A PAT &amp; SDR"/>
-<attribute name="REVISION_ID" value="T"/>
+<attribute name="REVISION_ID" value="U"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -2569,12 +2569,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R5" library="aarf" deviceset="R-1206" device="" value="100kΩ"/>
 <part name="Q8" library="aarf" deviceset="BFR193F" device="" value="BFR193F"/>
 <part name="R7" library="aarf" deviceset="R-1206" device="" value="1kΩ"/>
-<part name="C11" library="aarf" deviceset="C-0805" device="" value="330pF"/>
+<part name="C11" library="aarf" deviceset="C-0805" device="" value="1000pF"/>
 <part name="GND11" library="supply1" deviceset="GNDA" device=""/>
 <part name="C2" library="aarf" deviceset="C-1206" device="" value="0.1µF"/>
 <part name="GND10" library="supply1" deviceset="GNDA" device=""/>
 <part name="C3" library="aarf" deviceset="C-1206" device="" value="0.1µF"/>
-<part name="R11" library="aarf" deviceset="R-1206" device="" value="33kΩ"/>
+<part name="R11" library="aarf" deviceset="R-1206" device="" value="39kΩ"/>
 <part name="GND19" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND13" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND16" library="supply1" deviceset="GNDA" device=""/>
@@ -2595,7 +2595,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R3" library="aarf" deviceset="R-1206" device="" value="10kΩ"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="L3" library="aarf" deviceset="FB-0805" device="" value="BLM21"/>
-<part name="C12" library="aarf" deviceset="C-0805" device="" value="330pF"/>
+<part name="C12" library="aarf" deviceset="C-0805" device="" value="1000pF"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="Q5" library="aarf" deviceset="NCP553" device=""/>
@@ -2615,12 +2615,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R6" library="aarf" deviceset="R-1206" device="" value="100kΩ"/>
 <part name="GND7" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND8" library="supply1" deviceset="GNDA" device=""/>
-<part name="R13" library="aarf" deviceset="R-1206" device="" value="10Ω"/>
+<part name="R13" library="aarf" deviceset="R-1206" device="" value="27Ω"/>
 <part name="R12" library="aarf" deviceset="R-1206" device="" value="100Ω"/>
-<part name="R14" library="aarf" deviceset="R-1206" device="" value="10Ω"/>
-<part name="C13" library="aarf" deviceset="C-0805" device="" value="0.047µF"/>
+<part name="R14" library="aarf" deviceset="R-1206" device="" value="47Ω"/>
+<part name="C13" library="aarf" deviceset="C-1206" device="" value="4.7 nF"/>
 <part name="GND9" library="supply1" deviceset="GNDA" device=""/>
-<part name="L1" library="aarf" deviceset="L-0805" device="" value="91nH">
+<part name="L1" library="aarf" deviceset="L-0805" device="" value="82nH">
 <spice>
 <pinmapping isusermap="yes" isdevicewide="yes">
 <pinmap gate="G$1" pin="1" pinorder="2"/>
@@ -2630,7 +2630,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MODEL" value="LQW2BAN91NJ00L"/>
 <attribute name="SPICEPREFIX" value="L"/>
 </part>
-<part name="C14" library="aarf" deviceset="C-0805" device="" value="15pF"/>
+<part name="C14" library="aarf" deviceset="C-0805" device="" value="47pF"/>
 <part name="GND14" library="supply1" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
@@ -2835,7 +2835,7 @@ with Signal Control - Light Ed</text>
 <busses>
 </busses>
 <nets>
-<net name="N$4" class="0">
+<net name="ST2IN" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="Q8" gate="G$1" pin="B"/>
@@ -2846,7 +2846,7 @@ with Signal Control - Light Ed</text>
 <junction x="254" y="93.98"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="ST1M1" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="86.36" x2="241.3" y2="93.98" width="0.1524" layer="91"/>
@@ -3041,7 +3041,7 @@ with Signal Control - Light Ed</text>
 <wire x1="111.76" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="IFIN" class="0">
+<net name="ST1IN" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="RF2"/>
 <wire x1="187.96" y1="104.14" x2="215.9" y2="104.14" width="0.1524" layer="91"/>
@@ -3153,7 +3153,7 @@ with Signal Control - Light Ed</text>
 <wire x1="160.02" y1="139.7" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BIAS" class="0">
+<net name="ST2OUT" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="Q8" gate="G$1" pin="C"/>
@@ -3164,14 +3164,14 @@ with Signal Control - Light Ed</text>
 <junction x="261.62" y="106.68"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="ST2M1" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="287.02" y1="106.68" x2="297.18" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="ST2M2" class="0">
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="304.8" y1="106.68" x2="312.42" y2="106.68" width="0.1524" layer="91"/>
