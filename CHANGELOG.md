@@ -1,5 +1,9 @@
 # Changelog
 
+19/Nov/2024 - Revision U, Lite version
+* Minor changes over Rev. T: Updated some component values, improved footprint for BFR193 (it's a **ROYAL PAIN IN THE ASS** to solder) and NCP553. Version is good enough to be promoted to Master branch.
+* Resolves: [#20](https://github.com/rfrht/FT991A-PAT/issues/20), [#26](https://github.com/rfrht/FT991A-PAT/issues/26), [#27](https://github.com/rfrht/FT991A-PAT/issues/27)
+
 28/May/2024 - Revision T, Lite version
 * Fixed a gross flaw in Revision S: The RF switch was flipped out /o\  Resolves #25
 * Updated BOM, renamed some capacitors and the matching network components are labeled as {C,R}1x
