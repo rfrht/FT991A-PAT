@@ -1,4 +1,4 @@
-# Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991/A
+# Buffered IF tap board for Panadapter / SDR in a Yaesu FT-991-A
 
 *Supply chain issues warning - [check this](https://github.com/rfrht/FT991A-PAT/issues/21)*
 
