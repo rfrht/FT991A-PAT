@@ -1,5 +1,9 @@
 # Changelog
 
+25/Dec/2024 - Revision V, Lite Version
+* Got rid of the stupid and fragile DG2000 (was implemented to make the PE4259 compatible with other RF switches) and its associated parts
+* Replaced the PITA to solder BFR193 with a BFP460
+
 19/Nov/2024 - Revision U, Lite version
 * Minor changes over Rev. T: Updated some component values, improved footprint for BFR193 (it's a **ROYAL PAIN IN THE ASS** to solder) and NCP553. Version is good enough to be promoted to Master branch.
 * Resolves: [#20](https://github.com/rfrht/FT991A-PAT/issues/20), [#26](https://github.com/rfrht/FT991A-PAT/issues/26), [#27](https://github.com/rfrht/FT991A-PAT/issues/27)
