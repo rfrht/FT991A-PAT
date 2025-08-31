@@ -2262,13 +2262,14 @@ Features
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74AHC-AND" prefix="Q">
-<description>2-input &lt;b&gt;AND&lt;/b&gt; gate</description>
+<deviceset name="SN74AHC-AND" prefix="Q" uservalue="yes">
+<description>2-input &lt;b&gt;AND&lt;/b&gt; gate
+&lt;P&gt;SN74AHC1G32</description>
 <gates>
 <gate name="A" symbol="7408-AND" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DCK5">
+<device name="" package="SC70-5">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="B" pad="2"/>
@@ -2276,6 +2277,9 @@ Features
 <connect gate="A" pin="VCC" pad="5"/>
 <connect gate="A" pin="Y" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2405/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
