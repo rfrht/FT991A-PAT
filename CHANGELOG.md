@@ -1,5 +1,10 @@
 # Changelog
 
+31/Aug/2025 - Revision V, Lite Version
+* Improved BFP460 and NCP553 footprint
+* Some routing  and CPW improvements
+* Rebasing the library
+
 25/Dec/2024 - Revision V, Lite Version
 * Got rid of the stupid and fragile DG2000 (was implemented to make the PE4259 compatible with other RF switches) and its associated parts
 * Replaced the PITA to solder BFR193 with a BFP460

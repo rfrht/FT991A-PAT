@@ -926,18 +926,19 @@ Philips Semiconductors, SOT343R.pdf</description>
 <rectangle x1="0.65" y1="-0.9" x2="1.05" y2="-0.4" layer="51" rot="R90"/>
 <rectangle x1="-1.05" y1="-0.9" x2="-0.65" y2="-0.4" layer="51" rot="R90"/>
 <rectangle x1="-1.05" y1="0.4" x2="-0.65" y2="0.9" layer="51" rot="R90"/>
+<circle x="0.889" y="-1.397" radius="0.127" width="0.127" layer="21"/>
 </package>
 <package name="SC-82AB">
-<smd name="4" x="-0.6" y="0.9" dx="0.6" dy="1.016" layer="1"/>
-<smd name="3" x="0.6" y="0.9" dx="0.6" dy="1.016" layer="1"/>
-<smd name="1" x="-0.6" y="-0.9" dx="0.6" dy="1.016" layer="1"/>
-<smd name="2" x="0.6" y="-0.9" dx="0.8" dy="1.016" layer="1"/>
+<smd name="4" x="-0.7" y="1" dx="0.8" dy="1.2" layer="1"/>
+<smd name="3" x="0.7" y="1" dx="0.8" dy="1.2" layer="1"/>
+<smd name="1" x="-0.7" y="-1" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.8" y="-1" dx="1" dy="1.2" layer="1"/>
 <text x="0" y="-1.9" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <wire x1="-0.9" y1="0.6" x2="1" y2="0.6" width="0.127" layer="21"/>
 <wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="1" y1="-0.6" x2="-0.9" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="-0.9" y1="-0.6" x2="-0.9" y2="0.6" width="0.127" layer="21"/>
-<text x="0.024" y="-0.238" size="0.8" layer="21" font="vector" ratio="15" align="center">*</text>
+<text x="-0.046" y="-0.927" size="0.8" layer="21" font="vector" ratio="15" align="center">*</text>
 </package>
 <package name="SOIC8" urn="urn:adsk.eagle:footprint:16321/1" locally_modified="yes">
 <description>&lt;b&gt;SOIC-8&lt;/b&gt; CASE 751-07&lt;p&gt;
@@ -989,7 +990,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <wire x1="1" y1="0.65" x2="1.05" y2="0.65" width="0.127" layer="21"/>
 <wire x1="1.05" y1="0.65" x2="1.05" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="1.05" y1="-0.6" x2="1" y2="-0.6" width="0.127" layer="21"/>
-<text x="-1.524" y="-1.016" size="0.8" layer="21" font="vector" ratio="15" align="center">*</text>
+<circle x="-1.524" y="-0.508" radius="0.127" width="0.127" layer="21"/>
 </package>
 <package name="SOT23-3" urn="urn:adsk.eagle:footprint:28476/1" locally_modified="yes">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
@@ -1032,8 +1033,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <rectangle x1="-1.143" y1="-0.6096" x2="-0.843" y2="0.5903" layer="21"/>
 <rectangle x1="0.8382" y1="-0.6096" x2="1.1382" y2="0.5903" layer="21"/>
 <rectangle x1="-0.3" y1="-0.4001" x2="0.3" y2="0.4001" layer="35"/>
-<smd name="P$1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1" roundness="50"/>
-<smd name="P$2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1" roundness="50"/>
+<smd name="P$1" x="-0.9" y="0" dx="0.8" dy="1.5" layer="1" roundness="50"/>
+<smd name="P$2" x="0.9" y="0" dx="0.8" dy="1.5" layer="1" roundness="50"/>
 </package>
 <package name="SOD-323">
 <description>SOD323</description>
@@ -1268,9 +1269,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <connect gate="G$1" pin="OUT" pad="1"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="VOLTAGE" value="" constant="no"/>
-</technology>
 <technology name="09ABDR2GOSCT">
 <attribute name="VOLTAGE" value="9V"/>
 </technology>
@@ -1411,7 +1409,7 @@ Features
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE-1206" prefix="F">
+<deviceset name="FUSE-1206" prefix="F" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
@@ -2888,7 +2886,7 @@ with Signal Control - Light Ed</text>
 <wire x1="76.2" y1="185.42" x2="88.9" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="TX9" class="0">
 <segment>
 <pinref part="PAD3" gate="G$1" pin="P"/>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -2946,7 +2944,7 @@ with Signal Control - Light Ed</text>
 <junction x="215.9" y="104.14"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="SW_FLIP" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="111.76" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
