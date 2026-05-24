@@ -1,4 +1,8 @@
 # Changelog
+23/Mai/2026 - Revision W, Lite Version
+* Changed the BFP460 bias network, refactored to the application notes example
+* Gemini suggested to put the RF switch **after** the J310 to avoid detuning the IF chain
+* Implemented a proper ground-plane co-planar waveguide in the RF stage
 
 31/Aug/2025 - Revision V, Lite Version
 * Improved BFP460 and NCP553 footprint
